@@ -1,7 +1,17 @@
 |uart_tb
+i_Clk => UART_RX:U1.i_Clk
+i_RX_Serial => UART_RX:U1.i_RX_Serial
+o_RX_Byte[0] <= UART_RX:U1.o_RX_Byte[0]
+o_RX_Byte[1] <= UART_RX:U1.o_RX_Byte[1]
+o_RX_Byte[2] <= UART_RX:U1.o_RX_Byte[2]
+o_RX_Byte[3] <= UART_RX:U1.o_RX_Byte[3]
+o_RX_Byte[4] <= UART_RX:U1.o_RX_Byte[4]
+o_RX_Byte[5] <= UART_RX:U1.o_RX_Byte[5]
+o_RX_Byte[6] <= UART_RX:U1.o_RX_Byte[6]
+o_RX_Byte[7] <= UART_RX:U1.o_RX_Byte[7]
 
 
-|uart_tb|UART_RX:UART_RX_INST
+|uart_tb|UART_RX:U1
 i_Clk => r_RX_Byte[0].CLK
 i_Clk => r_RX_Byte[1].CLK
 i_Clk => r_RX_Byte[2].CLK

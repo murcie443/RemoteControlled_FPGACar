@@ -1,35 +1,44 @@
-module uart(input wire [7:0] data_in, //input data input wire wr_en,
-                      input wire clear,
-                      input wire clk_50m,
-                      output wire Tx,
-                      output wire Tx_busy,
-                      input wire Rx,
-                      output wire ready,
-                      input wire ready_clr,
-                      output wire [7:0] data_out,
-                      output [7:0] LEDR,
-                      output wire Tx2//output data
-                      );
-assign LEDR = data_in;
-assign Tx2 = Tx;
-wire Txclk_en, Rxclk_en;
-baudrate uart_baud( .clk_50m(clk_50m), .Rxclk_en(Rxclk_en),
-                                      .Txclk_en(Txclk_en)
-); transmitter uart_Tx( .data_in(data_in),
-clock to enable clock
-receiver uart_Rx(
-to enable clock
-endmodule
-.Rx(Rx),
-     .wr_en(wr_en),
-     .clk_50m(clk_50m),
-     .clken(Txclk_en), //We assign Tx
-     .Tx(Tx),
-     .Tx_busy(Tx_busy)
-     );
-.ready(ready),
-.ready_clr(ready_clr),
-.clk_50m(clk_50m),
-.clken(Rxclk_en), //We assign Tx clock
-.data(data_out)
-);
+library ieee;
+use ieee.std_logic_1164.ALL;
+use ieee.numeric_std.all;
+
+
+-- Top level entity
+entity uart_tb is
+  port (
+    i_Clk       : in  std_logic;
+    i_RX_Serial : in  std_logic;
+    o_RX_Byte   : out std_logic_vector(7 downto 0)
+    );
+end uart_tb;
+
+architecture rtl of uart_tb is
+
+-- Include the UART_RX component
+component UART_RX is
+  generic (
+    g_CLKS_PER_BIT : integer := 115
+    );
+  port (
+    i_Clk       : in  std_logic;
+    i_RX_Serial : in  std_logic;
+    o_RX_DV     : out std_logic;
+    o_RX_Byte   : out std_logic_vector(7 downto 0)
+    );
+end component;
+
+  signal s_RX_DV : std_logic;
+  
+begin
+  -- Instantiate the UART_RX component
+  U1: UART_RX
+    port map (
+      i_Clk       => i_Clk,
+      i_RX_Serial => i_RX_Serial,
+      o_RX_DV     => s_RX_DV,
+      o_RX_Byte   => o_RX_Byte
+      );
+
+  -- the message received is correct when s_RX_DV is '1'.
+
+end rtl;

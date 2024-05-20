@@ -1,5 +1,5 @@
 
-State Machine - |uart_tb|UART_RX:UART_RX_INST|r_SM_Main
+State Machine - |uart_tb|UART_RX:U1|r_SM_Main
 Name r_SM_Main.s_Cleanup r_SM_Main.s_RX_Stop_Bit r_SM_Main.s_RX_Data_Bits r_SM_Main.s_RX_Start_Bit r_SM_Main.s_Idle 
 r_SM_Main.s_Idle 0 0 0 0 0 
 r_SM_Main.s_RX_Start_Bit 0 0 0 1 1 
