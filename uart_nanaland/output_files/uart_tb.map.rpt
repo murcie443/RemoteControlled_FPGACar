@@ -1,5 +1,5 @@
 Analysis & Synthesis report for uart_tb
-Mon May 20 18:36:58 2024
+Mon May 20 19:27:39 2024
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -37,7 +37,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Mon May 20 18:36:58 2024           ;
+; Analysis & Synthesis Status        ; Failed - Mon May 20 19:27:39 2024           ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; uart_tb                                     ;
 ; Top-level Entity Name              ; uart_tb                                     ;
@@ -164,33 +164,28 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Mon May 20 18:36:49 2024
+    Info: Processing started: Mon May 20 19:27:32 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off uart_tb -c uart_tb
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
-Info (12021): Found 2 design units, including 1 entities, in source file uart_tb.vhd
-    Info (12022): Found design unit 1: uart_tb-behave File: C:/Users/Francesco Stasi/OneDrive - Politecnico di Bari/UNI_Digital_Programmable_Systems/VHDLProject/uart_nanaland/uart_tb.vhd Line: 11
-    Info (12023): Found entity 1: uart_tb File: C:/Users/Francesco Stasi/OneDrive - Politecnico di Bari/UNI_Digital_Programmable_Systems/VHDLProject/uart_nanaland/uart_tb.vhd Line: 8
+Error (10500): VHDL syntax error at uart_tb.vhd(35) near text "UART_RX_INST";  expecting "begin", or a declaration statement File: C:/Users/Francesco Stasi/OneDrive - Politecnico di Bari/UNI_Digital_Programmable_Systems/VHDLProject/uart_nanaland/uart_tb.vhd Line: 35
+Error (10500): VHDL syntax error at uart_tb.vhd(53) near text "wait";  expecting "end", or "(", or an identifier ("wait" is a reserved keyword), or a concurrent statement File: C:/Users/Francesco Stasi/OneDrive - Politecnico di Bari/UNI_Digital_Programmable_Systems/VHDLProject/uart_nanaland/uart_tb.vhd Line: 53
+Error (10500): VHDL syntax error at uart_tb.vhd(55) near text "(";  expecting ";" File: C:/Users/Francesco Stasi/OneDrive - Politecnico di Bari/UNI_Digital_Programmable_Systems/VHDLProject/uart_nanaland/uart_tb.vhd Line: 55
+Error (10500): VHDL syntax error at uart_tb.vhd(57) near text "loop";  expecting ";", or an identifier ("loop" is a reserved keyword), or "architecture" File: C:/Users/Francesco Stasi/OneDrive - Politecnico di Bari/UNI_Digital_Programmable_Systems/VHDLProject/uart_nanaland/uart_tb.vhd Line: 57
+Error (10500): VHDL syntax error at uart_tb.vhd(59) near text "wait";  expecting "end", or "(", or an identifier ("wait" is a reserved keyword), or a concurrent statement File: C:/Users/Francesco Stasi/OneDrive - Politecnico di Bari/UNI_Digital_Programmable_Systems/VHDLProject/uart_nanaland/uart_tb.vhd Line: 59
+Error (10500): VHDL syntax error at uart_tb.vhd(66) near text "if";  expecting ";", or an identifier ("if" is a reserved keyword), or "architecture" File: C:/Users/Francesco Stasi/OneDrive - Politecnico di Bari/UNI_Digital_Programmable_Systems/VHDLProject/uart_nanaland/uart_tb.vhd Line: 66
+Error (10500): VHDL syntax error at uart_tb.vhd(70) near text "process";  expecting ";", or an identifier ("process" is a reserved keyword), or "architecture" File: C:/Users/Francesco Stasi/OneDrive - Politecnico di Bari/UNI_Digital_Programmable_Systems/VHDLProject/uart_nanaland/uart_tb.vhd Line: 70
+Info (12021): Found 0 design units, including 0 entities, in source file uart_tb.vhd
 Info (12021): Found 2 design units, including 1 entities, in source file uart_tx.vhd
     Info (12022): Found design unit 1: UART_TX-RTL File: C:/Users/Francesco Stasi/OneDrive - Politecnico di Bari/UNI_Digital_Programmable_Systems/VHDLProject/uart_nanaland/UART_TX.vhd Line: 20
     Info (12023): Found entity 1: UART_TX File: C:/Users/Francesco Stasi/OneDrive - Politecnico di Bari/UNI_Digital_Programmable_Systems/VHDLProject/uart_nanaland/UART_TX.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file uart_rx.vhd
     Info (12022): Found design unit 1: UART_RX-rtl File: C:/Users/Francesco Stasi/OneDrive - Politecnico di Bari/UNI_Digital_Programmable_Systems/VHDLProject/uart_nanaland/UART_RX.vhd Line: 18
     Info (12023): Found entity 1: UART_RX File: C:/Users/Francesco Stasi/OneDrive - Politecnico di Bari/UNI_Digital_Programmable_Systems/VHDLProject/uart_nanaland/UART_RX.vhd Line: 5
-Info (12127): Elaborating entity "uart_tb" for the top level hierarchy
-Warning (10540): VHDL Signal Declaration warning at uart_tb.vhd(48): used explicit default value for signal "r_TX_DV" because signal was never assigned a value File: C:/Users/Francesco Stasi/OneDrive - Politecnico di Bari/UNI_Digital_Programmable_Systems/VHDLProject/uart_nanaland/uart_tb.vhd Line: 48
-Warning (10540): VHDL Signal Declaration warning at uart_tb.vhd(49): used explicit default value for signal "r_TX_BYTE" because signal was never assigned a value File: C:/Users/Francesco Stasi/OneDrive - Politecnico di Bari/UNI_Digital_Programmable_Systems/VHDLProject/uart_nanaland/uart_tb.vhd Line: 49
-Warning (10036): Verilog HDL or VHDL warning at uart_tb.vhd(50): object "w_TX_SERIAL" assigned a value but never read File: C:/Users/Francesco Stasi/OneDrive - Politecnico di Bari/UNI_Digital_Programmable_Systems/VHDLProject/uart_nanaland/uart_tb.vhd Line: 50
-Warning (10036): Verilog HDL or VHDL warning at uart_tb.vhd(51): object "w_TX_DONE" assigned a value but never read File: C:/Users/Francesco Stasi/OneDrive - Politecnico di Bari/UNI_Digital_Programmable_Systems/VHDLProject/uart_nanaland/uart_tb.vhd Line: 51
-Warning (10036): Verilog HDL or VHDL warning at uart_tb.vhd(52): object "w_RX_DV" assigned a value but never read File: C:/Users/Francesco Stasi/OneDrive - Politecnico di Bari/UNI_Digital_Programmable_Systems/VHDLProject/uart_nanaland/uart_tb.vhd Line: 52
-Error (10533): VHDL Wait Statement error at uart_tb.vhd(65): Wait Statement must contain condition clause with UNTIL keyword File: C:/Users/Francesco Stasi/OneDrive - Politecnico di Bari/UNI_Digital_Programmable_Systems/VHDLProject/uart_nanaland/uart_tb.vhd Line: 65
-Error (10532): VHDL Subprogram Body error at uart_tb.vhd(65): Subprogram Body cannot contain Wait Statement File: C:/Users/Francesco Stasi/OneDrive - Politecnico di Bari/UNI_Digital_Programmable_Systems/VHDLProject/uart_nanaland/uart_tb.vhd Line: 65
-Error (10657): VHDL Subprogram error at uart_tb.vhd(113):  failed to elaborate call to subprogram "UART_WRITE_BYTE" File: C:/Users/Francesco Stasi/OneDrive - Politecnico di Bari/UNI_Digital_Programmable_Systems/VHDLProject/uart_nanaland/uart_tb.vhd Line: 113
-Error (12153): Can't elaborate top-level user hierarchy
-Error: Quartus Prime Analysis & Synthesis was unsuccessful. 4 errors, 6 warnings
-    Error: Peak virtual memory: 4778 megabytes
-    Error: Processing ended: Mon May 20 18:36:58 2024
-    Error: Elapsed time: 00:00:09
-    Error: Total CPU time (on all processors): 00:00:18
+Error: Quartus Prime Analysis & Synthesis was unsuccessful. 7 errors, 1 warning
+    Error: Peak virtual memory: 4776 megabytes
+    Error: Processing ended: Mon May 20 19:27:39 2024
+    Error: Elapsed time: 00:00:07
+    Error: Total CPU time (on all processors): 00:00:10
 
 

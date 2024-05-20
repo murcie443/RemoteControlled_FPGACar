@@ -1,52 +1,6 @@
 |uart_tb
 
 
-|uart_tb|UART_TX:UART_TX_INST
-i_Clk => r_TX_Data[0].CLK
-i_Clk => r_TX_Data[1].CLK
-i_Clk => r_TX_Data[2].CLK
-i_Clk => r_TX_Data[3].CLK
-i_Clk => r_TX_Data[4].CLK
-i_Clk => r_TX_Data[5].CLK
-i_Clk => r_TX_Data[6].CLK
-i_Clk => r_TX_Data[7].CLK
-i_Clk => r_Bit_Index[0].CLK
-i_Clk => r_Bit_Index[1].CLK
-i_Clk => r_Bit_Index[2].CLK
-i_Clk => r_Clk_Count[0].CLK
-i_Clk => r_Clk_Count[1].CLK
-i_Clk => r_Clk_Count[2].CLK
-i_Clk => r_Clk_Count[3].CLK
-i_Clk => r_Clk_Count[4].CLK
-i_Clk => r_Clk_Count[5].CLK
-i_Clk => r_Clk_Count[6].CLK
-i_Clk => r_TX_Done.CLK
-i_Clk => o_TX_Serial~reg0.CLK
-i_Clk => o_TX_Active~reg0.CLK
-i_Clk => r_SM_Main~1.DATAIN
-i_TX_DV => r_TX_Data.OUTPUTSELECT
-i_TX_DV => r_TX_Data.OUTPUTSELECT
-i_TX_DV => r_TX_Data.OUTPUTSELECT
-i_TX_DV => r_TX_Data.OUTPUTSELECT
-i_TX_DV => r_TX_Data.OUTPUTSELECT
-i_TX_DV => r_TX_Data.OUTPUTSELECT
-i_TX_DV => r_TX_Data.OUTPUTSELECT
-i_TX_DV => r_TX_Data.OUTPUTSELECT
-i_TX_DV => Selector14.IN3
-i_TX_DV => Selector13.IN2
-i_TX_Byte[0] => r_TX_Data.DATAB
-i_TX_Byte[1] => r_TX_Data.DATAB
-i_TX_Byte[2] => r_TX_Data.DATAB
-i_TX_Byte[3] => r_TX_Data.DATAB
-i_TX_Byte[4] => r_TX_Data.DATAB
-i_TX_Byte[5] => r_TX_Data.DATAB
-i_TX_Byte[6] => r_TX_Data.DATAB
-i_TX_Byte[7] => r_TX_Data.DATAB
-o_TX_Active <= o_TX_Active~reg0.DB_MAX_OUTPUT_PORT_TYPE
-o_TX_Serial <= o_TX_Serial~reg0.DB_MAX_OUTPUT_PORT_TYPE
-o_TX_Done <= r_TX_Done.DB_MAX_OUTPUT_PORT_TYPE
-
-
 |uart_tb|UART_RX:UART_RX_INST
 i_Clk => r_RX_Byte[0].CLK
 i_Clk => r_RX_Byte[1].CLK
