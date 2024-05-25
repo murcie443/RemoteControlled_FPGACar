@@ -55,7 +55,18 @@ set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_signal_integrity
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_boundary_scan
 set_global_assignment -name VHDL_FILE UART_RX.vhd
-set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_location_assignment PIN_P11 -to i_Clk
+set_location_assignment PIN_AB19 -to i_RX_Serial
+set_location_assignment PIN_A8 -to o_RX_Byte[7]
+set_location_assignment PIN_A9 -to o_RX_Byte[6]
+set_location_assignment PIN_A10 -to o_RX_Byte[5]
+set_location_assignment PIN_B10 -to o_RX_Byte[4]
+set_location_assignment PIN_D13 -to o_RX_Byte[3]
+set_location_assignment PIN_C13 -to o_RX_Byte[2]
+set_location_assignment PIN_E14 -to o_RX_Byte[1]
+set_location_assignment PIN_D14 -to o_RX_Byte[0]
+set_location_assignment PIN_B11 -to o_RX_DV
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

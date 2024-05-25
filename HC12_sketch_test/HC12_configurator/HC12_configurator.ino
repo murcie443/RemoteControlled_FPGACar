@@ -1,5 +1,8 @@
 #include <SoftwareSerial.h>
 SoftwareSerial HC12(13, 12); // HC-12 TX Pin, HC-12 RX Pin
+
+uint8_t data = 4;
+
 void setup() {
   
   Serial.begin(9600);             // Serial port to computer
@@ -16,4 +19,5 @@ void loop() {
     HC12.write(Serial.read());      // Send that data to HC-12
   }
 
+  HC12.write(data);
 }

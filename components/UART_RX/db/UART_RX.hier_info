@@ -28,14 +28,14 @@ i_Clk => r_RX_Data.CLK
 i_Clk => r_RX_Data_R.CLK
 i_Clk => r_SM_Main~1.DATAIN
 i_RX_Serial => r_RX_Data_R.DATAIN
-o_RX_DV <= r_RX_DV.DB_MAX_OUTPUT_PORT_TYPE
-o_RX_Byte[0] <= r_RX_Byte[0].DB_MAX_OUTPUT_PORT_TYPE
-o_RX_Byte[1] <= r_RX_Byte[1].DB_MAX_OUTPUT_PORT_TYPE
-o_RX_Byte[2] <= r_RX_Byte[2].DB_MAX_OUTPUT_PORT_TYPE
-o_RX_Byte[3] <= r_RX_Byte[3].DB_MAX_OUTPUT_PORT_TYPE
-o_RX_Byte[4] <= r_RX_Byte[4].DB_MAX_OUTPUT_PORT_TYPE
-o_RX_Byte[5] <= r_RX_Byte[5].DB_MAX_OUTPUT_PORT_TYPE
-o_RX_Byte[6] <= r_RX_Byte[6].DB_MAX_OUTPUT_PORT_TYPE
-o_RX_Byte[7] <= r_RX_Byte[7].DB_MAX_OUTPUT_PORT_TYPE
+o_RX_DV << r_RX_DV.DB_MAX_OUTPUT_PORT_TYPE
+o_RX_Byte[0] << r_RX_Byte[0].DB_MAX_OUTPUT_PORT_TYPE
+o_RX_Byte[1] << r_RX_Byte[1].DB_MAX_OUTPUT_PORT_TYPE
+o_RX_Byte[2] << r_RX_Byte[2].DB_MAX_OUTPUT_PORT_TYPE
+o_RX_Byte[3] << r_RX_Byte[3].DB_MAX_OUTPUT_PORT_TYPE
+o_RX_Byte[4] << r_RX_Byte[4].DB_MAX_OUTPUT_PORT_TYPE
+o_RX_Byte[5] << r_RX_Byte[5].DB_MAX_OUTPUT_PORT_TYPE
+o_RX_Byte[6] << r_RX_Byte[6].DB_MAX_OUTPUT_PORT_TYPE
+o_RX_Byte[7] << r_RX_Byte[7].DB_MAX_OUTPUT_PORT_TYPE
 
 
