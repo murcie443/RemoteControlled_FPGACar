@@ -1,5 +1,5 @@
 Analysis & Synthesis report for UART_RX
-Fri May 24 18:56:08 2024
+Sun May 26 15:18:07 2024
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -46,7 +46,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri May 24 18:56:08 2024       ;
+; Analysis & Synthesis Status        ; Successful - Sun May 26 15:18:07 2024       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; UART_RX                                     ;
 ; Top-level Entity Name              ; UART_RX                                     ;
@@ -306,7 +306,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Fri May 24 18:55:59 2024
+    Info: Processing started: Sun May 26 15:17:58 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off UART_RX -c UART_RX
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
@@ -322,8 +322,8 @@ Info (21057): Implemented 74 device resources after synthesis - the final resour
     Info (21059): Implemented 9 output pins
     Info (21061): Implemented 63 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4793 megabytes
-    Info: Processing ended: Fri May 24 18:56:08 2024
+    Info: Peak virtual memory: 4806 megabytes
+    Info: Processing ended: Sun May 26 15:18:07 2024
     Info: Elapsed time: 00:00:09
     Info: Total CPU time (on all processors): 00:00:12
 

@@ -1,7 +1,5 @@
 #include <SoftwareSerial.h>
-SoftwareSerial HC12(13, 12); // HC-12 TX Pin, HC-12 RX Pin
-
-uint8_t data = 4;
+SoftwareSerial HC12(10, 11); // HC-12 TX Pin, HC-12 RX Pin
 
 void setup() {
   
@@ -19,5 +17,4 @@ void loop() {
     HC12.write(Serial.read());      // Send that data to HC-12
   }
 
-  HC12.write(data);
 }
