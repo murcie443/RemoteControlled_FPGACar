@@ -1,0 +1,38 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.ALL; --for the std_logic struct
+USE ieee.std_logic_unsigned.ALL; --for increment the value of the counter
+
+ENTITY pwmGen IS
+    PORT (
+        CLK2 : IN STD_LOGIC; --20ms clock for the pwm that is prescaled already
+        Svmot_anglev : IN STD_LOGIC_VECTOR (3 DOWNTO 0); --4bits velocity
+        PWM_SVmot : OUT STD_LOGIC --pwm signal output
+
+    );
+END ENTITY pwmGen;
+
+ARCHITECTURE driverdc_behave OF pwmGen IS
+
+    SIGNAL counter : STD_LOGIC_VECTOR(5 DOWNTO 0) := (OTHERS => '1'); --create a counter of 6 bits for divide the 20ms into 0.5ms
+    --create a signal that is equal to the svmot_angle in a 6 bits format
+    SIGNAL  X_6bit : out STD_LOGIC_VECTOR (5 downto 0):= X_6bit <= "00" & Svmot_anglev;
+    
+BEGIN
+    PROCESS (CLK1, DCmot_speedv)
+    BEGIN
+
+        IF rising_edge(CLK1) THEN
+            counter <= counter - '1'; --increment the counter each time clock
+            IF counter = "111100" THEN  --reset the counter whenever it reaches the value 110, otherwise goes to 0 in the case of speed equal to 111
+                counter <= (OTHERS => '1');
+            END IF;
+
+            IF counter > X_6bit THEN --the counter as a comparator
+                PWM_DCmot <= '1';
+            ELSE
+                PWM_DCmot <= '0';
+            END IF;
+
+        END IF;
+    END PROCESS;
+END driverdc_behave;h

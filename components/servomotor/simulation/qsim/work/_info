@@ -1,0 +1,154 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/david/Desktop/DPS/servomotor/simulation/qsim
+Ehard_block
+Z1 w1716646090
+Z2 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z3 DPx11 fiftyfivenm 21 fiftyfivenm_atom_pack 0 22 OTUTkBjTeYVegmIWhVi3N0
+Z4 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z5 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z6 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+Z7 DPx11 fiftyfivenm 22 fiftyfivenm_components 0 22 C5K^h=:j[4HI?HO^UkN3:2
+!i122 364
+R0
+Z8 8servomotor.vho
+Z9 Fservomotor.vho
+l0
+L35 1
+Vhj[i;a0dD85B`o1JPT^cg2
+!s100 3A]XnMhF<;9mKUe5mn3aM1
+Z10 OV;C;2020.1;71
+32
+Z11 !s110 1716646091
+!i10b 1
+Z12 !s108 1716646091.000000
+Z13 !s90 -work|work|servomotor.vho|
+Z14 !s107 servomotor.vho|
+!i113 1
+Z15 o-work work
+Z16 tExplicit 1 CvgOpt 0
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+DEx4 work 10 hard_block 0 22 hj[i;a0dD85B`o1JPT^cg2
+!i122 364
+l76
+L54 28
+Va5ClDYec`9chO`Ne0M1NL2
+!s100 >:Wi^nX[YiN=@>>JC6K_83
+R10
+32
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16
+Eservomotor
+R1
+R3
+R7
+R2
+Z17 DPx6 altera 11 dffeas_pack 0 22 dc5N=DKXMMTVYdUQ@D3FA2
+R4
+R5
+R6
+Z18 DPx6 altera 28 altera_primitives_components 0 22 ca:ehlQAg4;_gVV:^8MAg3
+!i122 364
+R0
+R8
+R9
+l0
+L91 1
+V@ETM71>]FIBP_dl2a8KC_3
+!s100 ifmNU<H2I_:b`nV7mXC8_3
+R10
+32
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16
+Astructure
+R3
+R7
+R2
+R17
+R4
+R5
+R6
+R18
+DEx4 work 10 servomotor 0 22 @ETM71>]FIBP_dl2a8KC_3
+!i122 364
+l187
+L108 1018
+VZi3XLaWc=Bh[:UlY<[mYS3
+!s100 2[^5CGceRUU<gkbb1j9>=0
+R10
+32
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16
+Eservomotor_vhd_vec_tst
+Z19 w1716646089
+R5
+R6
+!i122 365
+R0
+Z20 8Waveform58.vwf.vht
+Z21 FWaveform58.vwf.vht
+l0
+L32 1
+VY5UQ^?0n[M40a7?2f^do_3
+!s100 5db_NK>NZ0hzkjk2B3_a<1
+R10
+32
+R11
+!i10b 1
+R12
+Z22 !s90 -work|work|Waveform58.vwf.vht|
+Z23 !s107 Waveform58.vwf.vht|
+!i113 1
+R15
+R16
+Aservomotor_arch
+R5
+R6
+Z24 DEx4 work 22 servomotor_vhd_vec_tst 0 22 Y5UQ^?0n[M40a7?2f^do_3
+!i122 365
+l47
+Z25 L34 58
+Z26 V?k;CDV7UF^aRc7M:nUD;:2
+Z27 !s100 El42^Po`DWnD6_9OH7EZ@3
+R10
+32
+R11
+!i10b 1
+R12
+R22
+R23
+!i113 1
+R15
+R16
