@@ -1,0 +1,11 @@
+|DCmot_PWM_cntrl
+CLK1 => PWM_DCmot~reg0.CLK
+CLK1 => counter[0].CLK
+CLK1 => counter[1].CLK
+CLK1 => counter[2].CLK
+DCmot_speedv[0] => LessThan0.IN3
+DCmot_speedv[1] => LessThan0.IN2
+DCmot_speedv[2] => LessThan0.IN1
+PWM_DCmot <= PWM_DCmot~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

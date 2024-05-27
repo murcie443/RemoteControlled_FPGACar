@@ -1,0 +1,36 @@
+LIBRARY ieee;
+USE ieee.std_logic_arith.ALL;
+USE ieee.std_logic_1164.ALL;
+USE ieee.std_logic_unsigned.ALL;
+ENTITY pwmGen IS
+    PORT (
+        clk : IN STD_LOGIC;
+        velocity : IN STD_LOGIC_VECTOR (2 DOWNTO 0);
+
+        pwm_signal : OUT STD_LOGIC
+
+    );
+END ENTITY pwmGen;
+
+ARCHITECTURE driverdc_behave OF pwmGen IS
+
+    SIGNAL counter : STD_LOGIC_VECTOR(2 DOWNTO 0) := (OTHERS => '0');
+
+BEGIN
+    PROCESS (clk, velocity)
+    BEGIN
+
+        IF rising_edge(clk) THEN
+            counter <= counter + '1';
+            IF counter = "110" THEN
+                counter <= "000";
+            END IF;
+            IF counter < velocity THEN
+                pwm_signal <= '1';
+            ELSE
+                pwm_signal <= '0';
+            END IF;
+
+        END IF;
+    END PROCESS;
+END driverdc_behave;
