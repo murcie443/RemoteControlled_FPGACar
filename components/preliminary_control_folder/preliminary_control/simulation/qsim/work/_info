@@ -1,0 +1,154 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/david/Desktop/DPS/preliminary_control/simulation/qsim
+Ehard_block
+Z1 w1716899563
+Z2 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z3 DPx11 fiftyfivenm 21 fiftyfivenm_atom_pack 0 22 OTUTkBjTeYVegmIWhVi3N0
+Z4 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z5 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z6 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+Z7 DPx11 fiftyfivenm 22 fiftyfivenm_components 0 22 C5K^h=:j[4HI?HO^UkN3:2
+!i122 206
+Z8 dC:/Users/david/Desktop/preliminary_control/simulation/qsim
+Z9 8preliminary_control.vho
+Z10 Fpreliminary_control.vho
+l0
+L35 1
+Vhj[i;a0dD85B`o1JPT^cg2
+!s100 3A]XnMhF<;9mKUe5mn3aM1
+Z11 OV;C;2020.1;71
+32
+Z12 !s110 1716899565
+!i10b 1
+Z13 !s108 1716899564.000000
+Z14 !s90 -work|work|preliminary_control.vho|
+Z15 !s107 preliminary_control.vho|
+!i113 1
+Z16 o-work work
+Z17 tExplicit 1 CvgOpt 0
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+DEx4 work 10 hard_block 0 22 hj[i;a0dD85B`o1JPT^cg2
+!i122 206
+l76
+L54 28
+Va5ClDYec`9chO`Ne0M1NL2
+!s100 >:Wi^nX[YiN=@>>JC6K_83
+R11
+32
+R12
+!i10b 1
+R13
+R14
+R15
+!i113 1
+R16
+R17
+Epreliminary_control
+R1
+R3
+R7
+R2
+Z18 DPx6 altera 11 dffeas_pack 0 22 dc5N=DKXMMTVYdUQ@D3FA2
+R4
+R5
+R6
+Z19 DPx6 altera 28 altera_primitives_components 0 22 ca:ehlQAg4;_gVV:^8MAg3
+!i122 206
+R8
+R9
+R10
+l0
+L91 1
+VTD70nZ11Q5T1jokonk8jQ3
+!s100 N<]lb4]zkJLnc;mc3Lgjl1
+R11
+32
+R12
+!i10b 1
+R13
+R14
+R15
+!i113 1
+R16
+R17
+Astructure
+R3
+R7
+R2
+R18
+R4
+R5
+R6
+R19
+DEx4 work 19 preliminary_control 0 22 TD70nZ11Q5T1jokonk8jQ3
+!i122 206
+l292
+L123 2473
+VgDQQ`E0S60L8ZAZkGAJfA1
+!s100 Ko=d[4MT<c1GO8beQX@Z92
+R11
+32
+R12
+!i10b 1
+R13
+R14
+R15
+!i113 1
+R16
+R17
+Epreliminary_control_vhd_vec_tst
+R1
+R5
+R6
+!i122 207
+R8
+Z20 8Waveform33.vwf.vht
+Z21 FWaveform33.vwf.vht
+l0
+L32 1
+VbY;iFcA>O0JfFFGH0NQKK0
+!s100 f]c?]2dgR6LVzPjHn;0BW1
+R11
+32
+R12
+!i10b 1
+Z22 !s108 1716899565.000000
+Z23 !s90 -work|work|Waveform33.vwf.vht|
+!s107 Waveform33.vwf.vht|
+!i113 1
+R16
+R17
+Apreliminary_control_arch
+R5
+R6
+Z24 DEx4 work 31 preliminary_control_vhd_vec_tst 0 22 bY;iFcA>O0JfFFGH0NQKK0
+!i122 207
+l51
+Z25 L34 120
+V68oG14o2:Vd_S01Soa2la2
+!s100 6TL=j1_4Zcn?Zob93=F1z2
+R11
+32
+R12
+!i10b 1
+R22
+R23
+Z26 !s107 Waveform33.vwf.vht|
+!i113 1
+R16
+R17

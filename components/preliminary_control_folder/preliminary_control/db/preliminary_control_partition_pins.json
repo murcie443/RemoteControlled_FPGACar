@@ -1,0 +1,85 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "RX_data_OUT[0]",
+					"strict" : false
+				},
+				{
+					"name" : "RX_data_OUT[1]",
+					"strict" : false
+				},
+				{
+					"name" : "RX_data_OUT[2]",
+					"strict" : false
+				},
+				{
+					"name" : "RX_data_OUT[3]",
+					"strict" : false
+				},
+				{
+					"name" : "RX_data_OUT[4]",
+					"strict" : false
+				},
+				{
+					"name" : "RX_data_OUT[5]",
+					"strict" : false
+				},
+				{
+					"name" : "RX_data_OUT[6]",
+					"strict" : false
+				},
+				{
+					"name" : "RX_data_OUT[7]",
+					"strict" : false
+				},
+				{
+					"name" : "EN_SW",
+					"strict" : false
+				},
+				{
+					"name" : "RX_data_IN[0]",
+					"strict" : false
+				},
+				{
+					"name" : "RX_data_IN[1]",
+					"strict" : false
+				},
+				{
+					"name" : "RX_data_IN[2]",
+					"strict" : false
+				},
+				{
+					"name" : "RX_data_IN[3]",
+					"strict" : false
+				},
+				{
+					"name" : "RX_data_IN[4]",
+					"strict" : false
+				},
+				{
+					"name" : "RX_data_IN[5]",
+					"strict" : false
+				},
+				{
+					"name" : "RX_data_IN[6]",
+					"strict" : false
+				},
+				{
+					"name" : "RX_data_IN[7]",
+					"strict" : false
+				},
+				{
+					"name" : "o_RX_DV",
+					"strict" : false
+				},
+				{
+					"name" : "CLK3",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

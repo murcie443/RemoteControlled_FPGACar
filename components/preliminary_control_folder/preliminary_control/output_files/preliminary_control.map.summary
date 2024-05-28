@@ -1,0 +1,16 @@
+Analysis & Synthesis Status : Successful - Tue May 28 14:30:11 2024
+Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Revision Name : preliminary_control
+Top-level Entity Name : preliminary_control
+Family : MAX 10
+Total logic elements : 86
+    Total combinational functions : 85
+    Dedicated logic registers : 34
+Total registers : 34
+Total pins : 19
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
+UFM blocks : 0
+ADC blocks : 0
