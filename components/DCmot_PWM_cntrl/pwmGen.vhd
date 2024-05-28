@@ -24,7 +24,7 @@ BEGIN
             IF counter = "110" THEN  --reset the counter whenever it reaches the value 110, otherwise goes to 0 in the case of speed equal to 111
                 counter <= "000";
             END IF;
-            IF counter > DCmot_speedv THEN --the counter as a comparator
+            IF counter < DCmot_speedv THEN --the counter as a comparator
                 PWM_DCmot <= '1';
             ELSE
                 PWM_DCmot <= '0';
