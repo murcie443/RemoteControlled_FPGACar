@@ -1,0 +1,18 @@
+Fitter Status : Successful - Wed May 29 10:31:54 2024
+Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Revision Name : servo
+Top-level Entity Name : SVmot_angle_cntrl
+Family : MAX 10
+Device : 10M50DCF484C7G
+Timing Models : Final
+Total logic elements : 40 / 49,760 ( < 1 % )
+    Total combinational functions : 40 / 49,760 ( < 1 % )
+    Dedicated logic registers : 16 / 49,760 ( < 1 % )
+Total registers : 16
+Total pins : 6 / 360 ( 2 % )
+Total virtual pins : 0
+Total memory bits : 0 / 1,677,312 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 288 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )
+UFM blocks : 0 / 1 ( 0 % )
+ADC blocks : 0

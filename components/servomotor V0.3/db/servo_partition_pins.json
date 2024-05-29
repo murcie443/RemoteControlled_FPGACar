@@ -1,0 +1,33 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "PWM_SVmot",
+					"strict" : false
+				},
+				{
+					"name" : "Svmot_anglev[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Svmot_anglev[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Svmot_anglev[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Svmot_anglev[3]",
+					"strict" : false
+				},
+				{
+					"name" : "CLK2",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
