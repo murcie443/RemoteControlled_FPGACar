@@ -12,8 +12,8 @@ architecture byte_divider of byte_divider is
 begin
     process(RX_data)
     begin
-        DCmot_speedv <= RX_data(6 downto 4);
-        Svmot_anglev <= RX_data(3 downto 0);
         NUP_v <= RX_data(7);
+		  DCmot_speedv <= RX_data(6 downto 4);
+        Svmot_anglev <= RX_data(3 downto 0);
     end process;
 end byte_divider;
