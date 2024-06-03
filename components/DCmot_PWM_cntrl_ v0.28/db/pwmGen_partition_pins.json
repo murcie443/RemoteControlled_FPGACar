@@ -1,0 +1,29 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "PWM_DCmot",
+					"strict" : false
+				},
+				{
+					"name" : "DCmot_speedv[0]",
+					"strict" : false
+				},
+				{
+					"name" : "DCmot_speedv[1]",
+					"strict" : false
+				},
+				{
+					"name" : "DCmot_speedv[2]",
+					"strict" : false
+				},
+				{
+					"name" : "CLK1",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
