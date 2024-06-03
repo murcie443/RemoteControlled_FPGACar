@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Main
-Thu May 30 16:42:54 2024
+Mon Jun 03 18:40:31 2024
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -51,13 +51,13 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu May 30 16:42:54 2024       ;
+; Analysis & Synthesis Status        ; Successful - Mon Jun 03 18:40:31 2024       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; Main                                        ;
 ; Top-level Entity Name              ; Main                                        ;
 ; Family                             ; MAX 10                                      ;
-; Total logic elements               ; 185                                         ;
-;     Total combinational functions  ; 183                                         ;
+; Total logic elements               ; 182                                         ;
+;     Total combinational functions  ; 180                                         ;
 ;     Dedicated logic registers      ; 99                                          ;
 ; Total registers                    ; 99                                          ;
 ; Total pins                         ; 5                                           ;
@@ -173,25 +173,25 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                       ;
-+----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                             ; Library ;
-+----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------+---------+
-; components/byte_divider.vhd      ; yes             ; User VHDL File                     ; C:/Users/david/Desktop/Main2/components/byte_divider.vhd                 ;         ;
-; components/SVmot_angle_cntrl.vhd ; yes             ; User VHDL File                     ; C:/Users/david/Desktop/Main2/components/SVmot_angle_cntrl.vhd            ;         ;
-; components/UART_RX.vhd           ; yes             ; User VHDL File                     ; C:/Users/david/Desktop/Main2/components/UART_RX.vhd                      ;         ;
-; Main.bdf                         ; yes             ; User Block Diagram/Schematic File  ; C:/Users/david/Desktop/Main2/Main.bdf                                    ;         ;
-; components/DCmot_PWM_cntrl.vhd   ; yes             ; User VHDL File                     ; C:/Users/david/Desktop/Main2/components/DCmot_PWM_cntrl.vhd              ;         ;
-; components/PWM_DCMotor.vhd       ; yes             ; User VHDL File                     ; C:/Users/david/Desktop/Main2/components/PWM_DCMotor.vhd                  ;         ;
-; pll.vhd                          ; yes             ; User Wizard-Generated File         ; C:/Users/david/Desktop/Main2/pll.vhd                                     ;         ;
-; altpll.tdf                       ; yes             ; Megafunction                       ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altpll.tdf        ;         ;
-; aglobal201.inc                   ; yes             ; Megafunction                       ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/aglobal201.inc    ;         ;
-; stratix_pll.inc                  ; yes             ; Megafunction                       ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/stratix_pll.inc   ;         ;
-; stratixii_pll.inc                ; yes             ; Megafunction                       ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/stratixii_pll.inc ;         ;
-; cycloneii_pll.inc                ; yes             ; Megafunction                       ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/cycloneii_pll.inc ;         ;
-; db/pll_altpll.v                  ; yes             ; Auto-Generated Megafunction        ; C:/Users/david/Desktop/Main2/db/pll_altpll.v                             ;         ;
-+----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------+---------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                         ;
++----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                                               ; Library ;
++----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------------------------------------------+---------+
+; components/byte_divider.vhd      ; yes             ; User VHDL File                     ; C:/Users/david/Desktop/VHDLProject/Testing/TestConMotorePwmLimitata/Main2/components/byte_divider.vhd      ;         ;
+; components/SVmot_angle_cntrl.vhd ; yes             ; User VHDL File                     ; C:/Users/david/Desktop/VHDLProject/Testing/TestConMotorePwmLimitata/Main2/components/SVmot_angle_cntrl.vhd ;         ;
+; components/UART_RX.vhd           ; yes             ; User VHDL File                     ; C:/Users/david/Desktop/VHDLProject/Testing/TestConMotorePwmLimitata/Main2/components/UART_RX.vhd           ;         ;
+; Main.bdf                         ; yes             ; User Block Diagram/Schematic File  ; C:/Users/david/Desktop/VHDLProject/Testing/TestConMotorePwmLimitata/Main2/Main.bdf                         ;         ;
+; components/DCmot_PWM_cntrl.vhd   ; yes             ; User VHDL File                     ; C:/Users/david/Desktop/VHDLProject/Testing/TestConMotorePwmLimitata/Main2/components/DCmot_PWM_cntrl.vhd   ;         ;
+; components/PWM_DCMotor.vhd       ; yes             ; User VHDL File                     ; C:/Users/david/Desktop/VHDLProject/Testing/TestConMotorePwmLimitata/Main2/components/PWM_DCMotor.vhd       ;         ;
+; pll.vhd                          ; yes             ; User Wizard-Generated File         ; C:/Users/david/Desktop/VHDLProject/Testing/TestConMotorePwmLimitata/Main2/pll.vhd                          ;         ;
+; altpll.tdf                       ; yes             ; Megafunction                       ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altpll.tdf                                          ;         ;
+; aglobal201.inc                   ; yes             ; Megafunction                       ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/aglobal201.inc                                      ;         ;
+; stratix_pll.inc                  ; yes             ; Megafunction                       ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/stratix_pll.inc                                     ;         ;
+; stratixii_pll.inc                ; yes             ; Megafunction                       ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/stratixii_pll.inc                                   ;         ;
+; cycloneii_pll.inc                ; yes             ; Megafunction                       ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/cycloneii_pll.inc                                   ;         ;
+; db/pll_altpll.v                  ; yes             ; Auto-Generated Megafunction        ; C:/Users/david/Desktop/VHDLProject/Testing/TestConMotorePwmLimitata/Main2/db/pll_altpll.v                  ;         ;
++----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------------------------------------------+---------+
 
 
 +----------------------------------------------------------------------------------------------------------------------------+
@@ -199,16 +199,16 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+------------------------------------------------------------------------------+
 ; Resource                                    ; Usage                                                                        ;
 +---------------------------------------------+------------------------------------------------------------------------------+
-; Estimated Total logic elements              ; 185                                                                          ;
+; Estimated Total logic elements              ; 182                                                                          ;
 ;                                             ;                                                                              ;
-; Total combinational functions               ; 183                                                                          ;
+; Total combinational functions               ; 180                                                                          ;
 ; Logic element usage by number of LUT inputs ;                                                                              ;
-;     -- 4 input functions                    ; 65                                                                           ;
-;     -- 3 input functions                    ; 30                                                                           ;
-;     -- <=2 input functions                  ; 88                                                                           ;
+;     -- 4 input functions                    ; 67                                                                           ;
+;     -- 3 input functions                    ; 27                                                                           ;
+;     -- <=2 input functions                  ; 86                                                                           ;
 ;                                             ;                                                                              ;
 ; Logic elements by mode                      ;                                                                              ;
-;     -- normal mode                          ; 118                                                                          ;
+;     -- normal mode                          ; 115                                                                          ;
 ;     -- arithmetic mode                      ; 65                                                                           ;
 ;                                             ;                                                                              ;
 ; Total registers                             ; 99                                                                           ;
@@ -224,8 +224,8 @@ https://fpgasoftware.intel.com/eula.
 ;                                             ;                                                                              ;
 ; Maximum fan-out node                        ; pll:inst7|altpll:altpll_component|pll_altpll:auto_generated|wire_pll1_clk[0] ;
 ; Maximum fan-out                             ; 69                                                                           ;
-; Total fan-out                               ; 794                                                                          ;
-; Average fan-out                             ; 2.71                                                                         ;
+; Total fan-out                               ; 790                                                                          ;
+; Average fan-out                             ; 2.72                                                                         ;
 +---------------------------------------------+------------------------------------------------------------------------------+
 
 
@@ -234,9 +234,9 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-------------------------------------------------------------------+-------------------+--------------+
 ; Compilation Hierarchy Node           ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                                               ; Entity Name       ; Library Name ;
 +--------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-------------------------------------------------------------------+-------------------+--------------+
-; |Main                                ; 183 (0)             ; 99 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 5    ; 0            ; 0          ; |Main                                                             ; Main              ; work         ;
-;    |PWM_DCMotor:inst5|               ; 87 (2)              ; 52 (2)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Main|PWM_DCMotor:inst5                                           ; PWM_DCMotor       ; work         ;
-;       |DCmot_PWM_cntrl:U0|           ; 85 (85)             ; 50 (50)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Main|PWM_DCMotor:inst5|DCmot_PWM_cntrl:U0                        ; DCmot_PWM_cntrl   ; work         ;
+; |Main                                ; 180 (0)             ; 99 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 5    ; 0            ; 0          ; |Main                                                             ; Main              ; work         ;
+;    |PWM_DCMotor:inst5|               ; 84 (2)              ; 52 (2)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Main|PWM_DCMotor:inst5                                           ; PWM_DCMotor       ; work         ;
+;       |DCmot_PWM_cntrl:U0|           ; 82 (82)             ; 50 (50)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Main|PWM_DCMotor:inst5|DCmot_PWM_cntrl:U0                        ; DCmot_PWM_cntrl   ; work         ;
 ;    |SVmot_angle_cntrl:inst|          ; 40 (40)             ; 16 (16)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Main|SVmot_angle_cntrl:inst                                      ; SVmot_angle_cntrl ; work         ;
 ;    |UART_RX:inst1|                   ; 56 (56)             ; 31 (31)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Main|UART_RX:inst1                                               ; UART_RX           ; work         ;
 ;    |pll:inst7|                       ; 0 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Main|pll:inst7                                                   ; pll               ; work         ;
@@ -775,18 +775,18 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     ENA               ; 39                          ;
 ;     ENA SCLR          ; 13                          ;
 ;     plain             ; 47                          ;
-; cycloneiii_lcell_comb ; 183                         ;
+; cycloneiii_lcell_comb ; 180                         ;
 ;     arith             ; 65                          ;
 ;         2 data inputs ; 65                          ;
-;     normal            ; 118                         ;
-;         1 data inputs ; 5                           ;
-;         2 data inputs ; 18                          ;
-;         3 data inputs ; 30                          ;
-;         4 data inputs ; 65                          ;
+;     normal            ; 115                         ;
+;         1 data inputs ; 4                           ;
+;         2 data inputs ; 17                          ;
+;         3 data inputs ; 27                          ;
+;         4 data inputs ; 67                          ;
 ; cycloneiii_pll        ; 1                           ;
 ;                       ;                             ;
 ; Max LUT depth         ; 6.00                        ;
-; Average LUT depth     ; 3.55                        ;
+; Average LUT depth     ; 3.54                        ;
 +-----------------------+-----------------------------+
 
 
@@ -805,42 +805,42 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Thu May 30 16:42:46 2024
+    Info: Processing started: Mon Jun 03 18:40:22 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Main -c Main
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file components/byte_divider.vhd
-    Info (12022): Found design unit 1: byte_divider-byte_divider File: C:/Users/david/Desktop/Main2/components/byte_divider.vhd Line: 12
-    Info (12023): Found entity 1: byte_divider File: C:/Users/david/Desktop/Main2/components/byte_divider.vhd Line: 4
+    Info (12022): Found design unit 1: byte_divider-byte_divider File: C:/Users/david/Desktop/VHDLProject/Testing/TestConMotorePwmLimitata/Main2/components/byte_divider.vhd Line: 12
+    Info (12023): Found entity 1: byte_divider File: C:/Users/david/Desktop/VHDLProject/Testing/TestConMotorePwmLimitata/Main2/components/byte_divider.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file components/svmot_angle_cntrl.vhd
-    Info (12022): Found design unit 1: SVmot_angle_cntrl-servomotor_behave File: C:/Users/david/Desktop/Main2/components/SVmot_angle_cntrl.vhd Line: 14
-    Info (12023): Found entity 1: SVmot_angle_cntrl File: C:/Users/david/Desktop/Main2/components/SVmot_angle_cntrl.vhd Line: 5
+    Info (12022): Found design unit 1: SVmot_angle_cntrl-servomotor_behave File: C:/Users/david/Desktop/VHDLProject/Testing/TestConMotorePwmLimitata/Main2/components/SVmot_angle_cntrl.vhd Line: 14
+    Info (12023): Found entity 1: SVmot_angle_cntrl File: C:/Users/david/Desktop/VHDLProject/Testing/TestConMotorePwmLimitata/Main2/components/SVmot_angle_cntrl.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file components/uart_rx.vhd
-    Info (12022): Found design unit 1: UART_RX-rtl File: C:/Users/david/Desktop/Main2/components/UART_RX.vhd Line: 18
-    Info (12023): Found entity 1: UART_RX File: C:/Users/david/Desktop/Main2/components/UART_RX.vhd Line: 5
+    Info (12022): Found design unit 1: UART_RX-rtl File: C:/Users/david/Desktop/VHDLProject/Testing/TestConMotorePwmLimitata/Main2/components/UART_RX.vhd Line: 18
+    Info (12023): Found entity 1: UART_RX File: C:/Users/david/Desktop/VHDLProject/Testing/TestConMotorePwmLimitata/Main2/components/UART_RX.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file pll30khz.vhd
-    Info (12022): Found design unit 1: pll30khz-SYN File: C:/Users/david/Desktop/Main2/pll30khz.vhd Line: 53
-    Info (12023): Found entity 1: pll30khz File: C:/Users/david/Desktop/Main2/pll30khz.vhd Line: 43
+    Info (12022): Found design unit 1: pll30khz-SYN File: C:/Users/david/Desktop/VHDLProject/Testing/TestConMotorePwmLimitata/Main2/pll30khz.vhd Line: 53
+    Info (12023): Found entity 1: pll30khz File: C:/Users/david/Desktop/VHDLProject/Testing/TestConMotorePwmLimitata/Main2/pll30khz.vhd Line: 43
 Info (12021): Found 1 design units, including 1 entities, in source file main.bdf
     Info (12023): Found entity 1: Main
 Info (12021): Found 2 design units, including 1 entities, in source file components/dcmot_pwm_cntrl.vhd
-    Info (12022): Found design unit 1: DCmot_PWM_cntrl-driverdc_behave File: C:/Users/david/Desktop/Main2/components/DCmot_PWM_cntrl.vhd Line: 14
-    Info (12023): Found entity 1: DCmot_PWM_cntrl File: C:/Users/david/Desktop/Main2/components/DCmot_PWM_cntrl.vhd Line: 5
+    Info (12022): Found design unit 1: DCmot_PWM_cntrl-driverdc_behave File: C:/Users/david/Desktop/VHDLProject/Testing/TestConMotorePwmLimitata/Main2/components/DCmot_PWM_cntrl.vhd Line: 14
+    Info (12023): Found entity 1: DCmot_PWM_cntrl File: C:/Users/david/Desktop/VHDLProject/Testing/TestConMotorePwmLimitata/Main2/components/DCmot_PWM_cntrl.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file components/pwm_dcmotor.vhd
-    Info (12022): Found design unit 1: PWM_DCMotor-driverdc_behave File: C:/Users/david/Desktop/Main2/components/PWM_DCMotor.vhd Line: 15
-    Info (12023): Found entity 1: PWM_DCMotor File: C:/Users/david/Desktop/Main2/components/PWM_DCMotor.vhd Line: 5
+    Info (12022): Found design unit 1: PWM_DCMotor-driverdc_behave File: C:/Users/david/Desktop/VHDLProject/Testing/TestConMotorePwmLimitata/Main2/components/PWM_DCMotor.vhd Line: 15
+    Info (12023): Found entity 1: PWM_DCMotor File: C:/Users/david/Desktop/VHDLProject/Testing/TestConMotorePwmLimitata/Main2/components/PWM_DCMotor.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file pll10khz.vhd
-    Info (12022): Found design unit 1: pll10khz-SYN File: C:/Users/david/Desktop/Main2/pll10khz.vhd Line: 53
-    Info (12023): Found entity 1: pll10khz File: C:/Users/david/Desktop/Main2/pll10khz.vhd Line: 43
+    Info (12022): Found design unit 1: pll10khz-SYN File: C:/Users/david/Desktop/VHDLProject/Testing/TestConMotorePwmLimitata/Main2/pll10khz.vhd Line: 53
+    Info (12023): Found entity 1: pll10khz File: C:/Users/david/Desktop/VHDLProject/Testing/TestConMotorePwmLimitata/Main2/pll10khz.vhd Line: 43
 Info (12021): Found 2 design units, including 1 entities, in source file pll.vhd
-    Info (12022): Found design unit 1: pll-SYN File: C:/Users/david/Desktop/Main2/pll.vhd Line: 54
-    Info (12023): Found entity 1: pll File: C:/Users/david/Desktop/Main2/pll.vhd Line: 43
+    Info (12022): Found design unit 1: pll-SYN File: C:/Users/david/Desktop/VHDLProject/Testing/TestConMotorePwmLimitata/Main2/pll.vhd Line: 54
+    Info (12023): Found entity 1: pll File: C:/Users/david/Desktop/VHDLProject/Testing/TestConMotorePwmLimitata/Main2/pll.vhd Line: 43
 Info (12127): Elaborating entity "Main" for the top level hierarchy
 Info (12128): Elaborating entity "SVmot_angle_cntrl" for hierarchy "SVmot_angle_cntrl:inst"
 Info (12128): Elaborating entity "pll" for hierarchy "pll:inst7"
-Info (12128): Elaborating entity "altpll" for hierarchy "pll:inst7|altpll:altpll_component" File: C:/Users/david/Desktop/Main2/pll.vhd Line: 144
-Info (12130): Elaborated megafunction instantiation "pll:inst7|altpll:altpll_component" File: C:/Users/david/Desktop/Main2/pll.vhd Line: 144
-Info (12133): Instantiated megafunction "pll:inst7|altpll:altpll_component" with the following parameter: File: C:/Users/david/Desktop/Main2/pll.vhd Line: 144
+Info (12128): Elaborating entity "altpll" for hierarchy "pll:inst7|altpll:altpll_component" File: C:/Users/david/Desktop/VHDLProject/Testing/TestConMotorePwmLimitata/Main2/pll.vhd Line: 144
+Info (12130): Elaborated megafunction instantiation "pll:inst7|altpll:altpll_component" File: C:/Users/david/Desktop/VHDLProject/Testing/TestConMotorePwmLimitata/Main2/pll.vhd Line: 144
+Info (12133): Instantiated megafunction "pll:inst7|altpll:altpll_component" with the following parameter: File: C:/Users/david/Desktop/VHDLProject/Testing/TestConMotorePwmLimitata/Main2/pll.vhd Line: 144
     Info (12134): Parameter "bandwidth_type" = "AUTO"
     Info (12134): Parameter "clk0_divide_by" = "5000"
     Info (12134): Parameter "clk0_duty_cycle" = "50"
@@ -900,24 +900,24 @@ Info (12133): Instantiated megafunction "pll:inst7|altpll:altpll_component" with
     Info (12134): Parameter "port_extclk3" = "PORT_UNUSED"
     Info (12134): Parameter "width_clock" = "5"
 Info (12021): Found 1 design units, including 1 entities, in source file db/pll_altpll.v
-    Info (12023): Found entity 1: pll_altpll File: C:/Users/david/Desktop/Main2/db/pll_altpll.v Line: 30
+    Info (12023): Found entity 1: pll_altpll File: C:/Users/david/Desktop/VHDLProject/Testing/TestConMotorePwmLimitata/Main2/db/pll_altpll.v Line: 30
 Info (12128): Elaborating entity "pll_altpll" for hierarchy "pll:inst7|altpll:altpll_component|pll_altpll:auto_generated" File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altpll.tdf Line: 898
 Info (12128): Elaborating entity "byte_divider" for hierarchy "byte_divider:inst6"
 Info (12128): Elaborating entity "UART_RX" for hierarchy "UART_RX:inst1"
 Info (12128): Elaborating entity "PWM_DCMotor" for hierarchy "PWM_DCMotor:inst5"
-Info (12128): Elaborating entity "DCmot_PWM_cntrl" for hierarchy "PWM_DCMotor:inst5|DCmot_PWM_cntrl:U_rev" File: C:/Users/david/Desktop/Main2/components/PWM_DCMotor.vhd Line: 29
+Info (12128): Elaborating entity "DCmot_PWM_cntrl" for hierarchy "PWM_DCMotor:inst5|DCmot_PWM_cntrl:U_rev" File: C:/Users/david/Desktop/VHDLProject/Testing/TestConMotorePwmLimitata/Main2/components/PWM_DCMotor.vhd Line: 29
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 1 node(s), including 0 DDIO, 1 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 191 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 188 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 2 input pins
     Info (21059): Implemented 3 output pins
-    Info (21061): Implemented 185 logic cells
+    Info (21061): Implemented 182 logic cells
     Info (21065): Implemented 1 PLLs
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4801 megabytes
-    Info: Processing ended: Thu May 30 16:42:54 2024
-    Info: Elapsed time: 00:00:08
+    Info: Peak virtual memory: 4793 megabytes
+    Info: Processing ended: Mon Jun 03 18:40:31 2024
+    Info: Elapsed time: 00:00:09
     Info: Total CPU time (on all processors): 00:00:02
 
 
