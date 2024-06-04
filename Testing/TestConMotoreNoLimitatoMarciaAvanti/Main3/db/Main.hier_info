@@ -1,0 +1,189 @@
+|Main
+PWM_SVmot <= SVmot_angle_cntrl:inst.PWM_SVmot
+CLK => pll:inst7.inclk0
+CLK => UART_RX:inst1.i_Clk
+i_RX_Serial => UART_RX:inst1.i_RX_Serial
+PWM_DCmot <= DCmot_PWM_cntrl:inst2.PWM_DCmot
+
+
+|Main|SVmot_angle_cntrl:inst
+CLK2 => innercounter[0].CLK
+CLK2 => innercounter[1].CLK
+CLK2 => innercounter[2].CLK
+CLK2 => innercounter[3].CLK
+CLK2 => flag.CLK
+CLK2 => PWM_SVmot~reg0.CLK
+CLK2 => counter[0].CLK
+CLK2 => counter[1].CLK
+CLK2 => counter[2].CLK
+CLK2 => counter[3].CLK
+CLK2 => counter[4].CLK
+CLK2 => counter[5].CLK
+CLK2 => counter[6].CLK
+CLK2 => counter[7].CLK
+CLK2 => counter[8].CLK
+CLK2 => counter[9].CLK
+Svmot_anglev[0] => Equal1.IN7
+Svmot_anglev[0] => Equal2.IN7
+Svmot_anglev[0] => LessThan4.IN4
+Svmot_anglev[1] => Equal1.IN6
+Svmot_anglev[1] => Equal2.IN6
+Svmot_anglev[1] => LessThan4.IN3
+Svmot_anglev[2] => Equal1.IN5
+Svmot_anglev[2] => Equal2.IN5
+Svmot_anglev[2] => LessThan4.IN2
+Svmot_anglev[3] => Equal1.IN4
+Svmot_anglev[3] => Equal2.IN4
+Svmot_anglev[3] => LessThan4.IN1
+PWM_SVmot <= PWM_SVmot~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|pll:inst7
+areset => altpll:altpll_component.areset
+inclk0 => altpll:altpll_component.inclk[0]
+c0 <= altpll:altpll_component.clk[0]
+c1 <= altpll:altpll_component.clk[1]
+
+
+|Main|pll:inst7|altpll:altpll_component
+inclk[0] => pll_altpll:auto_generated.inclk[0]
+inclk[1] => pll_altpll:auto_generated.inclk[1]
+fbin => ~NO_FANOUT~
+pllena => ~NO_FANOUT~
+clkswitch => ~NO_FANOUT~
+areset => pll_altpll:auto_generated.areset
+pfdena => ~NO_FANOUT~
+clkena[0] => ~NO_FANOUT~
+clkena[1] => ~NO_FANOUT~
+clkena[2] => ~NO_FANOUT~
+clkena[3] => ~NO_FANOUT~
+clkena[4] => ~NO_FANOUT~
+clkena[5] => ~NO_FANOUT~
+extclkena[0] => ~NO_FANOUT~
+extclkena[1] => ~NO_FANOUT~
+extclkena[2] => ~NO_FANOUT~
+extclkena[3] => ~NO_FANOUT~
+scanclk => ~NO_FANOUT~
+scanclkena => ~NO_FANOUT~
+scanaclr => ~NO_FANOUT~
+scanread => ~NO_FANOUT~
+scanwrite => ~NO_FANOUT~
+scandata => ~NO_FANOUT~
+phasecounterselect[0] => ~NO_FANOUT~
+phasecounterselect[1] => ~NO_FANOUT~
+phasecounterselect[2] => ~NO_FANOUT~
+phasecounterselect[3] => ~NO_FANOUT~
+phaseupdown => ~NO_FANOUT~
+phasestep => ~NO_FANOUT~
+configupdate => ~NO_FANOUT~
+fbmimicbidir <> <GND>
+clk[0] <= clk[0].DB_MAX_OUTPUT_PORT_TYPE
+clk[1] <= clk[1].DB_MAX_OUTPUT_PORT_TYPE
+clk[2] <= clk[2].DB_MAX_OUTPUT_PORT_TYPE
+clk[3] <= clk[3].DB_MAX_OUTPUT_PORT_TYPE
+clk[4] <= clk[4].DB_MAX_OUTPUT_PORT_TYPE
+extclk[0] <= <GND>
+extclk[1] <= <GND>
+extclk[2] <= <GND>
+extclk[3] <= <GND>
+clkbad[0] <= <GND>
+clkbad[1] <= <GND>
+enable1 <= <GND>
+enable0 <= <GND>
+activeclock <= <GND>
+clkloss <= <GND>
+locked <= <GND>
+scandataout <= <GND>
+scandone <= <GND>
+sclkout0 <= <GND>
+sclkout1 <= <GND>
+phasedone <= <GND>
+vcooverrange <= <GND>
+vcounderrange <= <GND>
+fbout <= <GND>
+fref <= <GND>
+icdrclk <= <GND>
+
+
+|Main|pll:inst7|altpll:altpll_component|pll_altpll:auto_generated
+areset => pll1.ARESET
+clk[0] <= pll1.CLK
+clk[1] <= pll1.CLK1
+clk[2] <= pll1.CLK2
+clk[3] <= pll1.CLK3
+clk[4] <= pll1.CLK4
+inclk[0] => pll1.CLK
+inclk[1] => pll1.CLK1
+
+
+|Main|byte_divider:inst6
+RX_data[0] => Svmot_anglev[0].DATAIN
+RX_data[1] => Svmot_anglev[1].DATAIN
+RX_data[2] => Svmot_anglev[2].DATAIN
+RX_data[3] => Svmot_anglev[3].DATAIN
+RX_data[4] => DCmot_speedv[0].DATAIN
+RX_data[5] => DCmot_speedv[1].DATAIN
+RX_data[6] => DCmot_speedv[2].DATAIN
+RX_data[7] => NUP_v.DATAIN
+Svmot_anglev[0] <= RX_data[0].DB_MAX_OUTPUT_PORT_TYPE
+Svmot_anglev[1] <= RX_data[1].DB_MAX_OUTPUT_PORT_TYPE
+Svmot_anglev[2] <= RX_data[2].DB_MAX_OUTPUT_PORT_TYPE
+Svmot_anglev[3] <= RX_data[3].DB_MAX_OUTPUT_PORT_TYPE
+NUP_v <= RX_data[7].DB_MAX_OUTPUT_PORT_TYPE
+DCmot_speedv[0] <= RX_data[4].DB_MAX_OUTPUT_PORT_TYPE
+DCmot_speedv[1] <= RX_data[5].DB_MAX_OUTPUT_PORT_TYPE
+DCmot_speedv[2] <= RX_data[6].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|UART_RX:inst1
+i_Clk => r_RX_Byte[0].CLK
+i_Clk => r_RX_Byte[1].CLK
+i_Clk => r_RX_Byte[2].CLK
+i_Clk => r_RX_Byte[3].CLK
+i_Clk => r_RX_Byte[4].CLK
+i_Clk => r_RX_Byte[5].CLK
+i_Clk => r_RX_Byte[6].CLK
+i_Clk => r_RX_Byte[7].CLK
+i_Clk => r_Bit_Index[0].CLK
+i_Clk => r_Bit_Index[1].CLK
+i_Clk => r_Bit_Index[2].CLK
+i_Clk => r_Clk_Count[0].CLK
+i_Clk => r_Clk_Count[1].CLK
+i_Clk => r_Clk_Count[2].CLK
+i_Clk => r_Clk_Count[3].CLK
+i_Clk => r_Clk_Count[4].CLK
+i_Clk => r_Clk_Count[5].CLK
+i_Clk => r_Clk_Count[6].CLK
+i_Clk => r_Clk_Count[7].CLK
+i_Clk => r_Clk_Count[8].CLK
+i_Clk => r_Clk_Count[9].CLK
+i_Clk => r_Clk_Count[10].CLK
+i_Clk => r_Clk_Count[11].CLK
+i_Clk => r_Clk_Count[12].CLK
+i_Clk => r_RX_DV.CLK
+i_Clk => r_RX_Data.CLK
+i_Clk => r_RX_Data_R.CLK
+i_Clk => r_SM_Main~1.DATAIN
+i_RX_Serial => r_RX_Data_R.DATAIN
+o_RX_DV <= r_RX_DV.DB_MAX_OUTPUT_PORT_TYPE
+o_RX_Byte[0] <= r_RX_Byte[0].DB_MAX_OUTPUT_PORT_TYPE
+o_RX_Byte[1] <= r_RX_Byte[1].DB_MAX_OUTPUT_PORT_TYPE
+o_RX_Byte[2] <= r_RX_Byte[2].DB_MAX_OUTPUT_PORT_TYPE
+o_RX_Byte[3] <= r_RX_Byte[3].DB_MAX_OUTPUT_PORT_TYPE
+o_RX_Byte[4] <= r_RX_Byte[4].DB_MAX_OUTPUT_PORT_TYPE
+o_RX_Byte[5] <= r_RX_Byte[5].DB_MAX_OUTPUT_PORT_TYPE
+o_RX_Byte[6] <= r_RX_Byte[6].DB_MAX_OUTPUT_PORT_TYPE
+o_RX_Byte[7] <= r_RX_Byte[7].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|DCmot_PWM_cntrl:inst2
+CLK1 => PWM_DCmot~reg0.CLK
+CLK1 => counter[0].CLK
+CLK1 => counter[1].CLK
+CLK1 => counter[2].CLK
+DCmot_speedv[0] => LessThan0.IN3
+DCmot_speedv[1] => LessThan0.IN2
+DCmot_speedv[2] => LessThan0.IN1
+PWM_DCmot <= PWM_DCmot~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
