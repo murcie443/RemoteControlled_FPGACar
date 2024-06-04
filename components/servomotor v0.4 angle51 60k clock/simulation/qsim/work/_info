@@ -1,0 +1,248 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/david/Desktop/DPS/servomotor/simulation/qsim
+Ehard_block
+Z1 w1717521910
+Z2 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z3 DPx11 fiftyfivenm 21 fiftyfivenm_atom_pack 0 22 OTUTkBjTeYVegmIWhVi3N0
+Z4 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z5 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z6 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+Z7 DPx11 fiftyfivenm 22 fiftyfivenm_components 0 22 C5K^h=:j[4HI?HO^UkN3:2
+!i122 242
+R0
+Z8 8servo.vho
+Z9 Fservo.vho
+l0
+L35 1
+Vhj[i;a0dD85B`o1JPT^cg2
+!s100 3A]XnMhF<;9mKUe5mn3aM1
+Z10 OV;C;2020.1;71
+32
+Z11 !s110 1717521911
+!i10b 1
+Z12 !s108 1717521911.000000
+Z13 !s90 -work|work|servo.vho|
+Z14 !s107 servo.vho|
+!i113 1
+Z15 o-work work
+Z16 tExplicit 1 CvgOpt 0
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+DEx4 work 10 hard_block 0 22 hj[i;a0dD85B`o1JPT^cg2
+!i122 242
+l76
+L54 28
+Va5ClDYec`9chO`Ne0M1NL2
+!s100 >:Wi^nX[YiN=@>>JC6K_83
+R10
+32
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16
+Eservomotor
+Z17 w1716897494
+R3
+R7
+R2
+Z18 DPx6 altera 11 dffeas_pack 0 22 dc5N=DKXMMTVYdUQ@D3FA2
+R4
+R5
+R6
+Z19 DPx6 altera 28 altera_primitives_components 0 22 ca:ehlQAg4;_gVV:^8MAg3
+!i122 56
+R0
+R8
+R9
+l0
+Z20 L91 1
+V@ETM71>]FIBP_dl2a8KC_3
+!s100 ifmNU<H2I_:b`nV7mXC8_3
+R10
+32
+Z21 !s110 1716897495
+!i10b 1
+Z22 !s108 1716897495.000000
+R13
+R14
+!i113 1
+R15
+R16
+Astructure
+R3
+R7
+R2
+R18
+R4
+R5
+R6
+R19
+DEx4 work 10 servomotor 0 22 @ETM71>]FIBP_dl2a8KC_3
+!i122 56
+l182
+L108 935
+VAelDcRH@2]^@jjd5E6gH^1
+!s100 9FYFS>H`WlI>f9dWP2ET10
+R10
+32
+R21
+!i10b 1
+R22
+R13
+R14
+!i113 1
+R15
+R16
+Eservomotor_vhd_vec_tst
+Z23 w1716897493
+R5
+R6
+!i122 57
+R0
+Z24 8Waveform9.vwf.vht
+Z25 FWaveform9.vwf.vht
+l0
+Z26 L32 1
+VY5UQ^?0n[M40a7?2f^do_3
+!s100 5db_NK>NZ0hzkjk2B3_a<1
+R10
+32
+R21
+!i10b 1
+R22
+Z27 !s90 -work|work|Waveform9.vwf.vht|
+Z28 !s107 Waveform9.vwf.vht|
+!i113 1
+R15
+R16
+Aservomotor_arch
+R5
+R6
+DEx4 work 22 servomotor_vhd_vec_tst 0 22 Y5UQ^?0n[M40a7?2f^do_3
+!i122 57
+l47
+Z29 L34 58
+Vg819QCOGfaAA_foa;^3Nc0
+!s100 cLA<gBcWT9ZoDJS12Y`z<2
+R10
+32
+R21
+!i10b 1
+R22
+R27
+R28
+!i113 1
+R15
+R16
+Esvmot_angle_cntrl
+R1
+R3
+R7
+R2
+R18
+R4
+R5
+R6
+R19
+!i122 242
+R0
+R8
+R9
+l0
+R20
+VmXSnB0`Shfz2h]6FX]6>S2
+!s100 nlb3:W_lcVJb2L[8:z6YV0
+R10
+32
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16
+Astructure
+R3
+R7
+R2
+R18
+R4
+R5
+R6
+R19
+DEx4 work 17 svmot_angle_cntrl 0 22 mXSnB0`Shfz2h]6FX]6>S2
+!i122 242
+l197
+L108 1203
+V6^_6F<?Q2fJablmOClSW01
+!s100 RWVO`GmWE`KXKXQU@CW`@3
+R10
+32
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16
+Esvmot_angle_cntrl_vhd_vec_tst
+Z30 w1717521909
+R5
+R6
+!i122 243
+R0
+Z31 8Waveform24.vwf.vht
+Z32 FWaveform24.vwf.vht
+l0
+R26
+VUKA>UDnPU7aB]k4RTcY723
+!s100 fSbj46>hd<e;Cz@b9COBk2
+R10
+32
+R11
+!i10b 1
+R12
+Z33 !s90 -work|work|Waveform24.vwf.vht|
+Z34 !s107 Waveform24.vwf.vht|
+!i113 1
+R15
+R16
+Asvmot_angle_cntrl_arch
+R5
+R6
+Z35 DEx4 work 29 svmot_angle_cntrl_vhd_vec_tst 0 22 UKA>UDnPU7aB]k4RTcY723
+!i122 243
+l47
+R29
+V`Hl=de@b8:gN1HRzN3lZ_2
+!s100 4=KCmDLYaO9DFV7=KOGoV3
+R10
+32
+R11
+!i10b 1
+R12
+R33
+R34
+!i113 1
+R15
+R16

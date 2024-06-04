@@ -480,7 +480,7 @@ VCCIO4                       : U11       : power  :                   : 2.5V    
 VCCIO4                       : U12       : power  :                   : 2.5V    : 4         :                
 GND                          : U13       : gnd    :                   :         :           :                
 VCCIO4                       : U14       : power  :                   : 2.5V    : 4         :                
-PWM_DCmot                    : U15       : output : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : U15       :        :                   :         : 4         :                
 VCCD_PLL4                    : U16       : power  :                   : 1.2V    :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : U17       :        :                   :         : 5         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : U18       :        :                   :         : 5         :                
@@ -503,7 +503,7 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : V12       :        :                   :      
 RESERVED_INPUT_WITH_WEAK_PULLUP : V13       :        :                   :         : 4         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : V14       :        :                   :         : 4         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : V15       :        :                   :         : 4         :                
-PWM_DCmot_rev                : V16       : output : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : V16       :        :                   :         : 4         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : V17       :        :                   :         : 4         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : V18       :        :                   :         : 5         :                
 GND                          : V19       : gnd    :                   :         :           :                
@@ -521,8 +521,8 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : W8        :        :                   :      
 RESERVED_INPUT_WITH_WEAK_PULLUP : W9        :        :                   :         : 3         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : W10       :        :                   :         : 3         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : W11       :        :                   :         : 4         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : W12       :        :                   :         : 4         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : W13       :        :                   :         : 4         :                
+PWM_DCmot_rev                : W12       : output : 2.5 V             :         : 4         : N              
+PWM_DCmot                    : W13       : output : 2.5 V             :         : 4         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : W14       :        :                   :         : 4         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : W15       :        :                   :         : 4         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : W16       :        :                   :         : 4         :                

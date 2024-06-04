@@ -1,0 +1,39 @@
+|PWM_DCMotor
+CLK1 => DCmot_PWM_cntrl:U_rev.CLK1
+CLK1 => PWM_DCmot_rev~reg0.CLK
+CLK1 => PWM_DCmot~reg0.CLK
+CLK1 => DCmot_PWM_cntrl:U0.CLK1
+DCmot_speedv[0] => DCmot_PWM_cntrl:U0.DCmot_speedv[0]
+DCmot_speedv[0] => DCmot_PWM_cntrl:U_rev.DCmot_speedv[0]
+DCmot_speedv[1] => DCmot_PWM_cntrl:U0.DCmot_speedv[1]
+DCmot_speedv[1] => DCmot_PWM_cntrl:U_rev.DCmot_speedv[1]
+DCmot_speedv[2] => DCmot_PWM_cntrl:U0.DCmot_speedv[2]
+DCmot_speedv[2] => DCmot_PWM_cntrl:U_rev.DCmot_speedv[2]
+dir_mot => PWM_DCmot.OUTPUTSELECT
+dir_mot => PWM_DCmot_rev.OUTPUTSELECT
+PWM_DCmot << PWM_DCmot~reg0.DB_MAX_OUTPUT_PORT_TYPE
+PWM_DCmot_rev << PWM_DCmot_rev~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|PWM_DCMotor|DCmot_PWM_cntrl:U_rev
+CLK1 => PWM_DCmot~reg0.CLK
+CLK1 => counter[0].CLK
+CLK1 => counter[1].CLK
+CLK1 => counter[2].CLK
+DCmot_speedv[0] => LessThan0.IN3
+DCmot_speedv[1] => LessThan0.IN2
+DCmot_speedv[2] => LessThan0.IN1
+PWM_DCmot <= PWM_DCmot~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|PWM_DCMotor|DCmot_PWM_cntrl:U0
+CLK1 => PWM_DCmot~reg0.CLK
+CLK1 => counter[0].CLK
+CLK1 => counter[1].CLK
+CLK1 => counter[2].CLK
+DCmot_speedv[0] => LessThan0.IN3
+DCmot_speedv[1] => LessThan0.IN2
+DCmot_speedv[2] => LessThan0.IN1
+PWM_DCmot <= PWM_DCmot~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
