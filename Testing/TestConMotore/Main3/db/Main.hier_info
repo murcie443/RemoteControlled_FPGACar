@@ -1,10 +1,22 @@
 |Main
 PWM_SVmot <= SVmot_angle_cntrl:inst.PWM_SVmot
-CLK => pll:inst7.inclk0
+CLK => pll10_60khz:inst2.inclk0
 CLK => UART_RX:inst1.i_Clk
 i_RX_Serial => UART_RX:inst1.i_RX_Serial
 PWM_DCmot <= PWM_DCMotor:inst5.PWM_DCmot
 PWM_DCmot_rev <= PWM_DCMotor:inst5.PWM_DCmot_rev
+FRONT_LED <= led_cntrl:inst3.Front_led
+SW1 => led_cntrl:inst3.SW1
+SW2 => led_cntrl:inst3.SW2
+BACK_LED <= led_cntrl:inst3.Back_led
+debug[0] <= UART_RX:inst1.o_RX_Byte[0]
+debug[1] <= UART_RX:inst1.o_RX_Byte[1]
+debug[2] <= UART_RX:inst1.o_RX_Byte[2]
+debug[3] <= UART_RX:inst1.o_RX_Byte[3]
+debug[4] <= UART_RX:inst1.o_RX_Byte[4]
+debug[5] <= UART_RX:inst1.o_RX_Byte[5]
+debug[6] <= UART_RX:inst1.o_RX_Byte[6]
+debug[7] <= UART_RX:inst1.o_RX_Byte[7]
 
 
 |Main|SVmot_angle_cntrl:inst
@@ -24,6 +36,7 @@ CLK2 => counter[6].CLK
 CLK2 => counter[7].CLK
 CLK2 => counter[8].CLK
 CLK2 => counter[9].CLK
+CLK2 => counter[10].CLK
 Svmot_anglev[0] => Equal1.IN7
 Svmot_anglev[0] => Equal2.IN7
 Svmot_anglev[0] => LessThan4.IN4
@@ -39,20 +52,20 @@ Svmot_anglev[3] => LessThan4.IN1
 PWM_SVmot <= PWM_SVmot~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Main|pll:inst7
+|Main|pll10_60khz:inst2
 areset => altpll:altpll_component.areset
 inclk0 => altpll:altpll_component.inclk[0]
 c0 <= altpll:altpll_component.clk[0]
 c1 <= altpll:altpll_component.clk[1]
 
 
-|Main|pll:inst7|altpll:altpll_component
-inclk[0] => pll_altpll:auto_generated.inclk[0]
-inclk[1] => pll_altpll:auto_generated.inclk[1]
+|Main|pll10_60khz:inst2|altpll:altpll_component
+inclk[0] => pll10_60khz_altpll:auto_generated.inclk[0]
+inclk[1] => pll10_60khz_altpll:auto_generated.inclk[1]
 fbin => ~NO_FANOUT~
 pllena => ~NO_FANOUT~
 clkswitch => ~NO_FANOUT~
-areset => pll_altpll:auto_generated.areset
+areset => pll10_60khz_altpll:auto_generated.areset
 pfdena => ~NO_FANOUT~
 clkena[0] => ~NO_FANOUT~
 clkena[1] => ~NO_FANOUT~
@@ -106,7 +119,7 @@ fref <= <GND>
 icdrclk <= <GND>
 
 
-|Main|pll:inst7|altpll:altpll_component|pll_altpll:auto_generated
+|Main|pll10_60khz:inst2|altpll:altpll_component|pll10_60khz_altpll:auto_generated
 areset => pll1.ARESET
 clk[0] <= pll1.CLK
 clk[1] <= pll1.CLK1
@@ -195,24 +208,132 @@ PWM_DCmot_rev <= PWM_DCmot_rev~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |Main|PWM_DCMotor:inst5|DCmot_PWM_cntrl:U_rev
+CLK1 => flag[0].CLK
+CLK1 => flag[1].CLK
+CLK1 => flag[2].CLK
+CLK1 => flag[3].CLK
+CLK1 => flag[4].CLK
+CLK1 => flag[5].CLK
+CLK1 => flag[6].CLK
+CLK1 => flag[7].CLK
+CLK1 => flag[8].CLK
+CLK1 => flag[9].CLK
+CLK1 => flag[10].CLK
+CLK1 => flag[11].CLK
+CLK1 => flag[12].CLK
+CLK1 => flag[13].CLK
+CLK1 => flag[14].CLK
+CLK1 => flag[15].CLK
+CLK1 => flag[16].CLK
+CLK1 => flag[17].CLK
+CLK1 => flag[18].CLK
+CLK1 => flag[19].CLK
+CLK1 => flag[20].CLK
+CLK1 => flag[21].CLK
+CLK1 => flag[22].CLK
+CLK1 => flag[23].CLK
+CLK1 => flag[24].CLK
+CLK1 => flag[25].CLK
+CLK1 => flag[26].CLK
+CLK1 => flag[27].CLK
+CLK1 => flag[28].CLK
+CLK1 => flag[29].CLK
+CLK1 => flag[30].CLK
+CLK1 => flag[31].CLK
+CLK1 => innercounter[0].CLK
+CLK1 => innercounter[1].CLK
+CLK1 => innercounter[2].CLK
 CLK1 => PWM_DCmot~reg0.CLK
 CLK1 => counter[0].CLK
 CLK1 => counter[1].CLK
 CLK1 => counter[2].CLK
-DCmot_speedv[0] => LessThan0.IN3
-DCmot_speedv[1] => LessThan0.IN2
-DCmot_speedv[2] => LessThan0.IN1
+CLK1 => counter[3].CLK
+CLK1 => counter[4].CLK
+CLK1 => counter[5].CLK
+CLK1 => counter[6].CLK
+CLK1 => counter[7].CLK
+CLK1 => counter[8].CLK
+CLK1 => counter[9].CLK
+CLK1 => counter[10].CLK
+CLK1 => counter[11].CLK
+CLK1 => counter[12].CLK
+CLK1 => counter[13].CLK
+DCmot_speedv[0] => Equal1.IN5
+DCmot_speedv[0] => LessThan2.IN3
+DCmot_speedv[1] => Equal1.IN4
+DCmot_speedv[1] => LessThan2.IN2
+DCmot_speedv[2] => Equal1.IN3
+DCmot_speedv[2] => LessThan2.IN1
 PWM_DCmot <= PWM_DCmot~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |Main|PWM_DCMotor:inst5|DCmot_PWM_cntrl:U0
+CLK1 => flag[0].CLK
+CLK1 => flag[1].CLK
+CLK1 => flag[2].CLK
+CLK1 => flag[3].CLK
+CLK1 => flag[4].CLK
+CLK1 => flag[5].CLK
+CLK1 => flag[6].CLK
+CLK1 => flag[7].CLK
+CLK1 => flag[8].CLK
+CLK1 => flag[9].CLK
+CLK1 => flag[10].CLK
+CLK1 => flag[11].CLK
+CLK1 => flag[12].CLK
+CLK1 => flag[13].CLK
+CLK1 => flag[14].CLK
+CLK1 => flag[15].CLK
+CLK1 => flag[16].CLK
+CLK1 => flag[17].CLK
+CLK1 => flag[18].CLK
+CLK1 => flag[19].CLK
+CLK1 => flag[20].CLK
+CLK1 => flag[21].CLK
+CLK1 => flag[22].CLK
+CLK1 => flag[23].CLK
+CLK1 => flag[24].CLK
+CLK1 => flag[25].CLK
+CLK1 => flag[26].CLK
+CLK1 => flag[27].CLK
+CLK1 => flag[28].CLK
+CLK1 => flag[29].CLK
+CLK1 => flag[30].CLK
+CLK1 => flag[31].CLK
+CLK1 => innercounter[0].CLK
+CLK1 => innercounter[1].CLK
+CLK1 => innercounter[2].CLK
 CLK1 => PWM_DCmot~reg0.CLK
 CLK1 => counter[0].CLK
 CLK1 => counter[1].CLK
 CLK1 => counter[2].CLK
-DCmot_speedv[0] => LessThan0.IN3
-DCmot_speedv[1] => LessThan0.IN2
-DCmot_speedv[2] => LessThan0.IN1
+CLK1 => counter[3].CLK
+CLK1 => counter[4].CLK
+CLK1 => counter[5].CLK
+CLK1 => counter[6].CLK
+CLK1 => counter[7].CLK
+CLK1 => counter[8].CLK
+CLK1 => counter[9].CLK
+CLK1 => counter[10].CLK
+CLK1 => counter[11].CLK
+CLK1 => counter[12].CLK
+CLK1 => counter[13].CLK
+DCmot_speedv[0] => Equal1.IN5
+DCmot_speedv[0] => LessThan2.IN3
+DCmot_speedv[1] => Equal1.IN4
+DCmot_speedv[1] => LessThan2.IN2
+DCmot_speedv[2] => Equal1.IN3
+DCmot_speedv[2] => LessThan2.IN1
 PWM_DCmot <= PWM_DCmot~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|led_cntrl:inst3
+SW1 => Mux0.IN4
+SW1 => Mux1.IN4
+SW2 => Mux0.IN5
+SW2 => Mux1.IN5
+back_bit => Mux1.IN3
+Front_led <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+Back_led <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
 
 

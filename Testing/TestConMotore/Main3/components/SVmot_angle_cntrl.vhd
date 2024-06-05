@@ -13,11 +13,11 @@ END ENTITY SVmot_angle_cntrl;
 
 ARCHITECTURE servomotor_behave OF SVmot_angle_cntrl IS
 
-    SIGNAL counter : STD_LOGIC_VECTOR(9 DOWNTO 0) := (OTHERS => '0'); --create a counter of 10 bits for divide the 20ms into 600sections
+    SIGNAL counter : STD_LOGIC_VECTOR(10 DOWNTO 0) := (OTHERS => '0'); --create a counter of 11 bits for divide the 20ms into 1200sections
     SIGNAL innercounter : STD_LOGIC_VECTOR(3 DOWNTO 0) := "0000";  --second counter for the inner pwm generation  
-	 constant A_position: integer:= 29; --15 sections (from 0)
-	 constant B_position: integer:=45; --setpoint for the angle 0
-	 constant C_position: integer:=60;--30-15=levels (from 0)
+	 constant A_position: integer:= 74; --75 sections (from 0)
+	 constant B_position: integer:=90; --setpoint for the angle 0
+	 constant C_position: integer:=105;--105-75=30/2=15 levels (from 0)
 	 signal flag: std_logic:='1';
 	 
 BEGIN
@@ -27,7 +27,7 @@ BEGIN
         IF rising_edge(CLK2) THEN
 
             counter <= counter + '1'; --update the counter each time clock
-            IF counter = "1001010111" THEN --reset the counter at 599
+            IF counter = "10010101111" THEN --reset the counter at 599
                 counter <= (OTHERS => '0'); --reset counter to 0	
             END IF;
 				

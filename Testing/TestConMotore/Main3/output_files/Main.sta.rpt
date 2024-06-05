@@ -1,5 +1,5 @@
 Timing Analyzer report for Main
-Tue Jun 04 19:39:07 2024
+Wed Jun 05 14:18:44 2024
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -92,12 +92,12 @@ https://fpgasoftware.intel.com/eula.
 ; Number detected on machine ; 8           ;
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
-; Average used               ; 1.03        ;
+; Average used               ; 1.07        ;
 ; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-4         ;   1.1%      ;
+;     Processors 2-4         ;   2.3%      ;
 +----------------------------+-------------+
 
 
@@ -107,8 +107,8 @@ https://fpgasoftware.intel.com/eula.
 ; Clock Name                                        ; Type      ; Period     ; Frequency ; Rise  ; Fall      ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source                                              ; Targets                                               ;
 +---------------------------------------------------+-----------+------------+-----------+-------+-----------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+-----------------------------------------------------+-------------------------------------------------------+
 ; CLK                                               ; Base      ; 20.000     ; 50.0 MHz  ; 0.000 ; 10.000    ;            ;           ;             ;       ;        ;           ;            ;          ;        ;                                                     ; { CLK }                                               ;
-; inst7|altpll_component|auto_generated|pll1|clk[0] ; Generated ; 100000.000 ; 0.01 MHz  ; 0.000 ; 50000.000 ; 50.00      ; 5000      ; 1           ;       ;        ;           ;            ; false    ; CLK    ; inst7|altpll_component|auto_generated|pll1|inclk[0] ; { inst7|altpll_component|auto_generated|pll1|clk[0] } ;
-; inst7|altpll_component|auto_generated|pll1|clk[1] ; Generated ; 33333.333  ; 0.03 MHz  ; 0.000 ; 16666.666 ; 50.00      ; 5000      ; 3           ;       ;        ;           ;            ; false    ; CLK    ; inst7|altpll_component|auto_generated|pll1|inclk[0] ; { inst7|altpll_component|auto_generated|pll1|clk[1] } ;
+; inst2|altpll_component|auto_generated|pll1|clk[0] ; Generated ; 100000.000 ; 0.01 MHz  ; 0.000 ; 50000.000 ; 50.00      ; 5000      ; 1           ;       ;        ;           ;            ; false    ; CLK    ; inst2|altpll_component|auto_generated|pll1|inclk[0] ; { inst2|altpll_component|auto_generated|pll1|clk[0] } ;
+; inst2|altpll_component|auto_generated|pll1|clk[1] ; Generated ; 16666.666  ; 0.06 MHz  ; 0.000 ; 8333.333  ; 50.00      ; 2500      ; 3           ;       ;        ;           ;            ; false    ; CLK    ; inst2|altpll_component|auto_generated|pll1|inclk[0] ; { inst2|altpll_component|auto_generated|pll1|clk[1] } ;
 +---------------------------------------------------+-----------+------------+-----------+-------+-----------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+-----------------------------------------------------+-------------------------------------------------------+
 
 
@@ -117,9 +117,9 @@ https://fpgasoftware.intel.com/eula.
 +------------+-----------------+---------------------------------------------------+------+
 ; Fmax       ; Restricted Fmax ; Clock Name                                        ; Note ;
 +------------+-----------------+---------------------------------------------------+------+
-; 207.51 MHz ; 207.51 MHz      ; CLK                                               ;      ;
-; 294.03 MHz ; 294.03 MHz      ; inst7|altpll_component|auto_generated|pll1|clk[1] ;      ;
-; 332.45 MHz ; 332.45 MHz      ; inst7|altpll_component|auto_generated|pll1|clk[0] ;      ;
+; 173.34 MHz ; 173.34 MHz      ; CLK                                               ;      ;
+; 179.66 MHz ; 179.66 MHz      ; inst2|altpll_component|auto_generated|pll1|clk[0] ;      ;
+; 245.34 MHz ; 245.34 MHz      ; inst2|altpll_component|auto_generated|pll1|clk[1] ;      ;
 +------------+-----------------+---------------------------------------------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
@@ -129,9 +129,9 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +---------------------------------------------------+--------+---------------+
 ; Clock                                             ; Slack  ; End Point TNS ;
 +---------------------------------------------------+--------+---------------+
-; inst7|altpll_component|auto_generated|pll1|clk[1] ; 0.567  ; 0.000         ;
-; inst7|altpll_component|auto_generated|pll1|clk[0] ; 13.799 ; 0.000         ;
-; CLK                                               ; 15.181 ; 0.000         ;
+; inst2|altpll_component|auto_generated|pll1|clk[1] ; 0.534  ; 0.000         ;
+; inst2|altpll_component|auto_generated|pll1|clk[0] ; 12.067 ; 0.000         ;
+; CLK                                               ; 14.231 ; 0.000         ;
 +---------------------------------------------------+--------+---------------+
 
 
@@ -140,9 +140,9 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +---------------------------------------------------+-------+---------------+
 ; Clock                                             ; Slack ; End Point TNS ;
 +---------------------------------------------------+-------+---------------+
-; CLK                                               ; 0.340 ; 0.000         ;
-; inst7|altpll_component|auto_generated|pll1|clk[1] ; 0.396 ; 0.000         ;
-; inst7|altpll_component|auto_generated|pll1|clk[0] ; 0.397 ; 0.000         ;
+; CLK                                               ; 0.347 ; 0.000         ;
+; inst2|altpll_component|auto_generated|pll1|clk[0] ; 0.424 ; 0.000         ;
+; inst2|altpll_component|auto_generated|pll1|clk[1] ; 0.424 ; 0.000         ;
 +---------------------------------------------------+-------+---------------+
 
 
@@ -163,9 +163,9 @@ No paths to report.
 +---------------------------------------------------+-----------+---------------+
 ; Clock                                             ; Slack     ; End Point TNS ;
 +---------------------------------------------------+-----------+---------------+
-; CLK                                               ; 9.699     ; 0.000         ;
-; inst7|altpll_component|auto_generated|pll1|clk[1] ; 16666.386 ; 0.000         ;
-; inst7|altpll_component|auto_generated|pll1|clk[0] ; 49999.717 ; 0.000         ;
+; CLK                                               ; 9.690     ; 0.000         ;
+; inst2|altpll_component|auto_generated|pll1|clk[1] ; 8333.073  ; 0.000         ;
+; inst2|altpll_component|auto_generated|pll1|clk[0] ; 49999.742 ; 0.000         ;
 +---------------------------------------------------+-----------+---------------+
 
 
@@ -176,7 +176,7 @@ The design MTBF is not calculated because there are no specified synchronizers i
 Number of Synchronizer Chains Found: 1
 Shortest Synchronizer Chain: 2 Registers
 Fraction of Chains for which MTBFs Could Not be Calculated: 1.000
-Worst Case Available Settling Time: 36.260 ns
+Worst Case Available Settling Time: 36.965 ns
 
 
 
@@ -186,9 +186,9 @@ Worst Case Available Settling Time: 36.260 ns
 +------------+-----------------+---------------------------------------------------+------+
 ; Fmax       ; Restricted Fmax ; Clock Name                                        ; Note ;
 +------------+-----------------+---------------------------------------------------+------+
-; 225.33 MHz ; 225.33 MHz      ; CLK                                               ;      ;
-; 319.8 MHz  ; 319.8 MHz       ; inst7|altpll_component|auto_generated|pll1|clk[1] ;      ;
-; 353.98 MHz ; 353.98 MHz      ; inst7|altpll_component|auto_generated|pll1|clk[0] ;      ;
+; 187.13 MHz ; 187.13 MHz      ; CLK                                               ;      ;
+; 193.35 MHz ; 193.35 MHz      ; inst2|altpll_component|auto_generated|pll1|clk[0] ;      ;
+; 260.96 MHz ; 260.96 MHz      ; inst2|altpll_component|auto_generated|pll1|clk[1] ;      ;
 +------------+-----------------+---------------------------------------------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
@@ -198,9 +198,9 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +---------------------------------------------------+--------+---------------+
 ; Clock                                             ; Slack  ; End Point TNS ;
 +---------------------------------------------------+--------+---------------+
-; inst7|altpll_component|auto_generated|pll1|clk[1] ; 1.315  ; 0.000         ;
-; inst7|altpll_component|auto_generated|pll1|clk[0] ; 14.573 ; 0.000         ;
-; CLK                                               ; 15.562 ; 0.000         ;
+; inst2|altpll_component|auto_generated|pll1|clk[1] ; 1.288  ; 0.000         ;
+; inst2|altpll_component|auto_generated|pll1|clk[0] ; 12.912 ; 0.000         ;
+; CLK                                               ; 14.656 ; 0.000         ;
 +---------------------------------------------------+--------+---------------+
 
 
@@ -209,9 +209,9 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +---------------------------------------------------+-------+---------------+
 ; Clock                                             ; Slack ; End Point TNS ;
 +---------------------------------------------------+-------+---------------+
-; CLK                                               ; 0.306 ; 0.000         ;
-; inst7|altpll_component|auto_generated|pll1|clk[1] ; 0.317 ; 0.000         ;
-; inst7|altpll_component|auto_generated|pll1|clk[0] ; 0.319 ; 0.000         ;
+; CLK                                               ; 0.311 ; 0.000         ;
+; inst2|altpll_component|auto_generated|pll1|clk[1] ; 0.343 ; 0.000         ;
+; inst2|altpll_component|auto_generated|pll1|clk[0] ; 0.344 ; 0.000         ;
 +---------------------------------------------------+-------+---------------+
 
 
@@ -232,9 +232,9 @@ No paths to report.
 +---------------------------------------------------+-----------+---------------+
 ; Clock                                             ; Slack     ; End Point TNS ;
 +---------------------------------------------------+-----------+---------------+
-; CLK                                               ; 9.722     ; 0.000         ;
-; inst7|altpll_component|auto_generated|pll1|clk[1] ; 16666.365 ; 0.000         ;
-; inst7|altpll_component|auto_generated|pll1|clk[0] ; 49999.694 ; 0.000         ;
+; CLK                                               ; 9.711     ; 0.000         ;
+; inst2|altpll_component|auto_generated|pll1|clk[1] ; 8333.053  ; 0.000         ;
+; inst2|altpll_component|auto_generated|pll1|clk[0] ; 49999.719 ; 0.000         ;
 +---------------------------------------------------+-----------+---------------+
 
 
@@ -245,7 +245,7 @@ The design MTBF is not calculated because there are no specified synchronizers i
 Number of Synchronizer Chains Found: 1
 Shortest Synchronizer Chain: 2 Registers
 Fraction of Chains for which MTBFs Could Not be Calculated: 1.000
-Worst Case Available Settling Time: 36.567 ns
+Worst Case Available Settling Time: 37.195 ns
 
 
 
@@ -255,9 +255,9 @@ Worst Case Available Settling Time: 36.567 ns
 +---------------------------------------------------+--------+---------------+
 ; Clock                                             ; Slack  ; End Point TNS ;
 +---------------------------------------------------+--------+---------------+
-; inst7|altpll_component|auto_generated|pll1|clk[1] ; 3.907  ; 0.000         ;
-; inst7|altpll_component|auto_generated|pll1|clk[0] ; 17.172 ; 0.000         ;
-; CLK                                               ; 18.010 ; 0.000         ;
+; inst2|altpll_component|auto_generated|pll1|clk[1] ; 3.872  ; 0.000         ;
+; inst2|altpll_component|auto_generated|pll1|clk[0] ; 16.352 ; 0.000         ;
+; CLK                                               ; 17.521 ; 0.000         ;
 +---------------------------------------------------+--------+---------------+
 
 
@@ -266,9 +266,9 @@ Worst Case Available Settling Time: 36.567 ns
 +---------------------------------------------------+-------+---------------+
 ; Clock                                             ; Slack ; End Point TNS ;
 +---------------------------------------------------+-------+---------------+
-; CLK                                               ; 0.148 ; 0.000         ;
-; inst7|altpll_component|auto_generated|pll1|clk[0] ; 0.199 ; 0.000         ;
-; inst7|altpll_component|auto_generated|pll1|clk[1] ; 0.199 ; 0.000         ;
+; CLK                                               ; 0.152 ; 0.000         ;
+; inst2|altpll_component|auto_generated|pll1|clk[0] ; 0.211 ; 0.000         ;
+; inst2|altpll_component|auto_generated|pll1|clk[1] ; 0.211 ; 0.000         ;
 +---------------------------------------------------+-------+---------------+
 
 
@@ -289,9 +289,9 @@ No paths to report.
 +---------------------------------------------------+-----------+---------------+
 ; Clock                                             ; Slack     ; End Point TNS ;
 +---------------------------------------------------+-----------+---------------+
-; CLK                                               ; 9.462     ; 0.000         ;
-; inst7|altpll_component|auto_generated|pll1|clk[1] ; 16666.427 ; 0.000         ;
-; inst7|altpll_component|auto_generated|pll1|clk[0] ; 49999.773 ; 0.000         ;
+; CLK                                               ; 9.466     ; 0.000         ;
+; inst2|altpll_component|auto_generated|pll1|clk[1] ; 8333.137  ; 0.000         ;
+; inst2|altpll_component|auto_generated|pll1|clk[0] ; 49999.801 ; 0.000         ;
 +---------------------------------------------------+-----------+---------------+
 
 
@@ -302,7 +302,7 @@ The design MTBF is not calculated because there are no specified synchronizers i
 Number of Synchronizer Chains Found: 1
 Shortest Synchronizer Chain: 2 Registers
 Fraction of Chains for which MTBFs Could Not be Calculated: 1.000
-Worst Case Available Settling Time: 38.346 ns
+Worst Case Available Settling Time: 38.638 ns
 
 
 
@@ -312,14 +312,14 @@ Worst Case Available Settling Time: 38.346 ns
 +----------------------------------------------------+--------+-------+----------+---------+---------------------+
 ; Clock                                              ; Setup  ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
 +----------------------------------------------------+--------+-------+----------+---------+---------------------+
-; Worst-case Slack                                   ; 0.567  ; 0.148 ; N/A      ; N/A     ; 9.462               ;
-;  CLK                                               ; 15.181 ; 0.148 ; N/A      ; N/A     ; 9.462               ;
-;  inst7|altpll_component|auto_generated|pll1|clk[0] ; 13.799 ; 0.199 ; N/A      ; N/A     ; 49999.694           ;
-;  inst7|altpll_component|auto_generated|pll1|clk[1] ; 0.567  ; 0.199 ; N/A      ; N/A     ; 16666.365           ;
+; Worst-case Slack                                   ; 0.534  ; 0.152 ; N/A      ; N/A     ; 9.466               ;
+;  CLK                                               ; 14.231 ; 0.152 ; N/A      ; N/A     ; 9.466               ;
+;  inst2|altpll_component|auto_generated|pll1|clk[0] ; 12.067 ; 0.211 ; N/A      ; N/A     ; 49999.719           ;
+;  inst2|altpll_component|auto_generated|pll1|clk[1] ; 0.534  ; 0.211 ; N/A      ; N/A     ; 8333.053            ;
 ; Design-wide TNS                                    ; 0.0    ; 0.0   ; 0.0      ; 0.0     ; 0.0                 ;
 ;  CLK                                               ; 0.000  ; 0.000 ; N/A      ; N/A     ; 0.000               ;
-;  inst7|altpll_component|auto_generated|pll1|clk[0] ; 0.000  ; 0.000 ; N/A      ; N/A     ; 0.000               ;
-;  inst7|altpll_component|auto_generated|pll1|clk[1] ; 0.000  ; 0.000 ; N/A      ; N/A     ; 0.000               ;
+;  inst2|altpll_component|auto_generated|pll1|clk[0] ; 0.000  ; 0.000 ; N/A      ; N/A     ; 0.000               ;
+;  inst2|altpll_component|auto_generated|pll1|clk[1] ; 0.000  ; 0.000 ; N/A      ; N/A     ; 0.000               ;
 +----------------------------------------------------+--------+-------+----------+---------+---------------------+
 
 
@@ -331,6 +331,16 @@ Worst Case Available Settling Time: 38.346 ns
 ; PWM_SVmot     ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
 ; PWM_DCmot     ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
 ; PWM_DCmot_rev ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; FRONT_LED     ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; BACK_LED      ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; debug[7]      ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; debug[6]      ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; debug[5]      ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; debug[4]      ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; debug[3]      ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; debug[2]      ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; debug[1]      ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; debug[0]      ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
 ; ~ALTERA_TDO~  ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
 +---------------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+---------------+-----------------+-------------+
 
@@ -340,6 +350,8 @@ Worst Case Available Settling Time: 38.346 ns
 +---------------------+-----------------------+-----------------+-----------------+
 ; Pin                 ; I/O Standard          ; 10-90 Rise Time ; 90-10 Fall Time ;
 +---------------------+-----------------------+-----------------+-----------------+
+; SW1                 ; 2.5 V                 ; 2000 ps         ; 2000 ps         ;
+; SW2                 ; 2.5 V                 ; 2000 ps         ; 2000 ps         ;
 ; CLK                 ; 2.5 V                 ; 2000 ps         ; 2000 ps         ;
 ; i_RX_Serial         ; 2.5 V                 ; 2000 ps         ; 2000 ps         ;
 ; ~ALTERA_TMS~        ; 2.5 V Schmitt Trigger ; 2000 ps         ; 2000 ps         ;
@@ -358,8 +370,18 @@ Worst Case Available Settling Time: 38.346 ns
 ; Pin           ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
 +---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
 ; PWM_SVmot     ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 8.25e-09 V                   ; 2.41 V              ; -0.0871 V           ; 0.291 V                              ; 0.138 V                              ; 3.15e-10 s                  ; 4.16e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 8.25e-09 V                  ; 2.41 V             ; -0.0871 V          ; 0.291 V                             ; 0.138 V                             ; 3.15e-10 s                 ; 4.16e-10 s                 ; No                        ; Yes                       ;
-; PWM_DCmot     ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 8.25e-09 V                   ; 2.41 V              ; -0.0871 V           ; 0.291 V                              ; 0.138 V                              ; 3.15e-10 s                  ; 4.16e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 8.25e-09 V                  ; 2.41 V             ; -0.0871 V          ; 0.291 V                             ; 0.138 V                             ; 3.15e-10 s                 ; 4.16e-10 s                 ; No                        ; Yes                       ;
-; PWM_DCmot_rev ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 8.25e-09 V                   ; 2.41 V              ; -0.0859 V           ; 0.289 V                              ; 0.136 V                              ; 3.15e-10 s                  ; 4.16e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 8.25e-09 V                  ; 2.41 V             ; -0.0859 V          ; 0.289 V                             ; 0.136 V                             ; 3.15e-10 s                 ; 4.16e-10 s                 ; No                        ; Yes                       ;
+; PWM_DCmot     ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 8.25e-09 V                   ; 2.41 V              ; -0.0859 V           ; 0.289 V                              ; 0.136 V                              ; 3.15e-10 s                  ; 4.16e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 8.25e-09 V                  ; 2.41 V             ; -0.0859 V          ; 0.289 V                             ; 0.136 V                             ; 3.15e-10 s                 ; 4.16e-10 s                 ; No                        ; Yes                       ;
+; PWM_DCmot_rev ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 8.26e-09 V                   ; 2.4 V               ; -0.0783 V           ; 0.157 V                              ; 0.167 V                              ; 4.55e-10 s                  ; 4.33e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 8.26e-09 V                  ; 2.4 V              ; -0.0783 V          ; 0.157 V                             ; 0.167 V                             ; 4.55e-10 s                 ; 4.33e-10 s                 ; No                        ; Yes                       ;
+; FRONT_LED     ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 8.25e-09 V                   ; 2.41 V              ; -0.0871 V           ; 0.291 V                              ; 0.138 V                              ; 3.15e-10 s                  ; 4.16e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 8.25e-09 V                  ; 2.41 V             ; -0.0871 V          ; 0.291 V                             ; 0.138 V                             ; 3.15e-10 s                 ; 4.16e-10 s                 ; No                        ; Yes                       ;
+; BACK_LED      ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 8.26e-09 V                   ; 2.4 V               ; -0.0783 V           ; 0.157 V                              ; 0.167 V                              ; 4.55e-10 s                  ; 4.33e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 8.26e-09 V                  ; 2.4 V              ; -0.0783 V          ; 0.157 V                             ; 0.167 V                             ; 4.55e-10 s                 ; 4.33e-10 s                 ; No                        ; Yes                       ;
+; debug[7]      ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 8.25e-09 V                   ; 2.41 V              ; -0.0871 V           ; 0.291 V                              ; 0.138 V                              ; 3.15e-10 s                  ; 4.16e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 8.25e-09 V                  ; 2.41 V             ; -0.0871 V          ; 0.291 V                             ; 0.138 V                             ; 3.15e-10 s                 ; 4.16e-10 s                 ; No                        ; Yes                       ;
+; debug[6]      ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 8.25e-09 V                   ; 2.41 V              ; -0.0859 V           ; 0.289 V                              ; 0.136 V                              ; 3.15e-10 s                  ; 4.16e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 8.25e-09 V                  ; 2.41 V             ; -0.0859 V          ; 0.289 V                             ; 0.136 V                             ; 3.15e-10 s                 ; 4.16e-10 s                 ; No                        ; Yes                       ;
+; debug[5]      ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 8.25e-09 V                   ; 2.41 V              ; -0.0859 V           ; 0.289 V                              ; 0.136 V                              ; 3.15e-10 s                  ; 4.16e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 8.25e-09 V                  ; 2.41 V             ; -0.0859 V          ; 0.289 V                             ; 0.136 V                             ; 3.15e-10 s                 ; 4.16e-10 s                 ; No                        ; Yes                       ;
+; debug[4]      ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 8.25e-09 V                   ; 2.41 V              ; -0.0859 V           ; 0.289 V                              ; 0.136 V                              ; 3.15e-10 s                  ; 4.16e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 8.25e-09 V                  ; 2.41 V             ; -0.0859 V          ; 0.289 V                             ; 0.136 V                             ; 3.15e-10 s                 ; 4.16e-10 s                 ; No                        ; Yes                       ;
+; debug[3]      ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 8.25e-09 V                   ; 2.41 V              ; -0.0871 V           ; 0.291 V                              ; 0.138 V                              ; 3.15e-10 s                  ; 4.16e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 8.25e-09 V                  ; 2.41 V             ; -0.0871 V          ; 0.291 V                             ; 0.138 V                             ; 3.15e-10 s                 ; 4.16e-10 s                 ; No                        ; Yes                       ;
+; debug[2]      ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 8.25e-09 V                   ; 2.41 V              ; -0.0859 V           ; 0.289 V                              ; 0.136 V                              ; 3.15e-10 s                  ; 4.16e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 8.25e-09 V                  ; 2.41 V             ; -0.0859 V          ; 0.289 V                             ; 0.136 V                             ; 3.15e-10 s                 ; 4.16e-10 s                 ; No                        ; Yes                       ;
+; debug[1]      ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 8.25e-09 V                   ; 2.41 V              ; -0.0871 V           ; 0.291 V                              ; 0.138 V                              ; 3.15e-10 s                  ; 4.16e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 8.25e-09 V                  ; 2.41 V             ; -0.0871 V          ; 0.291 V                             ; 0.138 V                             ; 3.15e-10 s                 ; 4.16e-10 s                 ; No                        ; Yes                       ;
+; debug[0]      ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 8.25e-09 V                   ; 2.41 V              ; -0.0859 V           ; 0.289 V                              ; 0.136 V                              ; 3.15e-10 s                  ; 4.16e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 8.25e-09 V                  ; 2.41 V             ; -0.0859 V          ; 0.289 V                             ; 0.136 V                             ; 3.15e-10 s                 ; 4.16e-10 s                 ; No                        ; Yes                       ;
 ; ~ALTERA_TDO~  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.39e-08 V                   ; 2.39 V              ; -0.0409 V           ; 0.21 V                               ; 0.121 V                              ; 4.7e-10 s                   ; 5.93e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 1.39e-08 V                  ; 2.39 V             ; -0.0409 V          ; 0.21 V                              ; 0.121 V                             ; 4.7e-10 s                  ; 5.93e-10 s                 ; No                        ; Yes                       ;
 +---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
 
@@ -370,8 +392,18 @@ Worst Case Available Settling Time: 38.346 ns
 ; Pin           ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
 +---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
 ; PWM_SVmot     ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.16e-06 V                   ; 2.37 V              ; -0.0508 V           ; 0.153 V                              ; 0.187 V                              ; 4.63e-10 s                  ; 4.49e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 1.16e-06 V                  ; 2.37 V             ; -0.0508 V          ; 0.153 V                             ; 0.187 V                             ; 4.63e-10 s                 ; 4.49e-10 s                 ; Yes                       ; Yes                       ;
-; PWM_DCmot     ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.16e-06 V                   ; 2.37 V              ; -0.0508 V           ; 0.153 V                              ; 0.187 V                              ; 4.63e-10 s                  ; 4.49e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 1.16e-06 V                  ; 2.37 V             ; -0.0508 V          ; 0.153 V                             ; 0.187 V                             ; 4.63e-10 s                 ; 4.49e-10 s                 ; Yes                       ; Yes                       ;
-; PWM_DCmot_rev ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.16e-06 V                   ; 2.37 V              ; -0.049 V            ; 0.154 V                              ; 0.186 V                              ; 4.63e-10 s                  ; 4.5e-10 s                   ; Yes                        ; Yes                        ; 2.32 V                      ; 1.16e-06 V                  ; 2.37 V             ; -0.049 V           ; 0.154 V                             ; 0.186 V                             ; 4.63e-10 s                 ; 4.5e-10 s                  ; Yes                       ; Yes                       ;
+; PWM_DCmot     ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.16e-06 V                   ; 2.37 V              ; -0.049 V            ; 0.154 V                              ; 0.186 V                              ; 4.63e-10 s                  ; 4.5e-10 s                   ; Yes                        ; Yes                        ; 2.32 V                      ; 1.16e-06 V                  ; 2.37 V             ; -0.049 V           ; 0.154 V                             ; 0.186 V                             ; 4.63e-10 s                 ; 4.5e-10 s                  ; Yes                       ; Yes                       ;
+; PWM_DCmot_rev ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.16e-06 V                   ; 2.37 V              ; -0.0459 V           ; 0.201 V                              ; 0.093 V                              ; 4.9e-10 s                   ; 5.83e-10 s                  ; Yes                        ; No                         ; 2.32 V                      ; 1.16e-06 V                  ; 2.37 V             ; -0.0459 V          ; 0.201 V                             ; 0.093 V                             ; 4.9e-10 s                  ; 5.83e-10 s                 ; Yes                       ; No                        ;
+; FRONT_LED     ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.16e-06 V                   ; 2.37 V              ; -0.0508 V           ; 0.153 V                              ; 0.187 V                              ; 4.63e-10 s                  ; 4.49e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 1.16e-06 V                  ; 2.37 V             ; -0.0508 V          ; 0.153 V                             ; 0.187 V                             ; 4.63e-10 s                 ; 4.49e-10 s                 ; Yes                       ; Yes                       ;
+; BACK_LED      ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.16e-06 V                   ; 2.37 V              ; -0.0459 V           ; 0.201 V                              ; 0.093 V                              ; 4.9e-10 s                   ; 5.83e-10 s                  ; Yes                        ; No                         ; 2.32 V                      ; 1.16e-06 V                  ; 2.37 V             ; -0.0459 V          ; 0.201 V                             ; 0.093 V                             ; 4.9e-10 s                  ; 5.83e-10 s                 ; Yes                       ; No                        ;
+; debug[7]      ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.16e-06 V                   ; 2.37 V              ; -0.0508 V           ; 0.153 V                              ; 0.187 V                              ; 4.63e-10 s                  ; 4.49e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 1.16e-06 V                  ; 2.37 V             ; -0.0508 V          ; 0.153 V                             ; 0.187 V                             ; 4.63e-10 s                 ; 4.49e-10 s                 ; Yes                       ; Yes                       ;
+; debug[6]      ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.16e-06 V                   ; 2.37 V              ; -0.049 V            ; 0.154 V                              ; 0.186 V                              ; 4.63e-10 s                  ; 4.5e-10 s                   ; Yes                        ; Yes                        ; 2.32 V                      ; 1.16e-06 V                  ; 2.37 V             ; -0.049 V           ; 0.154 V                             ; 0.186 V                             ; 4.63e-10 s                 ; 4.5e-10 s                  ; Yes                       ; Yes                       ;
+; debug[5]      ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.16e-06 V                   ; 2.37 V              ; -0.049 V            ; 0.154 V                              ; 0.186 V                              ; 4.63e-10 s                  ; 4.5e-10 s                   ; Yes                        ; Yes                        ; 2.32 V                      ; 1.16e-06 V                  ; 2.37 V             ; -0.049 V           ; 0.154 V                             ; 0.186 V                             ; 4.63e-10 s                 ; 4.5e-10 s                  ; Yes                       ; Yes                       ;
+; debug[4]      ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.16e-06 V                   ; 2.37 V              ; -0.049 V            ; 0.154 V                              ; 0.186 V                              ; 4.63e-10 s                  ; 4.5e-10 s                   ; Yes                        ; Yes                        ; 2.32 V                      ; 1.16e-06 V                  ; 2.37 V             ; -0.049 V           ; 0.154 V                             ; 0.186 V                             ; 4.63e-10 s                 ; 4.5e-10 s                  ; Yes                       ; Yes                       ;
+; debug[3]      ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.16e-06 V                   ; 2.37 V              ; -0.0508 V           ; 0.153 V                              ; 0.187 V                              ; 4.63e-10 s                  ; 4.49e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 1.16e-06 V                  ; 2.37 V             ; -0.0508 V          ; 0.153 V                             ; 0.187 V                             ; 4.63e-10 s                 ; 4.49e-10 s                 ; Yes                       ; Yes                       ;
+; debug[2]      ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.16e-06 V                   ; 2.37 V              ; -0.049 V            ; 0.154 V                              ; 0.186 V                              ; 4.63e-10 s                  ; 4.5e-10 s                   ; Yes                        ; Yes                        ; 2.32 V                      ; 1.16e-06 V                  ; 2.37 V             ; -0.049 V           ; 0.154 V                             ; 0.186 V                             ; 4.63e-10 s                 ; 4.5e-10 s                  ; Yes                       ; Yes                       ;
+; debug[1]      ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.16e-06 V                   ; 2.37 V              ; -0.0508 V           ; 0.153 V                              ; 0.187 V                              ; 4.63e-10 s                  ; 4.49e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 1.16e-06 V                  ; 2.37 V             ; -0.0508 V          ; 0.153 V                             ; 0.187 V                             ; 4.63e-10 s                 ; 4.49e-10 s                 ; Yes                       ; Yes                       ;
+; debug[0]      ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.16e-06 V                   ; 2.37 V              ; -0.049 V            ; 0.154 V                              ; 0.186 V                              ; 4.63e-10 s                  ; 4.5e-10 s                   ; Yes                        ; Yes                        ; 2.32 V                      ; 1.16e-06 V                  ; 2.37 V             ; -0.049 V           ; 0.154 V                             ; 0.186 V                             ; 4.63e-10 s                 ; 4.5e-10 s                  ; Yes                       ; Yes                       ;
 ; ~ALTERA_TDO~  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.97e-06 V                   ; 2.36 V              ; -0.0173 V           ; 0.144 V                              ; 0.094 V                              ; 6.44e-10 s                  ; 7.2e-10 s                   ; No                         ; Yes                        ; 2.32 V                      ; 1.97e-06 V                  ; 2.36 V             ; -0.0173 V          ; 0.144 V                             ; 0.094 V                             ; 6.44e-10 s                 ; 7.2e-10 s                  ; No                        ; Yes                       ;
 +---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
 
@@ -382,8 +414,18 @@ Worst Case Available Settling Time: 38.346 ns
 ; Pin           ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
 +---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
 ; PWM_SVmot     ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 9.94e-08 V                   ; 2.78 V              ; -0.0444 V           ; 0.25 V                               ; 0.107 V                              ; 2.67e-10 s                  ; 2.75e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 9.94e-08 V                  ; 2.78 V             ; -0.0444 V          ; 0.25 V                              ; 0.107 V                             ; 2.67e-10 s                 ; 2.75e-10 s                 ; No                        ; Yes                       ;
-; PWM_DCmot     ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 9.94e-08 V                   ; 2.78 V              ; -0.0444 V           ; 0.25 V                               ; 0.107 V                              ; 2.67e-10 s                  ; 2.75e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 9.94e-08 V                  ; 2.78 V             ; -0.0444 V          ; 0.25 V                              ; 0.107 V                             ; 2.67e-10 s                 ; 2.75e-10 s                 ; No                        ; Yes                       ;
-; PWM_DCmot_rev ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 9.95e-08 V                   ; 2.78 V              ; -0.0452 V           ; 0.248 V                              ; 0.108 V                              ; 2.67e-10 s                  ; 2.75e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 9.95e-08 V                  ; 2.78 V             ; -0.0452 V          ; 0.248 V                             ; 0.108 V                             ; 2.67e-10 s                 ; 2.75e-10 s                 ; No                        ; Yes                       ;
+; PWM_DCmot     ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 9.95e-08 V                   ; 2.78 V              ; -0.0452 V           ; 0.248 V                              ; 0.108 V                              ; 2.67e-10 s                  ; 2.75e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 9.95e-08 V                  ; 2.78 V             ; -0.0452 V          ; 0.248 V                             ; 0.108 V                             ; 2.67e-10 s                 ; 2.75e-10 s                 ; No                        ; Yes                       ;
+; PWM_DCmot_rev ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 9.94e-08 V                   ; 2.77 V              ; -0.0485 V           ; 0.289 V                              ; 0.058 V                              ; 2.81e-10 s                  ; 3.04e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 9.94e-08 V                  ; 2.77 V             ; -0.0485 V          ; 0.289 V                             ; 0.058 V                             ; 2.81e-10 s                 ; 3.04e-10 s                 ; No                        ; Yes                       ;
+; FRONT_LED     ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 9.94e-08 V                   ; 2.78 V              ; -0.0444 V           ; 0.25 V                               ; 0.107 V                              ; 2.67e-10 s                  ; 2.75e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 9.94e-08 V                  ; 2.78 V             ; -0.0444 V          ; 0.25 V                              ; 0.107 V                             ; 2.67e-10 s                 ; 2.75e-10 s                 ; No                        ; Yes                       ;
+; BACK_LED      ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 9.94e-08 V                   ; 2.77 V              ; -0.0485 V           ; 0.289 V                              ; 0.058 V                              ; 2.81e-10 s                  ; 3.04e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 9.94e-08 V                  ; 2.77 V             ; -0.0485 V          ; 0.289 V                             ; 0.058 V                             ; 2.81e-10 s                 ; 3.04e-10 s                 ; No                        ; Yes                       ;
+; debug[7]      ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 9.94e-08 V                   ; 2.78 V              ; -0.0444 V           ; 0.25 V                               ; 0.107 V                              ; 2.67e-10 s                  ; 2.75e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 9.94e-08 V                  ; 2.78 V             ; -0.0444 V          ; 0.25 V                              ; 0.107 V                             ; 2.67e-10 s                 ; 2.75e-10 s                 ; No                        ; Yes                       ;
+; debug[6]      ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 9.95e-08 V                   ; 2.78 V              ; -0.0452 V           ; 0.248 V                              ; 0.108 V                              ; 2.67e-10 s                  ; 2.75e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 9.95e-08 V                  ; 2.78 V             ; -0.0452 V          ; 0.248 V                             ; 0.108 V                             ; 2.67e-10 s                 ; 2.75e-10 s                 ; No                        ; Yes                       ;
+; debug[5]      ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 9.95e-08 V                   ; 2.78 V              ; -0.0452 V           ; 0.248 V                              ; 0.108 V                              ; 2.67e-10 s                  ; 2.75e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 9.95e-08 V                  ; 2.78 V             ; -0.0452 V          ; 0.248 V                             ; 0.108 V                             ; 2.67e-10 s                 ; 2.75e-10 s                 ; No                        ; Yes                       ;
+; debug[4]      ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 9.95e-08 V                   ; 2.78 V              ; -0.0452 V           ; 0.248 V                              ; 0.108 V                              ; 2.67e-10 s                  ; 2.75e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 9.95e-08 V                  ; 2.78 V             ; -0.0452 V          ; 0.248 V                             ; 0.108 V                             ; 2.67e-10 s                 ; 2.75e-10 s                 ; No                        ; Yes                       ;
+; debug[3]      ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 9.94e-08 V                   ; 2.78 V              ; -0.0444 V           ; 0.25 V                               ; 0.107 V                              ; 2.67e-10 s                  ; 2.75e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 9.94e-08 V                  ; 2.78 V             ; -0.0444 V          ; 0.25 V                              ; 0.107 V                             ; 2.67e-10 s                 ; 2.75e-10 s                 ; No                        ; Yes                       ;
+; debug[2]      ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 9.95e-08 V                   ; 2.78 V              ; -0.0452 V           ; 0.248 V                              ; 0.108 V                              ; 2.67e-10 s                  ; 2.75e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 9.95e-08 V                  ; 2.78 V             ; -0.0452 V          ; 0.248 V                             ; 0.108 V                             ; 2.67e-10 s                 ; 2.75e-10 s                 ; No                        ; Yes                       ;
+; debug[1]      ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 9.94e-08 V                   ; 2.78 V              ; -0.0444 V           ; 0.25 V                               ; 0.107 V                              ; 2.67e-10 s                  ; 2.75e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 9.94e-08 V                  ; 2.78 V             ; -0.0444 V          ; 0.25 V                              ; 0.107 V                             ; 2.67e-10 s                 ; 2.75e-10 s                 ; No                        ; Yes                       ;
+; debug[0]      ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 9.95e-08 V                   ; 2.78 V              ; -0.0452 V           ; 0.248 V                              ; 0.108 V                              ; 2.67e-10 s                  ; 2.75e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 9.95e-08 V                  ; 2.78 V             ; -0.0452 V          ; 0.248 V                             ; 0.108 V                             ; 2.67e-10 s                 ; 2.75e-10 s                 ; No                        ; Yes                       ;
 ; ~ALTERA_TDO~  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 1.68e-07 V                   ; 2.73 V              ; -0.0395 V           ; 0.361 V                              ; 0.109 V                              ; 3.1e-10 s                   ; 4.41e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 1.68e-07 V                  ; 2.73 V             ; -0.0395 V          ; 0.361 V                             ; 0.109 V                             ; 3.1e-10 s                  ; 4.41e-10 s                 ; No                        ; Yes                       ;
 +---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
 
@@ -394,10 +436,10 @@ Worst Case Available Settling Time: 38.346 ns
 ; From Clock                                        ; To Clock                                          ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
 +---------------------------------------------------+---------------------------------------------------+----------+----------+----------+----------+
 ; CLK                                               ; CLK                                               ; 1068     ; 0        ; 0        ; 0        ;
-; CLK                                               ; inst7|altpll_component|auto_generated|pll1|clk[0] ; 8        ; 0        ; 0        ; 0        ;
-; inst7|altpll_component|auto_generated|pll1|clk[0] ; inst7|altpll_component|auto_generated|pll1|clk[0] ; 17       ; 0        ; 0        ; 0        ;
-; CLK                                               ; inst7|altpll_component|auto_generated|pll1|clk[1] ; 34       ; 0        ; 0        ; 0        ;
-; inst7|altpll_component|auto_generated|pll1|clk[1] ; inst7|altpll_component|auto_generated|pll1|clk[1] ; 210      ; 0        ; 0        ; 0        ;
+; CLK                                               ; inst2|altpll_component|auto_generated|pll1|clk[0] ; 224      ; 0        ; 0        ; 0        ;
+; inst2|altpll_component|auto_generated|pll1|clk[0] ; inst2|altpll_component|auto_generated|pll1|clk[0] ; 3667     ; 0        ; 0        ; 0        ;
+; CLK                                               ; inst2|altpll_component|auto_generated|pll1|clk[1] ; 32       ; 0        ; 0        ; 0        ;
+; inst2|altpll_component|auto_generated|pll1|clk[1] ; inst2|altpll_component|auto_generated|pll1|clk[1] ; 270      ; 0        ; 0        ; 0        ;
 +---------------------------------------------------+---------------------------------------------------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -408,10 +450,10 @@ Entries labeled "false path" only account for clock-to-clock false paths and not
 ; From Clock                                        ; To Clock                                          ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
 +---------------------------------------------------+---------------------------------------------------+----------+----------+----------+----------+
 ; CLK                                               ; CLK                                               ; 1068     ; 0        ; 0        ; 0        ;
-; CLK                                               ; inst7|altpll_component|auto_generated|pll1|clk[0] ; 8        ; 0        ; 0        ; 0        ;
-; inst7|altpll_component|auto_generated|pll1|clk[0] ; inst7|altpll_component|auto_generated|pll1|clk[0] ; 17       ; 0        ; 0        ; 0        ;
-; CLK                                               ; inst7|altpll_component|auto_generated|pll1|clk[1] ; 34       ; 0        ; 0        ; 0        ;
-; inst7|altpll_component|auto_generated|pll1|clk[1] ; inst7|altpll_component|auto_generated|pll1|clk[1] ; 210      ; 0        ; 0        ; 0        ;
+; CLK                                               ; inst2|altpll_component|auto_generated|pll1|clk[0] ; 224      ; 0        ; 0        ; 0        ;
+; inst2|altpll_component|auto_generated|pll1|clk[0] ; inst2|altpll_component|auto_generated|pll1|clk[0] ; 3667     ; 0        ; 0        ; 0        ;
+; CLK                                               ; inst2|altpll_component|auto_generated|pll1|clk[1] ; 32       ; 0        ; 0        ; 0        ;
+; inst2|altpll_component|auto_generated|pll1|clk[1] ; inst2|altpll_component|auto_generated|pll1|clk[1] ; 270      ; 0        ; 0        ; 0        ;
 +---------------------------------------------------+---------------------------------------------------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -435,10 +477,10 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 +---------------------------------+-------+------+
 ; Illegal Clocks                  ; 0     ; 0    ;
 ; Unconstrained Clocks            ; 0     ; 0    ;
-; Unconstrained Input Ports       ; 1     ; 1    ;
-; Unconstrained Input Port Paths  ; 1     ; 1    ;
-; Unconstrained Output Ports      ; 3     ; 3    ;
-; Unconstrained Output Port Paths ; 3     ; 3    ;
+; Unconstrained Input Ports       ; 3     ; 3    ;
+; Unconstrained Input Port Paths  ; 5     ; 5    ;
+; Unconstrained Output Ports      ; 13    ; 13   ;
+; Unconstrained Output Port Paths ; 16    ; 16   ;
 +---------------------------------+-------+------+
 
 
@@ -448,8 +490,8 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 ; Target                                            ; Clock                                             ; Type      ; Status      ;
 +---------------------------------------------------+---------------------------------------------------+-----------+-------------+
 ; CLK                                               ; CLK                                               ; Base      ; Constrained ;
-; inst7|altpll_component|auto_generated|pll1|clk[0] ; inst7|altpll_component|auto_generated|pll1|clk[0] ; Generated ; Constrained ;
-; inst7|altpll_component|auto_generated|pll1|clk[1] ; inst7|altpll_component|auto_generated|pll1|clk[1] ; Generated ; Constrained ;
+; inst2|altpll_component|auto_generated|pll1|clk[0] ; inst2|altpll_component|auto_generated|pll1|clk[0] ; Generated ; Constrained ;
+; inst2|altpll_component|auto_generated|pll1|clk[1] ; inst2|altpll_component|auto_generated|pll1|clk[1] ; Generated ; Constrained ;
 +---------------------------------------------------+---------------------------------------------------+-----------+-------------+
 
 
@@ -458,6 +500,8 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 +-------------+--------------------------------------------------------------------------------------+
 ; Input Port  ; Comment                                                                              ;
 +-------------+--------------------------------------------------------------------------------------+
+; SW1         ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; SW2         ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; i_RX_Serial ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
 +-------------+--------------------------------------------------------------------------------------+
 
@@ -467,9 +511,19 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 +---------------+---------------------------------------------------------------------------------------+
 ; Output Port   ; Comment                                                                               ;
 +---------------+---------------------------------------------------------------------------------------+
+; BACK_LED      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; FRONT_LED     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; PWM_DCmot     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; PWM_DCmot_rev ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; PWM_SVmot     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; debug[0]      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; debug[1]      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; debug[2]      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; debug[3]      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; debug[4]      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; debug[5]      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; debug[6]      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; debug[7]      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 +---------------+---------------------------------------------------------------------------------------+
 
 
@@ -478,6 +532,8 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 +-------------+--------------------------------------------------------------------------------------+
 ; Input Port  ; Comment                                                                              ;
 +-------------+--------------------------------------------------------------------------------------+
+; SW1         ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; SW2         ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; i_RX_Serial ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
 +-------------+--------------------------------------------------------------------------------------+
 
@@ -487,9 +543,19 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 +---------------+---------------------------------------------------------------------------------------+
 ; Output Port   ; Comment                                                                               ;
 +---------------+---------------------------------------------------------------------------------------+
+; BACK_LED      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; FRONT_LED     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; PWM_DCmot     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; PWM_DCmot_rev ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; PWM_SVmot     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; debug[0]      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; debug[1]      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; debug[2]      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; debug[3]      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; debug[4]      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; debug[5]      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; debug[6]      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; debug[7]      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 +---------------+---------------------------------------------------------------------------------------+
 
 
@@ -499,7 +565,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime Timing Analyzer
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Tue Jun 04 19:39:05 2024
+    Info: Processing started: Wed Jun 05 14:18:42 2024
 Info: Command: quartus_sta Main -c Main
 Info: qsta_default_script.tcl version: #1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
@@ -510,8 +576,8 @@ Critical Warning (332012): Synopsys Design Constraints File file not found: 'Mai
 Info (332142): No user constrained generated clocks found in the design. Calling "derive_pll_clocks -create_base_clocks"
 Info (332110): Deriving PLL clocks
     Info (332110): create_clock -period 20.000 -waveform {0.000 10.000} -name CLK CLK
-    Info (332110): create_generated_clock -source {inst7|altpll_component|auto_generated|pll1|inclk[0]} -divide_by 5000 -duty_cycle 50.00 -name {inst7|altpll_component|auto_generated|pll1|clk[0]} {inst7|altpll_component|auto_generated|pll1|clk[0]}
-    Info (332110): create_generated_clock -source {inst7|altpll_component|auto_generated|pll1|inclk[0]} -divide_by 5000 -multiply_by 3 -duty_cycle 50.00 -name {inst7|altpll_component|auto_generated|pll1|clk[1]} {inst7|altpll_component|auto_generated|pll1|clk[1]}
+    Info (332110): create_generated_clock -source {inst2|altpll_component|auto_generated|pll1|inclk[0]} -divide_by 5000 -duty_cycle 50.00 -name {inst2|altpll_component|auto_generated|pll1|clk[0]} {inst2|altpll_component|auto_generated|pll1|clk[0]}
+    Info (332110): create_generated_clock -source {inst2|altpll_component|auto_generated|pll1|inclk[0]} -divide_by 2500 -multiply_by 3 -duty_cycle 50.00 -name {inst2|altpll_component|auto_generated|pll1|clk[1]} {inst2|altpll_component|auto_generated|pll1|clk[1]}
 Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
 Info (332096): The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
 Info (332143): No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
@@ -519,99 +585,99 @@ Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Tim
 Info: Found TIMING_ANALYZER_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
 Info: Analyzing Slow 1200mV 85C Model
 Info: Can't run Report Timing Closure Recommendations. The current device family is not supported.
-Info (332146): Worst-case setup slack is 0.567
+Info (332146): Worst-case setup slack is 0.534
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.567               0.000 inst7|altpll_component|auto_generated|pll1|clk[1] 
-    Info (332119):    13.799               0.000 inst7|altpll_component|auto_generated|pll1|clk[0] 
-    Info (332119):    15.181               0.000 CLK 
-Info (332146): Worst-case hold slack is 0.340
+    Info (332119):     0.534               0.000 inst2|altpll_component|auto_generated|pll1|clk[1] 
+    Info (332119):    12.067               0.000 inst2|altpll_component|auto_generated|pll1|clk[0] 
+    Info (332119):    14.231               0.000 CLK 
+Info (332146): Worst-case hold slack is 0.347
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.340               0.000 CLK 
-    Info (332119):     0.396               0.000 inst7|altpll_component|auto_generated|pll1|clk[1] 
-    Info (332119):     0.397               0.000 inst7|altpll_component|auto_generated|pll1|clk[0] 
+    Info (332119):     0.347               0.000 CLK 
+    Info (332119):     0.424               0.000 inst2|altpll_component|auto_generated|pll1|clk[0] 
+    Info (332119):     0.424               0.000 inst2|altpll_component|auto_generated|pll1|clk[1] 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
-Info (332146): Worst-case minimum pulse width slack is 9.699
+Info (332146): Worst-case minimum pulse width slack is 9.690
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     9.699               0.000 CLK 
-    Info (332119): 16666.386               0.000 inst7|altpll_component|auto_generated|pll1|clk[1] 
-    Info (332119): 49999.717               0.000 inst7|altpll_component|auto_generated|pll1|clk[0] 
+    Info (332119):     9.690               0.000 CLK 
+    Info (332119):  8333.073               0.000 inst2|altpll_component|auto_generated|pll1|clk[1] 
+    Info (332119): 49999.742               0.000 inst2|altpll_component|auto_generated|pll1|clk[0] 
 Info (332114): Report Metastability: Found 1 synchronizer chains.
     Info (332114): The design MTBF is not calculated because there are no specified synchronizers in the design.
     Info (332114): Number of Synchronizer Chains Found: 1
     Info (332114): Shortest Synchronizer Chain: 2 Registers
     Info (332114): Fraction of Chains for which MTBFs Could Not be Calculated: 1.000
-    Info (332114): Worst Case Available Settling Time: 36.260 ns
+    Info (332114): Worst Case Available Settling Time: 36.965 ns
     Info (332114): 
 Info: Analyzing Slow 1200mV 0C Model
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
-Info (332146): Worst-case setup slack is 1.315
+Info (332146): Worst-case setup slack is 1.288
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     1.315               0.000 inst7|altpll_component|auto_generated|pll1|clk[1] 
-    Info (332119):    14.573               0.000 inst7|altpll_component|auto_generated|pll1|clk[0] 
-    Info (332119):    15.562               0.000 CLK 
-Info (332146): Worst-case hold slack is 0.306
+    Info (332119):     1.288               0.000 inst2|altpll_component|auto_generated|pll1|clk[1] 
+    Info (332119):    12.912               0.000 inst2|altpll_component|auto_generated|pll1|clk[0] 
+    Info (332119):    14.656               0.000 CLK 
+Info (332146): Worst-case hold slack is 0.311
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.306               0.000 CLK 
-    Info (332119):     0.317               0.000 inst7|altpll_component|auto_generated|pll1|clk[1] 
-    Info (332119):     0.319               0.000 inst7|altpll_component|auto_generated|pll1|clk[0] 
+    Info (332119):     0.311               0.000 CLK 
+    Info (332119):     0.343               0.000 inst2|altpll_component|auto_generated|pll1|clk[1] 
+    Info (332119):     0.344               0.000 inst2|altpll_component|auto_generated|pll1|clk[0] 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
-Info (332146): Worst-case minimum pulse width slack is 9.722
+Info (332146): Worst-case minimum pulse width slack is 9.711
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     9.722               0.000 CLK 
-    Info (332119): 16666.365               0.000 inst7|altpll_component|auto_generated|pll1|clk[1] 
-    Info (332119): 49999.694               0.000 inst7|altpll_component|auto_generated|pll1|clk[0] 
+    Info (332119):     9.711               0.000 CLK 
+    Info (332119):  8333.053               0.000 inst2|altpll_component|auto_generated|pll1|clk[1] 
+    Info (332119): 49999.719               0.000 inst2|altpll_component|auto_generated|pll1|clk[0] 
 Info (332114): Report Metastability: Found 1 synchronizer chains.
     Info (332114): The design MTBF is not calculated because there are no specified synchronizers in the design.
     Info (332114): Number of Synchronizer Chains Found: 1
     Info (332114): Shortest Synchronizer Chain: 2 Registers
     Info (332114): Fraction of Chains for which MTBFs Could Not be Calculated: 1.000
-    Info (332114): Worst Case Available Settling Time: 36.567 ns
+    Info (332114): Worst Case Available Settling Time: 37.195 ns
     Info (332114): 
 Info: Analyzing Fast 1200mV 0C Model
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
-Info (332146): Worst-case setup slack is 3.907
+Info (332146): Worst-case setup slack is 3.872
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     3.907               0.000 inst7|altpll_component|auto_generated|pll1|clk[1] 
-    Info (332119):    17.172               0.000 inst7|altpll_component|auto_generated|pll1|clk[0] 
-    Info (332119):    18.010               0.000 CLK 
-Info (332146): Worst-case hold slack is 0.148
+    Info (332119):     3.872               0.000 inst2|altpll_component|auto_generated|pll1|clk[1] 
+    Info (332119):    16.352               0.000 inst2|altpll_component|auto_generated|pll1|clk[0] 
+    Info (332119):    17.521               0.000 CLK 
+Info (332146): Worst-case hold slack is 0.152
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.148               0.000 CLK 
-    Info (332119):     0.199               0.000 inst7|altpll_component|auto_generated|pll1|clk[0] 
-    Info (332119):     0.199               0.000 inst7|altpll_component|auto_generated|pll1|clk[1] 
+    Info (332119):     0.152               0.000 CLK 
+    Info (332119):     0.211               0.000 inst2|altpll_component|auto_generated|pll1|clk[0] 
+    Info (332119):     0.211               0.000 inst2|altpll_component|auto_generated|pll1|clk[1] 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
-Info (332146): Worst-case minimum pulse width slack is 9.462
+Info (332146): Worst-case minimum pulse width slack is 9.466
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     9.462               0.000 CLK 
-    Info (332119): 16666.427               0.000 inst7|altpll_component|auto_generated|pll1|clk[1] 
-    Info (332119): 49999.773               0.000 inst7|altpll_component|auto_generated|pll1|clk[0] 
+    Info (332119):     9.466               0.000 CLK 
+    Info (332119):  8333.137               0.000 inst2|altpll_component|auto_generated|pll1|clk[1] 
+    Info (332119): 49999.801               0.000 inst2|altpll_component|auto_generated|pll1|clk[0] 
 Info (332114): Report Metastability: Found 1 synchronizer chains.
     Info (332114): The design MTBF is not calculated because there are no specified synchronizers in the design.
     Info (332114): Number of Synchronizer Chains Found: 1
     Info (332114): Shortest Synchronizer Chain: 2 Registers
     Info (332114): Fraction of Chains for which MTBFs Could Not be Calculated: 1.000
-    Info (332114): Worst Case Available Settling Time: 38.346 ns
+    Info (332114): Worst Case Available Settling Time: 38.638 ns
     Info (332114): 
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime Timing Analyzer was successful. 0 errors, 2 warnings
-    Info: Peak virtual memory: 4830 megabytes
-    Info: Processing ended: Tue Jun 04 19:39:07 2024
+    Info: Peak virtual memory: 4832 megabytes
+    Info: Processing ended: Wed Jun 05 14:18:44 2024
     Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:00
+    Info: Total CPU time (on all processors): 00:00:01
 
 
