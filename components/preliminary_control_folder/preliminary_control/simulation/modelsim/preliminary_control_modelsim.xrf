@@ -1,11 +1,12 @@
 vendor_name = ModelSim
-source_file = 1, C:/Users/david/Desktop/preliminary_control/preliminary_control.vhd
-source_file = 1, C:/Users/david/Desktop/preliminary_control/Waveform32.vwf
+source_file = 1, C:/Users/david/Desktop/VHDLProject/components/preliminary_control_folder/preliminary_control/preliminary_control.vhd
+source_file = 1, C:/Users/david/Desktop/VHDLProject/components/preliminary_control_folder/preliminary_control/Waveform32.vwf
+source_file = 1, C:/Users/david/Desktop/VHDLProject/components/preliminary_control_folder/preliminary_control/Waveform33.vwf
 source_file = 1, c:/intelfpga_lite/20.1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
 source_file = 1, c:/intelfpga_lite/20.1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
 source_file = 1, c:/intelfpga_lite/20.1/quartus/libraries/vhdl/ieee/timing_b.vhd
 source_file = 1, c:/intelfpga_lite/20.1/quartus/libraries/vhdl/ieee/timing_p.vhd
-source_file = 1, C:/Users/david/Desktop/preliminary_control/db/preliminary_control.cbx.xml
+source_file = 1, C:/Users/david/Desktop/VHDLProject/components/preliminary_control_folder/preliminary_control/db/preliminary_control.cbx.xml
 design_name = hard_block
 design_name = preliminary_control
 instance = comp, \~QUARTUS_CREATED_GND~I\, ~QUARTUS_CREATED_GND~I, preliminary_control, 1

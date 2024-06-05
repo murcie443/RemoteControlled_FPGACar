@@ -31,7 +31,7 @@ BEGIN
         END IF;
     END PROCESS assign;
 
-    check : PROCESS (o_RX_DV)
+    check : PROCESS (o_RX_DV, clk3)
     BEGIN
         IF rising_edge(clk3) THEN
             IF o_RX_DV /= before THEN
