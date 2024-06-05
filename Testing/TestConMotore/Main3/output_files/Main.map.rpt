@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Main
-Wed Jun 05 21:15:22 2024
+Wed Jun 05 21:34:42 2024
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -52,7 +52,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Jun 05 21:15:22 2024       ;
+; Analysis & Synthesis Status        ; Successful - Wed Jun 05 21:34:42 2024       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; Main                                        ;
 ; Top-level Entity Name              ; Main                                        ;
@@ -206,8 +206,8 @@ https://fpgasoftware.intel.com/eula.
 ;                                             ;                                                                                              ;
 ; Total combinational functions               ; 132                                                                                          ;
 ; Logic element usage by number of LUT inputs ;                                                                                              ;
-;     -- 4 input functions                    ; 61                                                                                           ;
-;     -- 3 input functions                    ; 23                                                                                           ;
+;     -- 4 input functions                    ; 62                                                                                           ;
+;     -- 3 input functions                    ; 22                                                                                           ;
 ;     -- <=2 input functions                  ; 48                                                                                           ;
 ;                                             ;                                                                                              ;
 ; Logic elements by mode                      ;                                                                                              ;
@@ -227,8 +227,8 @@ https://fpgasoftware.intel.com/eula.
 ;                                             ;                                                                                              ;
 ; Maximum fan-out node                        ; pll20_60khz:inst2|altpll:altpll_component|pll20_60khz_altpll:auto_generated|wire_pll1_clk[0] ;
 ; Maximum fan-out                             ; 37                                                                                           ;
-; Total fan-out                               ; 602                                                                                          ;
-; Average fan-out                             ; 2.57                                                                                         ;
+; Total fan-out                               ; 603                                                                                          ;
+; Average fan-out                             ; 2.58                                                                                         ;
 +---------------------------------------------+----------------------------------------------------------------------------------------------+
 
 
@@ -770,12 +770,12 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     normal            ; 96                          ;
 ;         1 data inputs ; 3                           ;
 ;         2 data inputs ; 9                           ;
-;         3 data inputs ; 23                          ;
-;         4 data inputs ; 61                          ;
+;         3 data inputs ; 22                          ;
+;         4 data inputs ; 62                          ;
 ; cycloneiii_pll        ; 1                           ;
 ;                       ;                             ;
 ; Max LUT depth         ; 6.00                        ;
-; Average LUT depth     ; 3.15                        ;
+; Average LUT depth     ; 3.21                        ;
 +-----------------------+-----------------------------+
 
 
@@ -794,7 +794,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Wed Jun 05 21:15:14 2024
+    Info: Processing started: Wed Jun 05 21:34:33 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Main -c Main
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -910,9 +910,9 @@ Info (21057): Implemented 152 device resources after synthesis - the final resou
     Info (21061): Implemented 134 logic cells
     Info (21065): Implemented 1 PLLs
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 2 warnings
-    Info: Peak virtual memory: 4808 megabytes
-    Info: Processing ended: Wed Jun 05 21:15:22 2024
-    Info: Elapsed time: 00:00:08
-    Info: Total CPU time (on all processors): 00:00:01
+    Info: Peak virtual memory: 4809 megabytes
+    Info: Processing ended: Wed Jun 05 21:34:42 2024
+    Info: Elapsed time: 00:00:09
+    Info: Total CPU time (on all processors): 00:00:02
 
 
