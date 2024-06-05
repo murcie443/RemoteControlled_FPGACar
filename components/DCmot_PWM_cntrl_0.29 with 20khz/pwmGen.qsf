@@ -81,5 +81,5 @@ set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform18.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform19.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform20.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform21.vwf
-set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
 set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform.vwf
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
