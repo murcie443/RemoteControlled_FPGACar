@@ -1,6 +1,6 @@
 |Main
 PWM_SVmot <= SVmot_angle_cntrl:inst.PWM_SVmot
-CLK => pll10_60khz:inst2.inclk0
+CLK => pll20_60khz:inst2.inclk0
 CLK => UART_RX:inst1.i_Clk
 i_RX_Serial => UART_RX:inst1.i_RX_Serial
 PWM_DCmot <= PWM_DCMotor:inst5.PWM_DCmot
@@ -52,20 +52,20 @@ Svmot_anglev[3] => LessThan4.IN1
 PWM_SVmot <= PWM_SVmot~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Main|pll10_60khz:inst2
+|Main|pll20_60khz:inst2
 areset => altpll:altpll_component.areset
 inclk0 => altpll:altpll_component.inclk[0]
 c0 <= altpll:altpll_component.clk[0]
 c1 <= altpll:altpll_component.clk[1]
 
 
-|Main|pll10_60khz:inst2|altpll:altpll_component
-inclk[0] => pll10_60khz_altpll:auto_generated.inclk[0]
-inclk[1] => pll10_60khz_altpll:auto_generated.inclk[1]
+|Main|pll20_60khz:inst2|altpll:altpll_component
+inclk[0] => pll20_60khz_altpll:auto_generated.inclk[0]
+inclk[1] => pll20_60khz_altpll:auto_generated.inclk[1]
 fbin => ~NO_FANOUT~
 pllena => ~NO_FANOUT~
 clkswitch => ~NO_FANOUT~
-areset => pll10_60khz_altpll:auto_generated.areset
+areset => pll20_60khz_altpll:auto_generated.areset
 pfdena => ~NO_FANOUT~
 clkena[0] => ~NO_FANOUT~
 clkena[1] => ~NO_FANOUT~
@@ -119,7 +119,7 @@ fref <= <GND>
 icdrclk <= <GND>
 
 
-|Main|pll10_60khz:inst2|altpll:altpll_component|pll10_60khz_altpll:auto_generated
+|Main|pll20_60khz:inst2|altpll:altpll_component|pll20_60khz_altpll:auto_generated
 areset => pll1.ARESET
 clk[0] <= pll1.CLK
 clk[1] <= pll1.CLK1
@@ -258,6 +258,7 @@ CLK1 => counter[10].CLK
 CLK1 => counter[11].CLK
 CLK1 => counter[12].CLK
 CLK1 => counter[13].CLK
+CLK1 => counter[14].CLK
 DCmot_speedv[0] => Equal1.IN5
 DCmot_speedv[0] => LessThan2.IN3
 DCmot_speedv[1] => Equal1.IN4
@@ -318,6 +319,7 @@ CLK1 => counter[10].CLK
 CLK1 => counter[11].CLK
 CLK1 => counter[12].CLK
 CLK1 => counter[13].CLK
+CLK1 => counter[14].CLK
 DCmot_speedv[0] => Equal1.IN5
 DCmot_speedv[0] => LessThan2.IN3
 DCmot_speedv[1] => Equal1.IN4
