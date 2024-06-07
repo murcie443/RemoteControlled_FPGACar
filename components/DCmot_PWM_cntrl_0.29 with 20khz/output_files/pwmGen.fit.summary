@@ -1,14 +1,14 @@
-Fitter Status : Successful - Wed Jun 05 21:33:20 2024
+Fitter Status : Successful - Fri Jun 07 15:15:32 2024
 Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 Revision Name : pwmGen
 Top-level Entity Name : DCmot_PWM_cntrl
 Family : MAX 10
 Device : 10M50DAF484C7G
 Timing Models : Final
-Total logic elements : 30 / 49,760 ( < 1 % )
-    Total combinational functions : 30 / 49,760 ( < 1 % )
-    Dedicated logic registers : 16 / 49,760 ( < 1 % )
-Total registers : 16
+Total logic elements : 94 / 49,760 ( < 1 % )
+    Total combinational functions : 93 / 49,760 ( < 1 % )
+    Dedicated logic registers : 51 / 49,760 ( < 1 % )
+Total registers : 51
 Total pins : 5 / 360 ( 1 % )
 Total virtual pins : 0
 Total memory bits : 0 / 1,677,312 ( 0 % )

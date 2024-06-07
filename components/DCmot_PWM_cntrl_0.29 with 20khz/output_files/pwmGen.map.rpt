@@ -1,5 +1,5 @@
 Analysis & Synthesis report for pwmGen
-Wed Jun 05 21:33:11 2024
+Fri Jun 07 15:15:23 2024
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -13,12 +13,11 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. Registers Removed During Synthesis
-  9. Removed Registers Triggering Further Register Optimizations
- 10. General Register Statistics
- 11. Post-Synthesis Netlist Statistics for Top Partition
- 12. Elapsed Time Per Partition
- 13. Analysis & Synthesis Messages
+  8. General Register Statistics
+  9. Inverted Register Statistics
+ 10. Post-Synthesis Netlist Statistics for Top Partition
+ 11. Elapsed Time Per Partition
+ 12. Analysis & Synthesis Messages
 
 
 
@@ -45,15 +44,15 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Jun 05 21:33:11 2024       ;
+; Analysis & Synthesis Status        ; Successful - Fri Jun 07 15:15:23 2024       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; pwmGen                                      ;
 ; Top-level Entity Name              ; DCmot_PWM_cntrl                             ;
 ; Family                             ; MAX 10                                      ;
-; Total logic elements               ; 29                                          ;
-;     Total combinational functions  ; 29                                          ;
-;     Dedicated logic registers      ; 16                                          ;
-; Total registers                    ; 16                                          ;
+; Total logic elements               ; 92                                          ;
+;     Total combinational functions  ; 92                                          ;
+;     Dedicated logic registers      ; 51                                          ;
+; Total registers                    ; 51                                          ;
 ; Total pins                         ; 5                                           ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
@@ -181,20 +180,20 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+------------+
 ; Resource                                    ; Usage      ;
 +---------------------------------------------+------------+
-; Estimated Total logic elements              ; 29         ;
+; Estimated Total logic elements              ; 92         ;
 ;                                             ;            ;
-; Total combinational functions               ; 29         ;
+; Total combinational functions               ; 92         ;
 ; Logic element usage by number of LUT inputs ;            ;
-;     -- 4 input functions                    ; 14         ;
-;     -- 3 input functions                    ; 0          ;
-;     -- <=2 input functions                  ; 15         ;
+;     -- 4 input functions                    ; 22         ;
+;     -- 3 input functions                    ; 10         ;
+;     -- <=2 input functions                  ; 60         ;
 ;                                             ;            ;
 ; Logic elements by mode                      ;            ;
-;     -- normal mode                          ; 15         ;
-;     -- arithmetic mode                      ; 14         ;
+;     -- normal mode                          ; 47         ;
+;     -- arithmetic mode                      ; 45         ;
 ;                                             ;            ;
-; Total registers                             ; 16         ;
-;     -- Dedicated logic registers            ; 16         ;
+; Total registers                             ; 51         ;
+;     -- Dedicated logic registers            ; 51         ;
 ;     -- I/O registers                        ; 0          ;
 ;                                             ;            ;
 ; I/O pins                                    ; 5          ;
@@ -202,9 +201,9 @@ https://fpgasoftware.intel.com/eula.
 ; Embedded Multiplier 9-bit elements          ; 0          ;
 ;                                             ;            ;
 ; Maximum fan-out node                        ; CLK1~input ;
-; Maximum fan-out                             ; 16         ;
-; Total fan-out                               ; 123        ;
-; Average fan-out                             ; 2.24       ;
+; Maximum fan-out                             ; 51         ;
+; Total fan-out                               ; 379        ;
+; Average fan-out                             ; 2.48       ;
 +---------------------------------------------+------------+
 
 
@@ -213,31 +212,9 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-----------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name ; Entity Name     ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-----------------+--------------+
-; |DCmot_PWM_cntrl           ; 29 (29)             ; 16 (16)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 5    ; 0            ; 0          ; |DCmot_PWM_cntrl    ; DCmot_PWM_cntrl ; work         ;
+; |DCmot_PWM_cntrl           ; 92 (92)             ; 51 (51)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 5    ; 0            ; 0          ; |DCmot_PWM_cntrl    ; DCmot_PWM_cntrl ; work         ;
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-----------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-+--------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                   ;
-+----------------------------------------+---------------------------------------------+
-; Register name                          ; Reason for Removal                          ;
-+----------------------------------------+---------------------------------------------+
-; flag[1]                                ; Stuck at GND due to stuck port clock_enable ;
-; flag[0]                                ; Stuck at VCC due to stuck port clock_enable ;
-; flag[2..31]                            ; Stuck at GND due to stuck port clock_enable ;
-; innercounter[0..2]                     ; Lost fanout                                 ;
-; Total Number of Removed Registers = 35 ;                                             ;
-+----------------------------------------+---------------------------------------------+
-
-
-+-------------------------------------------------------------------------------+
-; Removed Registers Triggering Further Register Optimizations                   ;
-+-----------------+--------------------+----------------------------------------+
-; Register name   ; Reason for Removal ; Registers Removed due to This Register ;
-+-----------------+--------------------+----------------------------------------+
-; innercounter[2] ; Lost Fanouts       ; innercounter[1], innercounter[0]       ;
-+-----------------+--------------------+----------------------------------------+
 
 
 +------------------------------------------------------+
@@ -245,14 +222,24 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 16    ;
+; Total registers                              ; 51    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Clock Enable       ; 35    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
+
+
++--------------------------------------------------+
+; Inverted Register Statistics                     ;
++----------------------------------------+---------+
+; Inverted Register                      ; Fan out ;
++----------------------------------------+---------+
+; flag[0]                                ; 2       ;
+; Total number of inverted registers = 1 ;         ;
++----------------------------------------+---------+
 
 
 +-----------------------------------------------------+
@@ -261,17 +248,20 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 5                           ;
-; cycloneiii_ff         ; 16                          ;
+; cycloneiii_ff         ; 51                          ;
+;     ENA               ; 35                          ;
 ;     plain             ; 16                          ;
-; cycloneiii_lcell_comb ; 29                          ;
-;     arith             ; 14                          ;
-;         2 data inputs ; 14                          ;
-;     normal            ; 15                          ;
-;         1 data inputs ; 1                           ;
-;         4 data inputs ; 14                          ;
+; cycloneiii_lcell_comb ; 92                          ;
+;     arith             ; 45                          ;
+;         2 data inputs ; 45                          ;
+;     normal            ; 47                          ;
+;         1 data inputs ; 2                           ;
+;         2 data inputs ; 13                          ;
+;         3 data inputs ; 10                          ;
+;         4 data inputs ; 22                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 4.00                        ;
-; Average LUT depth     ; 2.77                        ;
+; Max LUT depth         ; 5.00                        ;
+; Average LUT depth     ; 3.72                        ;
 +-----------------------+-----------------------------+
 
 
@@ -290,7 +280,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Wed Jun 05 21:33:02 2024
+    Info: Processing started: Fri Jun 07 15:15:14 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off DCmot_PWM_cntrl -c pwmGen
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -299,16 +289,15 @@ Info (12021): Found 2 design units, including 1 entities, in source file pwmgen.
     Info (12023): Found entity 1: DCmot_PWM_cntrl File: C:/Users/david/Desktop/VHDLProject/components/DCmot_PWM_cntrl_0.29 with 20khz/pwmGen.vhd Line: 5
 Info (12127): Elaborating entity "DCmot_PWM_cntrl" for the top level hierarchy
 Info (286030): Timing-Driven Synthesis is running
-Info (17049): 3 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 34 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 97 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 4 input pins
     Info (21059): Implemented 1 output pins
-    Info (21061): Implemented 29 logic cells
+    Info (21061): Implemented 92 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4779 megabytes
-    Info: Processing ended: Wed Jun 05 21:33:11 2024
+    Info: Peak virtual memory: 4777 megabytes
+    Info: Processing ended: Fri Jun 07 15:15:23 2024
     Info: Elapsed time: 00:00:09
     Info: Total CPU time (on all processors): 00:00:02
 

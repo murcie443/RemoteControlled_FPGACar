@@ -1,5 +1,5 @@
 Flow report for pwmGen
-Wed Jun 05 21:33:29 2024
+Fri Jun 07 15:15:40 2024
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -41,17 +41,17 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Wed Jun 05 21:33:29 2024       ;
+; Flow Status                        ; Successful - Fri Jun 07 15:15:40 2024       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; pwmGen                                      ;
 ; Top-level Entity Name              ; DCmot_PWM_cntrl                             ;
 ; Family                             ; MAX 10                                      ;
 ; Device                             ; 10M50DAF484C7G                              ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 30 / 49,760 ( < 1 % )                       ;
-;     Total combinational functions  ; 30 / 49,760 ( < 1 % )                       ;
-;     Dedicated logic registers      ; 16 / 49,760 ( < 1 % )                       ;
-; Total registers                    ; 16                                          ;
+; Total logic elements               ; 94 / 49,760 ( < 1 % )                       ;
+;     Total combinational functions  ; 93 / 49,760 ( < 1 % )                       ;
+;     Dedicated logic registers      ; 51 / 49,760 ( < 1 % )                       ;
+; Total registers                    ; 51                                          ;
 ; Total pins                         ; 5 / 360 ( 1 % )                             ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0 / 1,677,312 ( 0 % )                       ;
@@ -67,7 +67,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 06/05/2024 21:33:03 ;
+; Start date & time ; 06/07/2024 15:15:14 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; pwmGen              ;
 +-------------------+---------------------+
@@ -78,7 +78,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------+----------------------------------------+---------------+-----------------+-----------------------------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name     ; Section Id                        ;
 +-------------------------------------+----------------------------------------+---------------+-----------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID               ; 10995770589197.171761598302084         ; --            ; --              ; --                                ;
+; COMPILER_SIGNATURE_ID               ; 10995770589197.171776611405852         ; --            ; --              ; --                                ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --              ; eda_board_design_timing           ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --              ; eda_board_design_boundary_scan    ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --              ; eda_board_design_signal_integrity ;
@@ -103,12 +103,12 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:09     ; 1.0                     ; 4779 MB             ; 00:00:02                           ;
-; Fitter               ; 00:00:08     ; 1.0                     ; 5640 MB             ; 00:00:01                           ;
-; Assembler            ; 00:00:03     ; 1.0                     ; 4689 MB             ; 00:00:00                           ;
-; Timing Analyzer      ; 00:00:02     ; 1.0                     ; 4824 MB             ; 00:00:00                           ;
-; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4645 MB             ; 00:00:00                           ;
-; Total                ; 00:00:22     ; --                      ; --                  ; 00:00:03                           ;
+; Analysis & Synthesis ; 00:00:09     ; 1.0                     ; 4777 MB             ; 00:00:02                           ;
+; Fitter               ; 00:00:08     ; 1.0                     ; 5644 MB             ; 00:00:01                           ;
+; Assembler            ; 00:00:03     ; 1.0                     ; 4692 MB             ; 00:00:01                           ;
+; Timing Analyzer      ; 00:00:02     ; 1.0                     ; 4822 MB             ; 00:00:00                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4645 MB             ; 00:00:00                           ;
+; Total                ; 00:00:23     ; --                      ; --                  ; 00:00:04                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

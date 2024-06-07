@@ -19,7 +19,7 @@
 -- the top level entity of the current Quartus project .The user can use this   
 -- testbench to simulate his design using a third-party simulation tool .       
 -- *****************************************************************************
--- Generated on "05/28/2024 15:01:36"
+-- Generated on "06/07/2024 15:09:58"
                                                              
 -- Vhdl Test Bench(with test vectors) for design  :          DCmot_PWM_cntrl
 -- 
@@ -58,9 +58,9 @@ t_prcs_CLK1: PROCESS
 BEGIN
 LOOP
 	CLK1 <= '0';
-	WAIT FOR 25000 ps;
+	WAIT FOR 5000 ps;
 	CLK1 <= '1';
-	WAIT FOR 25000 ps;
+	WAIT FOR 5000 ps;
 	IF (NOW >= 1000000 ps) THEN WAIT; END IF;
 END LOOP;
 END PROCESS t_prcs_CLK1;
@@ -79,7 +79,7 @@ END PROCESS t_prcs_DCmot_speedv_1;
 -- DCmot_speedv[0]
 t_prcs_DCmot_speedv_0: PROCESS
 BEGIN
-	DCmot_speedv(0) <= '0';
+	DCmot_speedv(0) <= '1';
 WAIT;
 END PROCESS t_prcs_DCmot_speedv_0;
 END DCmot_PWM_cntrl_arch;

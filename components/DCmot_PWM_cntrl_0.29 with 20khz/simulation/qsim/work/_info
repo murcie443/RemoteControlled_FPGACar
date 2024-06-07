@@ -10,7 +10,7 @@ z2
 cModel Technology
 Z0 dC:/Users/david/Desktop/DPS/pwm/simulation/qsim
 Edcmot_pwm_cntrl
-Z1 w1717612463
+Z1 w1717765799
 Z2 DPx11 fiftyfivenm 21 fiftyfivenm_atom_pack 0 22 OTUTkBjTeYVegmIWhVi3N0
 Z3 DPx11 fiftyfivenm 22 fiftyfivenm_components 0 22 C5K^h=:j[4HI?HO^UkN3:2
 Z4 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
@@ -19,7 +19,7 @@ Z6 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
 Z7 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z8 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
 Z9 DPx6 altera 28 altera_primitives_components 0 22 ca:ehlQAg4;_gVV:^8MAg3
-!i122 176
+!i122 202
 Z10 dC:/Users/david/Desktop/VHDLProject/components/DCmot_PWM_cntrl_0.29 with 20khz/simulation/qsim
 Z11 8pwmGen.vho
 Z12 FpwmGen.vho
@@ -29,9 +29,9 @@ VDLljmZ91SA@DUZC8J><c50
 !s100 YLI<S^<iSnb>>6IV]3R>h2
 Z14 OV;C;2020.1;71
 32
-Z15 !s110 1717612464
+Z15 !s110 1717765800
 !i10b 1
-Z16 !s108 1717612464.000000
+Z16 !s108 1717765800.000000
 Z17 !s90 -work|work|pwmGen.vho|
 Z18 !s107 pwmGen.vho|
 !i113 1
@@ -47,11 +47,11 @@ R7
 R8
 R9
 DEx4 work 15 dcmot_pwm_cntrl 0 22 DLljmZ91SA@DUZC8J><c50
-!i122 176
-l187
-L107 997
-VlheObZBSN7mE^PgR@L?6Y1
-!s100 N3VDzMCX7eHe>C@bU=8J:2
+!i122 202
+l274
+L107 2539
+VRX2F0W[1zm6:kX>;C>];J2
+!s100 oV3n7dE;4A0>9aF^MXRmJ1
 R14
 32
 R15
@@ -63,13 +63,13 @@ R18
 R19
 R20
 Edcmot_pwm_cntrl_vhd_vec_tst
-Z21 w1717612462
+Z21 w1717765798
 R7
 R8
-!i122 177
+!i122 203
 R10
-Z22 8Waveform.vwf.vht
-Z23 FWaveform.vwf.vht
+Z22 8Waveform4.vwf.vht
+Z23 FWaveform4.vwf.vht
 l0
 Z24 L32 1
 VEc1>>;_5I^maCj@0YJP=`0
@@ -79,8 +79,8 @@ R14
 R15
 !i10b 1
 R16
-Z25 !s90 -work|work|Waveform.vwf.vht|
-Z26 !s107 Waveform.vwf.vht|
+Z25 !s90 -work|work|Waveform4.vwf.vht|
+Z26 !s107 Waveform4.vwf.vht|
 !i113 1
 R19
 R20
@@ -88,11 +88,11 @@ Adcmot_pwm_cntrl_arch
 R7
 R8
 Z27 DEx4 work 27 dcmot_pwm_cntrl_vhd_vec_tst 0 22 Ec1>>;_5I^maCj@0YJP=`0
-!i122 177
+!i122 203
 l47
 Z28 L34 52
-VLD9boZE1XfP]Okb]9fZ1S3
-!s100 FiDjDN1<MQKM:dVmEJ3Oa3
+V4UUFIP4Z=V[dXCIgLJc`K3
+!s100 9`Z5hCnR=A`;d8nOPL_;G1
 R14
 32
 R15
@@ -111,7 +111,7 @@ R6
 R7
 R8
 R3
-!i122 176
+!i122 202
 R10
 R11
 R12
@@ -137,7 +137,7 @@ R7
 R8
 R3
 DEx4 work 10 hard_block 0 22 hj[i;a0dD85B`o1JPT^cg2
-!i122 176
+!i122 202
 l76
 L54 28
 Va5ClDYec`9chO`Ne0M1NL2

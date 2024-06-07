@@ -8,7 +8,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "DCmot_speedv[0]",
+					"name" : "DCmot_speedv[2]",
 					"strict" : false
 				},
 				{
@@ -16,7 +16,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "DCmot_speedv[2]",
+					"name" : "DCmot_speedv[0]",
 					"strict" : false
 				},
 				{
