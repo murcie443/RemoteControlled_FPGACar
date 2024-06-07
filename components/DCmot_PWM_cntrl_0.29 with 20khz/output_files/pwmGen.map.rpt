@@ -1,5 +1,5 @@
 Analysis & Synthesis report for pwmGen
-Fri Jun 07 15:15:23 2024
+Fri Jun 07 17:53:18 2024
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -44,13 +44,13 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Jun 07 15:15:23 2024       ;
+; Analysis & Synthesis Status        ; Successful - Fri Jun 07 17:53:18 2024       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; pwmGen                                      ;
 ; Top-level Entity Name              ; DCmot_PWM_cntrl                             ;
 ; Family                             ; MAX 10                                      ;
-; Total logic elements               ; 92                                          ;
-;     Total combinational functions  ; 92                                          ;
+; Total logic elements               ; 87                                          ;
+;     Total combinational functions  ; 87                                          ;
 ;     Dedicated logic registers      ; 51                                          ;
 ; Total registers                    ; 51                                          ;
 ; Total pins                         ; 5                                           ;
@@ -180,16 +180,16 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+------------+
 ; Resource                                    ; Usage      ;
 +---------------------------------------------+------------+
-; Estimated Total logic elements              ; 92         ;
+; Estimated Total logic elements              ; 87         ;
 ;                                             ;            ;
-; Total combinational functions               ; 92         ;
+; Total combinational functions               ; 87         ;
 ; Logic element usage by number of LUT inputs ;            ;
-;     -- 4 input functions                    ; 22         ;
-;     -- 3 input functions                    ; 10         ;
-;     -- <=2 input functions                  ; 60         ;
+;     -- 4 input functions                    ; 25         ;
+;     -- 3 input functions                    ; 8          ;
+;     -- <=2 input functions                  ; 54         ;
 ;                                             ;            ;
 ; Logic elements by mode                      ;            ;
-;     -- normal mode                          ; 47         ;
+;     -- normal mode                          ; 42         ;
 ;     -- arithmetic mode                      ; 45         ;
 ;                                             ;            ;
 ; Total registers                             ; 51         ;
@@ -202,8 +202,8 @@ https://fpgasoftware.intel.com/eula.
 ;                                             ;            ;
 ; Maximum fan-out node                        ; CLK1~input ;
 ; Maximum fan-out                             ; 51         ;
-; Total fan-out                               ; 379        ;
-; Average fan-out                             ; 2.48       ;
+; Total fan-out                               ; 372        ;
+; Average fan-out                             ; 2.51       ;
 +---------------------------------------------+------------+
 
 
@@ -212,7 +212,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-----------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name ; Entity Name     ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-----------------+--------------+
-; |DCmot_PWM_cntrl           ; 92 (92)             ; 51 (51)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 5    ; 0            ; 0          ; |DCmot_PWM_cntrl    ; DCmot_PWM_cntrl ; work         ;
+; |DCmot_PWM_cntrl           ; 87 (87)             ; 51 (51)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 5    ; 0            ; 0          ; |DCmot_PWM_cntrl    ; DCmot_PWM_cntrl ; work         ;
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-----------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -251,17 +251,17 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; cycloneiii_ff         ; 51                          ;
 ;     ENA               ; 35                          ;
 ;     plain             ; 16                          ;
-; cycloneiii_lcell_comb ; 92                          ;
+; cycloneiii_lcell_comb ; 87                          ;
 ;     arith             ; 45                          ;
 ;         2 data inputs ; 45                          ;
-;     normal            ; 47                          ;
-;         1 data inputs ; 2                           ;
-;         2 data inputs ; 13                          ;
-;         3 data inputs ; 10                          ;
-;         4 data inputs ; 22                          ;
+;     normal            ; 42                          ;
+;         1 data inputs ; 3                           ;
+;         2 data inputs ; 6                           ;
+;         3 data inputs ; 8                           ;
+;         4 data inputs ; 25                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 5.00                        ;
-; Average LUT depth     ; 3.72                        ;
+; Max LUT depth         ; 4.10                        ;
+; Average LUT depth     ; 3.44                        ;
 +-----------------------+-----------------------------+
 
 
@@ -280,7 +280,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Fri Jun 07 15:15:14 2024
+    Info: Processing started: Fri Jun 07 17:53:09 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off DCmot_PWM_cntrl -c pwmGen
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -291,13 +291,13 @@ Info (12127): Elaborating entity "DCmot_PWM_cntrl" for the top level hierarchy
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 97 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 92 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 4 input pins
     Info (21059): Implemented 1 output pins
-    Info (21061): Implemented 92 logic cells
+    Info (21061): Implemented 87 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4777 megabytes
-    Info: Processing ended: Fri Jun 07 15:15:23 2024
+    Info: Peak virtual memory: 4786 megabytes
+    Info: Processing ended: Fri Jun 07 17:53:18 2024
     Info: Elapsed time: 00:00:09
     Info: Total CPU time (on all processors): 00:00:02
 
