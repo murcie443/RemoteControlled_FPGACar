@@ -36,11 +36,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "EN_SW",
+					"name" : "RX_data_IN[0]",
 					"strict" : false
 				},
 				{
-					"name" : "RX_data_IN[0]",
+					"name" : "EN_SW",
 					"strict" : false
 				},
 				{
@@ -69,14 +69,6 @@
 				},
 				{
 					"name" : "RX_data_IN[7]",
-					"strict" : false
-				},
-				{
-					"name" : "o_RX_DV",
-					"strict" : false
-				},
-				{
-					"name" : "CLK3",
 					"strict" : false
 				}
 			]

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for preliminary_control
-Wed Jun 05 19:34:19 2024
+Fri Jun 07 19:59:15 2024
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -14,11 +14,9 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
-  9. Inverted Register Statistics
- 10. Multiplexer Restructuring Statistics (Restructuring Performed)
- 11. Post-Synthesis Netlist Statistics for Top Partition
- 12. Elapsed Time Per Partition
- 13. Analysis & Synthesis Messages
+  9. Post-Synthesis Netlist Statistics for Top Partition
+ 10. Elapsed Time Per Partition
+ 11. Analysis & Synthesis Messages
 
 
 
@@ -45,16 +43,16 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Jun 05 19:34:19 2024       ;
+; Analysis & Synthesis Status        ; Successful - Fri Jun 07 19:59:15 2024       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; preliminary_control                         ;
 ; Top-level Entity Name              ; preliminary_control                         ;
 ; Family                             ; MAX 10                                      ;
-; Total logic elements               ; 86                                          ;
-;     Total combinational functions  ; 85                                          ;
-;     Dedicated logic registers      ; 34                                          ;
-; Total registers                    ; 34                                          ;
-; Total pins                         ; 19                                          ;
+; Total logic elements               ; 8                                           ;
+;     Total combinational functions  ; 8                                           ;
+;     Dedicated logic registers      ; 0                                           ;
+; Total registers                    ; 0                                           ;
+; Total pins                         ; 17                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -159,11 +157,10 @@ https://fpgasoftware.intel.com/eula.
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 4           ;
+; Maximum used               ; 1           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-4         ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -176,36 +173,36 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------------------------------------------+---------+
 
 
-+-------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                 ;
-+---------------------------------------------+---------------+
-; Resource                                    ; Usage         ;
-+---------------------------------------------+---------------+
-; Estimated Total logic elements              ; 86            ;
-;                                             ;               ;
-; Total combinational functions               ; 85            ;
-; Logic element usage by number of LUT inputs ;               ;
-;     -- 4 input functions                    ; 12            ;
-;     -- 3 input functions                    ; 40            ;
-;     -- <=2 input functions                  ; 33            ;
-;                                             ;               ;
-; Logic elements by mode                      ;               ;
-;     -- normal mode                          ; 54            ;
-;     -- arithmetic mode                      ; 31            ;
-;                                             ;               ;
-; Total registers                             ; 34            ;
-;     -- Dedicated logic registers            ; 34            ;
-;     -- I/O registers                        ; 0             ;
-;                                             ;               ;
-; I/O pins                                    ; 19            ;
-;                                             ;               ;
-; Embedded Multiplier 9-bit elements          ; 0             ;
-;                                             ;               ;
-; Maximum fan-out node                        ; o_RX_DV~input ;
-; Maximum fan-out                             ; 35            ;
-; Total fan-out                               ; 359           ;
-; Average fan-out                             ; 2.29          ;
-+---------------------------------------------+---------------+
++-----------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary               ;
++---------------------------------------------+-------------+
+; Resource                                    ; Usage       ;
++---------------------------------------------+-------------+
+; Estimated Total logic elements              ; 8           ;
+;                                             ;             ;
+; Total combinational functions               ; 8           ;
+; Logic element usage by number of LUT inputs ;             ;
+;     -- 4 input functions                    ; 0           ;
+;     -- 3 input functions                    ; 0           ;
+;     -- <=2 input functions                  ; 8           ;
+;                                             ;             ;
+; Logic elements by mode                      ;             ;
+;     -- normal mode                          ; 8           ;
+;     -- arithmetic mode                      ; 0           ;
+;                                             ;             ;
+; Total registers                             ; 0           ;
+;     -- Dedicated logic registers            ; 0           ;
+;     -- I/O registers                        ; 0           ;
+;                                             ;             ;
+; I/O pins                                    ; 17          ;
+;                                             ;             ;
+; Embedded Multiplier 9-bit elements          ; 0           ;
+;                                             ;             ;
+; Maximum fan-out node                        ; EN_SW~input ;
+; Maximum fan-out                             ; 8           ;
+; Total fan-out                               ; 41          ;
+; Average fan-out                             ; 0.98        ;
++---------------------------------------------+-------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -213,7 +210,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+----------------------+---------------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name  ; Entity Name         ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+----------------------+---------------------+--------------+
-; |preliminary_control       ; 85 (85)             ; 34 (34)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 19   ; 0            ; 0          ; |preliminary_control ; preliminary_control ; work         ;
+; |preliminary_control       ; 8 (8)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 17   ; 0            ; 0          ; |preliminary_control ; preliminary_control ; work         ;
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+----------------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -223,33 +220,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 34    ;
+; Total registers                              ; 0     ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 31    ;
+; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
-
-
-+--------------------------------------------------+
-; Inverted Register Statistics                     ;
-+----------------------------------------+---------+
-; Inverted Register                      ; Fan out ;
-+----------------------------------------+---------+
-; counter[0]                             ; 2       ;
-; Total number of inverted registers = 1 ;         ;
-+----------------------------------------+---------+
-
-
-+------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                 ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output       ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------+
-; 3:1                ; 31 bits   ; 62 LEs        ; 31 LEs               ; 31 LEs                 ; Yes        ; |preliminary_control|counter[30] ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------+
 
 
 +-----------------------------------------------------+
@@ -257,21 +235,13 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 19                          ;
-; cycloneiii_ff         ; 34                          ;
-;     ENA               ; 31                          ;
-;     plain             ; 3                           ;
-; cycloneiii_lcell_comb ; 85                          ;
-;     arith             ; 31                          ;
-;         2 data inputs ; 31                          ;
-;     normal            ; 54                          ;
-;         1 data inputs ; 1                           ;
-;         2 data inputs ; 1                           ;
-;         3 data inputs ; 40                          ;
-;         4 data inputs ; 12                          ;
+; boundary_port         ; 17                          ;
+; cycloneiii_lcell_comb ; 8                           ;
+;     normal            ; 8                           ;
+;         2 data inputs ; 8                           ;
 ;                       ;                             ;
-; Max LUT depth         ; 5.10                        ;
-; Average LUT depth     ; 3.66                        ;
+; Max LUT depth         ; 1.00                        ;
+; Average LUT depth     ; 1.00                        ;
 +-----------------------+-----------------------------+
 
 
@@ -290,24 +260,25 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Wed Jun 05 19:34:10 2024
+    Info: Processing started: Fri Jun 07 19:59:06 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off preliminary_control -c preliminary_control
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file preliminary_control.vhd
-    Info (12022): Found design unit 1: preliminary_control-preliminary_control_arch File: C:/Users/david/Desktop/VHDLProject/components/preliminary_control_folder/preliminary_control/preliminary_control.vhd Line: 17
+    Info (12022): Found design unit 1: preliminary_control-preliminary_control_arch File: C:/Users/david/Desktop/VHDLProject/components/preliminary_control_folder/preliminary_control/preliminary_control.vhd Line: 16
     Info (12023): Found entity 1: preliminary_control File: C:/Users/david/Desktop/VHDLProject/components/preliminary_control_folder/preliminary_control/preliminary_control.vhd Line: 6
 Info (12127): Elaborating entity "preliminary_control" for the top level hierarchy
+Warning (10492): VHDL Process Statement warning at preliminary_control.vhd(26): signal "RX_data_IN" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/david/Desktop/VHDLProject/components/preliminary_control_folder/preliminary_control/preliminary_control.vhd Line: 26
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 105 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 11 input pins
+Info (21057): Implemented 25 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 9 input pins
     Info (21059): Implemented 8 output pins
-    Info (21061): Implemented 86 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4779 megabytes
-    Info: Processing ended: Wed Jun 05 19:34:19 2024
+    Info (21061): Implemented 8 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 2 warnings
+    Info: Peak virtual memory: 4786 megabytes
+    Info: Processing ended: Fri Jun 07 19:59:15 2024
     Info: Elapsed time: 00:00:09
     Info: Total CPU time (on all processors): 00:00:02
 
