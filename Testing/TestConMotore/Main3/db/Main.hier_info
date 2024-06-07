@@ -3,8 +3,8 @@ PWM_SVmot <= SVmot_angle_cntrl:inst.PWM_SVmot
 CLK => pll20_60khz:inst2.inclk0
 CLK => UART_RX:inst1.i_Clk
 i_RX_Serial => UART_RX:inst1.i_RX_Serial
-PWM_DCmot <= PWM_DCMotor:inst5.PWM_DCmot
-PWM_DCmot_rev <= PWM_DCMotor:inst5.PWM_DCmot_rev
+PWM_DCmot <= PWM_DCMotor:inst4.PWM_DCmot
+PWM_DCmot_rev <= PWM_DCMotor:inst4.PWM_DCmot_rev
 FRONT_LED <= led_cntrl:inst3.Front_led
 SW1 => led_cntrl:inst3.SW1
 SW2 => led_cntrl:inst3.SW2
@@ -190,7 +190,7 @@ o_RX_Byte[6] <= r_RX_Byte[6].DB_MAX_OUTPUT_PORT_TYPE
 o_RX_Byte[7] <= r_RX_Byte[7].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Main|PWM_DCMotor:inst5
+|Main|PWM_DCMotor:inst4
 CLK1 => DCmot_PWM_cntrl:U_rev.CLK1
 CLK1 => PWM_DCmot_rev~reg0.CLK
 CLK1 => PWM_DCmot~reg0.CLK
@@ -207,7 +207,7 @@ PWM_DCmot <= PWM_DCmot~reg0.DB_MAX_OUTPUT_PORT_TYPE
 PWM_DCmot_rev <= PWM_DCmot_rev~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Main|PWM_DCMotor:inst5|DCmot_PWM_cntrl:U_rev
+|Main|PWM_DCMotor:inst4|DCmot_PWM_cntrl:U_rev
 CLK1 => flag[0].CLK
 CLK1 => flag[1].CLK
 CLK1 => flag[2].CLK
@@ -268,7 +268,7 @@ DCmot_speedv[2] => LessThan2.IN1
 PWM_DCmot <= PWM_DCmot~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Main|PWM_DCMotor:inst5|DCmot_PWM_cntrl:U0
+|Main|PWM_DCMotor:inst4|DCmot_PWM_cntrl:U0
 CLK1 => flag[0].CLK
 CLK1 => flag[1].CLK
 CLK1 => flag[2].CLK

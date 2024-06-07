@@ -46,7 +46,7 @@ BEGIN
 					ELSE
 						 IF flag=1 THEN
 							 innercounter <= innercounter + '1'; --update the inner counter only here
-							 flag<=(B_position-A_position)/7; --range/7levels
+							 flag<=(B_position/A_position)-1; --range/7levels
 							 IF innercounter = "110" THEN --reset the inner counter
 								  innercounter <= "000";
 							 END IF;

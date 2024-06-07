@@ -1,5 +1,5 @@
 Fitter report for Main
-Fri Jun 07 15:18:21 2024
+Fri Jun 07 20:36:40 2024
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -69,7 +69,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Fri Jun 07 15:18:21 2024       ;
+; Fitter Status                      ; Successful - Fri Jun 07 20:36:40 2024       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; Main                                        ;
 ; Top-level Entity Name              ; Main                                        ;
@@ -160,8 +160,7 @@ https://fpgasoftware.intel.com/eula.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   1.0%      ;
-;     Processors 3-4         ;   1.0%      ;
+;     Processors 2-4         ;   1.0%      ;
 +----------------------------+-------------+
 
 
@@ -986,9 +985,9 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 ; Compilation Hierarchy Node                   ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M9Ks ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; ADC blocks ; Full Hierarchy Name                                                               ; Entity Name        ; Library Name ;
 +----------------------------------------------+-------------+---------------------------+---------------+-------------+------+------------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------+-----------------------------------------------------------------------------------+--------------------+--------------+
 ; |Main                                        ; 133 (1)     ; 67 (0)                    ; 0 (0)         ; 0           ; 0    ; 1          ; 0            ; 0       ; 0         ; 17   ; 0            ; 66 (1)       ; 0 (0)             ; 67 (0)           ; 0          ; |Main                                                                             ; Main               ; work         ;
-;    |PWM_DCMotor:inst5|                       ; 33 (2)      ; 19 (2)                    ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 14 (0)       ; 0 (0)             ; 19 (2)           ; 0          ; |Main|PWM_DCMotor:inst5                                                           ; PWM_DCMotor        ; work         ;
-;       |DCmot_PWM_cntrl:U0|                   ; 30 (30)     ; 16 (16)                   ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 14 (14)      ; 0 (0)             ; 16 (16)          ; 0          ; |Main|PWM_DCMotor:inst5|DCmot_PWM_cntrl:U0                                        ; DCmot_PWM_cntrl    ; work         ;
-;       |DCmot_PWM_cntrl:U_rev|                ; 1 (1)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0          ; |Main|PWM_DCMotor:inst5|DCmot_PWM_cntrl:U_rev                                     ; DCmot_PWM_cntrl    ; work         ;
+;    |PWM_DCMotor:inst4|                       ; 33 (2)      ; 19 (2)                    ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 14 (0)       ; 0 (0)             ; 19 (2)           ; 0          ; |Main|PWM_DCMotor:inst4                                                           ; PWM_DCMotor        ; work         ;
+;       |DCmot_PWM_cntrl:U0|                   ; 30 (30)     ; 16 (16)                   ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 14 (14)      ; 0 (0)             ; 16 (16)          ; 0          ; |Main|PWM_DCMotor:inst4|DCmot_PWM_cntrl:U0                                        ; DCmot_PWM_cntrl    ; work         ;
+;       |DCmot_PWM_cntrl:U_rev|                ; 1 (1)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0          ; |Main|PWM_DCMotor:inst4|DCmot_PWM_cntrl:U_rev                                     ; DCmot_PWM_cntrl    ; work         ;
 ;    |SVmot_angle_cntrl:inst|                  ; 41 (41)     ; 17 (17)                   ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 20 (20)      ; 0 (0)             ; 21 (21)          ; 0          ; |Main|SVmot_angle_cntrl:inst                                                      ; SVmot_angle_cntrl  ; work         ;
 ;    |UART_RX:inst1|                           ; 60 (60)     ; 31 (31)                   ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 29 (29)      ; 0 (0)             ; 31 (31)          ; 0          ; |Main|UART_RX:inst1                                                               ; UART_RX            ; work         ;
 ;    |led_cntrl:inst3|                         ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0          ; |Main|led_cntrl:inst3                                                             ; led_cntrl          ; work         ;
@@ -1395,7 +1394,7 @@ Info (176235): Finished register packing
     Extra Info (176219): No registers were packed into other blocks
 Warning (15705): Ignored locations or region assignments to the following nodes
     Warning (15706): Node "SW0" is assigned to location or region, but does not exist in design
-Info (171121): Fitter preparation operations ending: elapsed time is 00:00:01
+Info (171121): Fitter preparation operations ending: elapsed time is 00:00:00
 Info (14896): Fitter has disabled Advanced Physical Optimization because it is not supported for the current family.
 Info (170189): Fitter placement preparation operations beginning
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:00
@@ -1409,7 +1408,7 @@ Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were
     Info (170201): Optimizations that may affect the design's routability were skipped
     Info (170200): Optimizations that may affect the design's timing were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:00
-Info (11888): Total time spent on timing analysis during the Fitter is 0.12 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.13 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
@@ -1418,8 +1417,8 @@ Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
 Warning (171167): Found invalid Fitter assignments. See the Ignored Assignments panel in the Fitter Compilation Report for more information.
 Info (144001): Generated suppressed messages file C:/Users/david/Desktop/VHDLProject/Testing/TestConMotore/Main3/output_files/Main.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 7 warnings
-    Info: Peak virtual memory: 5642 megabytes
-    Info: Processing ended: Fri Jun 07 15:18:21 2024
+    Info: Peak virtual memory: 5644 megabytes
+    Info: Processing ended: Fri Jun 07 20:36:40 2024
     Info: Elapsed time: 00:00:07
     Info: Total CPU time (on all processors): 00:00:01
 

@@ -16,8 +16,8 @@ ARCHITECTURE driverdc_behave OF DCmot_PWM_cntrl IS
     
     SIGNAL counter : STD_LOGIC_VECTOR(13 DOWNTO 0) := (OTHERS => '0'); --create a counter of 14 bits for divide the period into 10000 sections
     SIGNAL innercounter : STD_LOGIC_VECTOR(2 DOWNTO 0) := "000";  --second counter for the inner pwm generation  
-	 constant A_position: integer:= 4999; --setpoint A to 0 for instance
-	 constant B_position: integer:=9998; --(B_pos / A_pos) must be a int multiple of 7 for 7 levels of choice from 0 (3bit)
+	 constant A_position: integer:= 4000; --setpoint A to 0 for instance
+	 constant B_position: integer:=7990; --(B_pos / A_pos) must be a int multiple of 7 for 7 levels of choice from 0 (3bit)
 	 signal flag: integer:=1; --flag to have the an hold for the output in the pwm interval 
 
 BEGIN
@@ -45,7 +45,7 @@ BEGIN
 					ELSE
 						 IF flag=1 THEN
 							 innercounter <= innercounter + '1'; --update the inner counter only here
-							 flag<=(B_position/A_position)-1; --cause the flag is preincremented by 1
+							 flag<=(B_position-A_position)/7; --cause the flag is preincremented by 1
 							 IF innercounter = "110" THEN --reset the inner counter
 								  innercounter <= "000";
 							 END IF;
