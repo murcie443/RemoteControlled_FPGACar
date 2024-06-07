@@ -10,7 +10,7 @@ z2
 cModel Technology
 Z0 dC:/Users/david/Desktop/DPS/pwm/simulation/qsim
 Edcmot_pwm_cntrl
-Z1 w1717775647
+Z1 w1717782140
 Z2 DPx11 fiftyfivenm 21 fiftyfivenm_atom_pack 0 22 OTUTkBjTeYVegmIWhVi3N0
 Z3 DPx11 fiftyfivenm 22 fiftyfivenm_components 0 22 C5K^h=:j[4HI?HO^UkN3:2
 Z4 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
@@ -19,7 +19,7 @@ Z6 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
 Z7 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z8 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
 Z9 DPx6 altera 28 altera_primitives_components 0 22 ca:ehlQAg4;_gVV:^8MAg3
-!i122 218
+!i122 262
 Z10 dC:/Users/david/Desktop/VHDLProject/components/DCmot_PWM_cntrl_0.29 with 20khz/simulation/qsim
 Z11 8pwmGen.vho
 Z12 FpwmGen.vho
@@ -29,9 +29,9 @@ VDLljmZ91SA@DUZC8J><c50
 !s100 YLI<S^<iSnb>>6IV]3R>h2
 Z14 OV;C;2020.1;71
 32
-Z15 !s110 1717775647
+Z15 !s110 1717782141
 !i10b 1
-Z16 !s108 1717775647.000000
+Z16 !s108 1717782141.000000
 Z17 !s90 -work|work|pwmGen.vho|
 Z18 !s107 pwmGen.vho|
 !i113 1
@@ -47,11 +47,11 @@ R7
 R8
 R9
 DEx4 work 15 dcmot_pwm_cntrl 0 22 DLljmZ91SA@DUZC8J><c50
-!i122 218
-l277
-L107 2596
-VVa?M9>j`4i0[MOMdZUz]n2
-!s100 1nI@z[UZ^e?zz_2ZKe`VH2
+!i122 262
+l263
+L107 2344
+V0HgI@9f4:NJoPLCVT0egT0
+!s100 :]31]R_QZ[nDSO3D;A2860
 R14
 32
 R15
@@ -63,43 +63,43 @@ R18
 R19
 R20
 Edcmot_pwm_cntrl_vhd_vec_tst
-Z21 w1717775646
+R1
 R7
 R8
-!i122 219
+!i122 263
 R10
-Z22 8Waveform7.vwf.vht
-Z23 FWaveform7.vwf.vht
+Z21 8Waveform10.vwf.vht
+Z22 FWaveform10.vwf.vht
 l0
-Z24 L32 1
+Z23 L32 1
 VEc1>>;_5I^maCj@0YJP=`0
 !s100 ?CmW5G=Pn`NCJ;XfCJ>@D0
 R14
 32
-Z25 !s110 1717775648
+R15
 !i10b 1
 R16
-Z26 !s90 -work|work|Waveform7.vwf.vht|
-Z27 !s107 Waveform7.vwf.vht|
+Z24 !s90 -work|work|Waveform10.vwf.vht|
+Z25 !s107 Waveform10.vwf.vht|
 !i113 1
 R19
 R20
 Adcmot_pwm_cntrl_arch
 R7
 R8
-Z28 DEx4 work 27 dcmot_pwm_cntrl_vhd_vec_tst 0 22 Ec1>>;_5I^maCj@0YJP=`0
-!i122 219
+Z26 DEx4 work 27 dcmot_pwm_cntrl_vhd_vec_tst 0 22 Ec1>>;_5I^maCj@0YJP=`0
+!i122 263
 l47
-Z29 L34 52
-V4UUFIP4Z=V[dXCIgLJc`K3
-!s100 9`Z5hCnR=A`;d8nOPL_;G1
+Z27 L34 52
+VVEe@BfBh1W=dGTfWzij5K2
+!s100 FmFCejU^kIBm5=e;`07AD2
 R14
 32
-R25
+R15
 !i10b 1
 R16
-R26
-R27
+R24
+R25
 !i113 1
 R19
 R20
@@ -111,7 +111,7 @@ R6
 R7
 R8
 R3
-!i122 218
+!i122 262
 R10
 R11
 R12
@@ -137,7 +137,7 @@ R7
 R8
 R3
 DEx4 work 10 hard_block 0 22 hj[i;a0dD85B`o1JPT^cg2
-!i122 218
+!i122 262
 l76
 L54 28
 Va5ClDYec`9chO`Ne0M1NL2
@@ -153,7 +153,7 @@ R18
 R19
 R20
 Epwmgen
-Z30 w1716564781
+Z28 w1716564781
 R2
 R3
 R4
@@ -172,9 +172,9 @@ VGSE_bKFEJ1Z@@]gI]CA@d2
 !s100 E@j0@N`?YJnTTZ7nYl9`U2
 R14
 32
-Z31 !s110 1716564782
+Z29 !s110 1716564782
 !i10b 1
-Z32 !s108 1716564782.000000
+Z30 !s108 1716564782.000000
 R17
 R18
 !i113 1
@@ -197,33 +197,33 @@ V0CmFKTg5gnTH<DSM9^:7f2
 !s100 mDc4J[noC=mJmEb[^PI;k1
 R14
 32
-R31
+R29
 !i10b 1
-R32
+R30
 R17
 R18
 !i113 1
 R19
 R20
 Epwmgen_vhd_vec_tst
-Z33 w1716564780
+Z31 w1716564780
 R7
 R8
 !i122 29
 R0
-Z34 8Waveform1.vwf.vht
-Z35 FWaveform1.vwf.vht
+Z32 8Waveform1.vwf.vht
+Z33 FWaveform1.vwf.vht
 l0
-R24
+R23
 VEHl=DUJ8H@CU]?^b]g=^D1
 !s100 BGD8E>kI<:DDeRS0@Yg750
 R14
 32
-R31
+R29
 !i10b 1
-R32
-Z36 !s90 -work|work|Waveform1.vwf.vht|
-Z37 !s107 Waveform1.vwf.vht|
+R30
+Z34 !s90 -work|work|Waveform1.vwf.vht|
+Z35 !s107 Waveform1.vwf.vht|
 !i113 1
 R19
 R20
@@ -233,16 +233,16 @@ R8
 DEx4 work 18 pwmgen_vhd_vec_tst 0 22 EHl=DUJ8H@CU]?^b]g=^D1
 !i122 29
 l47
-R29
+R27
 Vj6D[mZ`>=?l_H3=ldEn`m3
 !s100 Ie3mOd14k>hV:U:ML?IcQ0
 R14
 32
-R31
+R29
 !i10b 1
-R32
-R36
-R37
+R30
+R34
+R35
 !i113 1
 R19
 R20

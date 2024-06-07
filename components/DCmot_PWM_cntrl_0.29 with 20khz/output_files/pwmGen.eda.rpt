@@ -1,5 +1,5 @@
 EDA Netlist Writer report for pwmGen
-Fri Jun 07 17:54:07 2024
+Fri Jun 07 19:42:20 2024
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -37,7 +37,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Fri Jun 07 17:54:07 2024 ;
+; EDA Netlist Writer Status ; Successful - Fri Jun 07 19:42:20 2024 ;
 ; Revision Name             ; pwmGen                                ;
 ; Top-level Entity Name     ; DCmot_PWM_cntrl                       ;
 ; Family                    ; MAX 10                                ;
@@ -95,14 +95,14 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Fri Jun 07 17:54:06 2024
+    Info: Processing started: Fri Jun 07 19:42:20 2024
 Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="C:/Users/david/Desktop/VHDLProject/components/DCmot_PWM_cntrl_0.29 with 20khz/simulation/qsim/" DCmot_PWM_cntrl -c pwmGen
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (204019): Generated file pwmGen.vho in folder "C:/Users/david/Desktop/VHDLProject/components/DCmot_PWM_cntrl_0.29 with 20khz/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4645 megabytes
-    Info: Processing ended: Fri Jun 07 17:54:07 2024
-    Info: Elapsed time: 00:00:01
+    Info: Peak virtual memory: 4646 megabytes
+    Info: Processing ended: Fri Jun 07 19:42:20 2024
+    Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:00
 
 

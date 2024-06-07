@@ -1,0 +1,204 @@
+|main
+PWM_DCMOT <= DCmot_PWM_cntrl:inst.PWM_DCmot
+CLK => pll10khz:inst3.inclk0
+CLK => UART_RX:inst1.i_Clk
+I_RX_series => UART_RX:inst1.i_RX_Serial
+
+
+|main|DCmot_PWM_cntrl:inst
+CLK1 => flag[0].CLK
+CLK1 => flag[1].CLK
+CLK1 => flag[2].CLK
+CLK1 => flag[3].CLK
+CLK1 => flag[4].CLK
+CLK1 => flag[5].CLK
+CLK1 => flag[6].CLK
+CLK1 => flag[7].CLK
+CLK1 => flag[8].CLK
+CLK1 => flag[9].CLK
+CLK1 => flag[10].CLK
+CLK1 => flag[11].CLK
+CLK1 => flag[12].CLK
+CLK1 => flag[13].CLK
+CLK1 => flag[14].CLK
+CLK1 => flag[15].CLK
+CLK1 => flag[16].CLK
+CLK1 => flag[17].CLK
+CLK1 => flag[18].CLK
+CLK1 => flag[19].CLK
+CLK1 => flag[20].CLK
+CLK1 => flag[21].CLK
+CLK1 => flag[22].CLK
+CLK1 => flag[23].CLK
+CLK1 => flag[24].CLK
+CLK1 => flag[25].CLK
+CLK1 => flag[26].CLK
+CLK1 => flag[27].CLK
+CLK1 => flag[28].CLK
+CLK1 => flag[29].CLK
+CLK1 => flag[30].CLK
+CLK1 => flag[31].CLK
+CLK1 => innercounter[0].CLK
+CLK1 => innercounter[1].CLK
+CLK1 => innercounter[2].CLK
+CLK1 => PWM_DCmot~reg0.CLK
+CLK1 => counter[0].CLK
+CLK1 => counter[1].CLK
+CLK1 => counter[2].CLK
+CLK1 => counter[3].CLK
+CLK1 => counter[4].CLK
+CLK1 => counter[5].CLK
+CLK1 => counter[6].CLK
+CLK1 => counter[7].CLK
+CLK1 => counter[8].CLK
+CLK1 => counter[9].CLK
+CLK1 => counter[10].CLK
+CLK1 => counter[11].CLK
+CLK1 => counter[12].CLK
+CLK1 => counter[13].CLK
+DCmot_speedv[0] => Equal1.IN5
+DCmot_speedv[0] => LessThan2.IN3
+DCmot_speedv[1] => Equal1.IN4
+DCmot_speedv[1] => LessThan2.IN2
+DCmot_speedv[2] => Equal1.IN3
+DCmot_speedv[2] => LessThan2.IN1
+PWM_DCmot <= PWM_DCmot~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|pll10khz:inst3
+areset => areset.IN1
+inclk0 => sub_wire1[0].IN1
+c0 <= altpll:altpll_component.clk
+
+
+|main|pll10khz:inst3|altpll:altpll_component
+inclk[0] => pll10khz_altpll:auto_generated.inclk[0]
+inclk[1] => pll10khz_altpll:auto_generated.inclk[1]
+fbin => ~NO_FANOUT~
+pllena => ~NO_FANOUT~
+clkswitch => ~NO_FANOUT~
+areset => pll10khz_altpll:auto_generated.areset
+pfdena => ~NO_FANOUT~
+clkena[0] => ~NO_FANOUT~
+clkena[1] => ~NO_FANOUT~
+clkena[2] => ~NO_FANOUT~
+clkena[3] => ~NO_FANOUT~
+clkena[4] => ~NO_FANOUT~
+clkena[5] => ~NO_FANOUT~
+extclkena[0] => ~NO_FANOUT~
+extclkena[1] => ~NO_FANOUT~
+extclkena[2] => ~NO_FANOUT~
+extclkena[3] => ~NO_FANOUT~
+scanclk => ~NO_FANOUT~
+scanclkena => ~NO_FANOUT~
+scanaclr => ~NO_FANOUT~
+scanread => ~NO_FANOUT~
+scanwrite => ~NO_FANOUT~
+scandata => ~NO_FANOUT~
+phasecounterselect[0] => ~NO_FANOUT~
+phasecounterselect[1] => ~NO_FANOUT~
+phasecounterselect[2] => ~NO_FANOUT~
+phasecounterselect[3] => ~NO_FANOUT~
+phaseupdown => ~NO_FANOUT~
+phasestep => ~NO_FANOUT~
+configupdate => ~NO_FANOUT~
+fbmimicbidir <> <GND>
+clk[0] <= clk[0].DB_MAX_OUTPUT_PORT_TYPE
+clk[1] <= clk[1].DB_MAX_OUTPUT_PORT_TYPE
+clk[2] <= clk[2].DB_MAX_OUTPUT_PORT_TYPE
+clk[3] <= clk[3].DB_MAX_OUTPUT_PORT_TYPE
+clk[4] <= clk[4].DB_MAX_OUTPUT_PORT_TYPE
+extclk[0] <= <GND>
+extclk[1] <= <GND>
+extclk[2] <= <GND>
+extclk[3] <= <GND>
+clkbad[0] <= <GND>
+clkbad[1] <= <GND>
+enable1 <= <GND>
+enable0 <= <GND>
+activeclock <= <GND>
+clkloss <= <GND>
+locked <= <GND>
+scandataout <= <GND>
+scandone <= <GND>
+sclkout0 <= <GND>
+sclkout1 <= <GND>
+phasedone <= <GND>
+vcooverrange <= <GND>
+vcounderrange <= <GND>
+fbout <= <GND>
+fref <= <GND>
+icdrclk <= <GND>
+
+
+|main|pll10khz:inst3|altpll:altpll_component|pll10khz_altpll:auto_generated
+areset => pll1.ARESET
+clk[0] <= pll1.CLK
+clk[1] <= pll1.CLK1
+clk[2] <= pll1.CLK2
+clk[3] <= pll1.CLK3
+clk[4] <= pll1.CLK4
+inclk[0] => pll1.CLK
+inclk[1] => pll1.CLK1
+
+
+|main|byte_divider:inst2
+RX_data[0] => Svmot_anglev[0].DATAIN
+RX_data[1] => Svmot_anglev[1].DATAIN
+RX_data[2] => Svmot_anglev[2].DATAIN
+RX_data[3] => Svmot_anglev[3].DATAIN
+RX_data[4] => DCmot_speedv[0].DATAIN
+RX_data[5] => DCmot_speedv[1].DATAIN
+RX_data[6] => DCmot_speedv[2].DATAIN
+RX_data[7] => Dir_mot.DATAIN
+DCmot_speedv[0] <= RX_data[4].DB_MAX_OUTPUT_PORT_TYPE
+DCmot_speedv[1] <= RX_data[5].DB_MAX_OUTPUT_PORT_TYPE
+DCmot_speedv[2] <= RX_data[6].DB_MAX_OUTPUT_PORT_TYPE
+Svmot_anglev[0] <= RX_data[0].DB_MAX_OUTPUT_PORT_TYPE
+Svmot_anglev[1] <= RX_data[1].DB_MAX_OUTPUT_PORT_TYPE
+Svmot_anglev[2] <= RX_data[2].DB_MAX_OUTPUT_PORT_TYPE
+Svmot_anglev[3] <= RX_data[3].DB_MAX_OUTPUT_PORT_TYPE
+Dir_mot <= RX_data[7].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|UART_RX:inst1
+i_Clk => r_RX_Byte[0].CLK
+i_Clk => r_RX_Byte[1].CLK
+i_Clk => r_RX_Byte[2].CLK
+i_Clk => r_RX_Byte[3].CLK
+i_Clk => r_RX_Byte[4].CLK
+i_Clk => r_RX_Byte[5].CLK
+i_Clk => r_RX_Byte[6].CLK
+i_Clk => r_RX_Byte[7].CLK
+i_Clk => r_Bit_Index[0].CLK
+i_Clk => r_Bit_Index[1].CLK
+i_Clk => r_Bit_Index[2].CLK
+i_Clk => r_Clk_Count[0].CLK
+i_Clk => r_Clk_Count[1].CLK
+i_Clk => r_Clk_Count[2].CLK
+i_Clk => r_Clk_Count[3].CLK
+i_Clk => r_Clk_Count[4].CLK
+i_Clk => r_Clk_Count[5].CLK
+i_Clk => r_Clk_Count[6].CLK
+i_Clk => r_Clk_Count[7].CLK
+i_Clk => r_Clk_Count[8].CLK
+i_Clk => r_Clk_Count[9].CLK
+i_Clk => r_Clk_Count[10].CLK
+i_Clk => r_Clk_Count[11].CLK
+i_Clk => r_Clk_Count[12].CLK
+i_Clk => r_RX_DV.CLK
+i_Clk => r_RX_Data.CLK
+i_Clk => r_RX_Data_R.CLK
+i_Clk => r_SM_Main~1.DATAIN
+i_RX_Serial => r_RX_Data_R.DATAIN
+o_RX_DV <= r_RX_DV.DB_MAX_OUTPUT_PORT_TYPE
+o_RX_Byte[0] <= r_RX_Byte[0].DB_MAX_OUTPUT_PORT_TYPE
+o_RX_Byte[1] <= r_RX_Byte[1].DB_MAX_OUTPUT_PORT_TYPE
+o_RX_Byte[2] <= r_RX_Byte[2].DB_MAX_OUTPUT_PORT_TYPE
+o_RX_Byte[3] <= r_RX_Byte[3].DB_MAX_OUTPUT_PORT_TYPE
+o_RX_Byte[4] <= r_RX_Byte[4].DB_MAX_OUTPUT_PORT_TYPE
+o_RX_Byte[5] <= r_RX_Byte[5].DB_MAX_OUTPUT_PORT_TYPE
+o_RX_Byte[6] <= r_RX_Byte[6].DB_MAX_OUTPUT_PORT_TYPE
+o_RX_Byte[7] <= r_RX_Byte[7].DB_MAX_OUTPUT_PORT_TYPE
+
+

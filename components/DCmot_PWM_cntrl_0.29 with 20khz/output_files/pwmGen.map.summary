@@ -1,12 +1,12 @@
-Analysis & Synthesis Status : Successful - Fri Jun 07 17:53:18 2024
+Analysis & Synthesis Status : Successful - Fri Jun 07 19:39:03 2024
 Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 Revision Name : pwmGen
 Top-level Entity Name : DCmot_PWM_cntrl
 Family : MAX 10
-Total logic elements : 87
-    Total combinational functions : 87
-    Dedicated logic registers : 51
-Total registers : 51
+Total logic elements : 77
+    Total combinational functions : 77
+    Dedicated logic registers : 46
+Total registers : 46
 Total pins : 5
 Total virtual pins : 0
 Total memory bits : 0

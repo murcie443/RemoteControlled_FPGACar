@@ -1,5 +1,5 @@
 Analysis & Synthesis report for pwmGen
-Fri Jun 07 17:53:18 2024
+Fri Jun 07 19:39:03 2024
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -44,15 +44,15 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Jun 07 17:53:18 2024       ;
+; Analysis & Synthesis Status        ; Successful - Fri Jun 07 19:39:03 2024       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; pwmGen                                      ;
 ; Top-level Entity Name              ; DCmot_PWM_cntrl                             ;
 ; Family                             ; MAX 10                                      ;
-; Total logic elements               ; 87                                          ;
-;     Total combinational functions  ; 87                                          ;
-;     Dedicated logic registers      ; 51                                          ;
-; Total registers                    ; 51                                          ;
+; Total logic elements               ; 77                                          ;
+;     Total combinational functions  ; 77                                          ;
+;     Dedicated logic registers      ; 46                                          ;
+; Total registers                    ; 46                                          ;
 ; Total pins                         ; 5                                           ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
@@ -180,20 +180,20 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+------------+
 ; Resource                                    ; Usage      ;
 +---------------------------------------------+------------+
-; Estimated Total logic elements              ; 87         ;
+; Estimated Total logic elements              ; 77         ;
 ;                                             ;            ;
-; Total combinational functions               ; 87         ;
+; Total combinational functions               ; 77         ;
 ; Logic element usage by number of LUT inputs ;            ;
-;     -- 4 input functions                    ; 25         ;
-;     -- 3 input functions                    ; 8          ;
-;     -- <=2 input functions                  ; 54         ;
+;     -- 4 input functions                    ; 18         ;
+;     -- 3 input functions                    ; 6          ;
+;     -- <=2 input functions                  ; 53         ;
 ;                                             ;            ;
 ; Logic elements by mode                      ;            ;
-;     -- normal mode                          ; 42         ;
-;     -- arithmetic mode                      ; 45         ;
+;     -- normal mode                          ; 37         ;
+;     -- arithmetic mode                      ; 40         ;
 ;                                             ;            ;
-; Total registers                             ; 51         ;
-;     -- Dedicated logic registers            ; 51         ;
+; Total registers                             ; 46         ;
+;     -- Dedicated logic registers            ; 46         ;
 ;     -- I/O registers                        ; 0          ;
 ;                                             ;            ;
 ; I/O pins                                    ; 5          ;
@@ -201,9 +201,9 @@ https://fpgasoftware.intel.com/eula.
 ; Embedded Multiplier 9-bit elements          ; 0          ;
 ;                                             ;            ;
 ; Maximum fan-out node                        ; CLK1~input ;
-; Maximum fan-out                             ; 51         ;
-; Total fan-out                               ; 372        ;
-; Average fan-out                             ; 2.51       ;
+; Maximum fan-out                             ; 46         ;
+; Total fan-out                               ; 326        ;
+; Average fan-out                             ; 2.45       ;
 +---------------------------------------------+------------+
 
 
@@ -212,7 +212,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-----------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name ; Entity Name     ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-----------------+--------------+
-; |DCmot_PWM_cntrl           ; 87 (87)             ; 51 (51)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 5    ; 0            ; 0          ; |DCmot_PWM_cntrl    ; DCmot_PWM_cntrl ; work         ;
+; |DCmot_PWM_cntrl           ; 77 (77)             ; 46 (46)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 5    ; 0            ; 0          ; |DCmot_PWM_cntrl    ; DCmot_PWM_cntrl ; work         ;
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-----------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -222,7 +222,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 51    ;
+; Total registers                              ; 46    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
@@ -248,20 +248,20 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 5                           ;
-; cycloneiii_ff         ; 51                          ;
+; cycloneiii_ff         ; 46                          ;
 ;     ENA               ; 35                          ;
-;     plain             ; 16                          ;
-; cycloneiii_lcell_comb ; 87                          ;
-;     arith             ; 45                          ;
-;         2 data inputs ; 45                          ;
-;     normal            ; 42                          ;
+;     plain             ; 11                          ;
+; cycloneiii_lcell_comb ; 77                          ;
+;     arith             ; 40                          ;
+;         2 data inputs ; 40                          ;
+;     normal            ; 37                          ;
 ;         1 data inputs ; 3                           ;
-;         2 data inputs ; 6                           ;
-;         3 data inputs ; 8                           ;
-;         4 data inputs ; 25                          ;
+;         2 data inputs ; 10                          ;
+;         3 data inputs ; 6                           ;
+;         4 data inputs ; 18                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 4.10                        ;
-; Average LUT depth     ; 3.44                        ;
+; Average LUT depth     ; 3.25                        ;
 +-----------------------+-----------------------------+
 
 
@@ -280,7 +280,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Fri Jun 07 17:53:09 2024
+    Info: Processing started: Fri Jun 07 19:38:55 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off DCmot_PWM_cntrl -c pwmGen
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -291,14 +291,14 @@ Info (12127): Elaborating entity "DCmot_PWM_cntrl" for the top level hierarchy
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 92 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 82 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 4 input pins
     Info (21059): Implemented 1 output pins
-    Info (21061): Implemented 87 logic cells
+    Info (21061): Implemented 77 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 4786 megabytes
-    Info: Processing ended: Fri Jun 07 17:53:18 2024
-    Info: Elapsed time: 00:00:09
+    Info: Processing ended: Fri Jun 07 19:39:03 2024
+    Info: Elapsed time: 00:00:08
     Info: Total CPU time (on all processors): 00:00:02
 
 
