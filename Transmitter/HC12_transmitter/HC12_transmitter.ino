@@ -7,12 +7,19 @@ int mapx; //A2 mapping for accelerator
 byte mergeb; //byte merged
 
 void setup() {
+  Serial.begin(9600);
   HC12.begin(9600);               // Serial port to HC12
 }
 
 void loop() {
-  mapy = map(analogRead(A1), 0, 1023, 0, 15);
-  mapx = map(analogRead(A2), 0, 1023, 0, 15);
+  mapy = map(analogRead(A1), 0, 1000, 0, 15);
+  mapx = map(analogRead(A2), 0, 1000, 0, 15);
+
+  //Serial.print("y:");
+  //Serial.println(mapy);
+  Serial.print("x:");
+  Serial.println(mapx);
+  Serial.println("");
   
   mergeb = (mapx << 4) | mapy;
 
