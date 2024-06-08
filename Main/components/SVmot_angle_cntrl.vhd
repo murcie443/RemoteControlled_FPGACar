@@ -27,18 +27,18 @@ BEGIN
         IF rising_edge(CLK2) THEN
 
             counter <= counter + '1'; --update the counter each time clock
-            IF counter = "10010101111" THEN --reset the counter at 599
+            IF counter = "10010101111" THEN --reset the counter at 1199
                 counter <= (OTHERS => '0'); --reset counter to 0	
             END IF;
 				
-				IF Svmot_anglev="1000" or Svmot_anglev="0111" then --if the angle is -6 or +6 force the pulse to 1.5ms to be 0 angle degree
+				IF Svmot_anglev="1000" or Svmot_anglev="0111" then -- force the pulse to 1.5ms to be 0 angle degree
 					
 					
 					IF counter <("000000000" + B_position) then
 						PWM_SVmot <= '1'; --Hold high for 1.5 MS (0 angle degree)
 					end if;
 					IF counter>=("000000000"+B_position) then
-						PWM_SVmot <= '0'; --Hold high for 1.5 MS (0 angle degree)
+						PWM_SVmot <= '0'; --Hold low for 1.5 MS (0 angle degree)
 					end if;
 							
 				ELSIF counter <= ("000000000" + A_position) THEN --when it has reached the A_position
@@ -60,7 +60,7 @@ BEGIN
 						ELSE --pwm
 						
 							innercounter <= innercounter + 1; --update the inner counter only here
-							flag<='0'; --flag to 0 for the output in hold for another rising clock
+							flag<='0'; --the output in hold for another rising clock
 							IF innercounter = "1110" THEN --reset the inner counter
 								innercounter <= "0000";
 
