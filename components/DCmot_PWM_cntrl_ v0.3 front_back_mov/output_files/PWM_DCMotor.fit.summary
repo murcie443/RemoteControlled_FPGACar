@@ -1,0 +1,18 @@
+Fitter Status : Successful - Tue Jun 04 19:36:55 2024
+Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Revision Name : PWM_DCMotor
+Top-level Entity Name : PWM_DCMotor
+Family : MAX 10
+Device : 10M50DAF256C7G
+Timing Models : Final
+Total logic elements : 10 / 49,760 ( < 1 % )
+    Total combinational functions : 10 / 49,760 ( < 1 % )
+    Dedicated logic registers : 7 / 49,760 ( < 1 % )
+Total registers : 7
+Total pins : 7 / 178 ( 4 % )
+Total virtual pins : 0
+Total memory bits : 0 / 1,677,312 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 288 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )
+UFM blocks : 0 / 1 ( 0 % )
+ADC blocks : 0 / 2 ( 0 % )

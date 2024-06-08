@@ -1,0 +1,40 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.ALL; --for the std_logic struct
+USE ieee.std_logic_unsigned.ALL; 
+
+ENTITY led_cntrl IS
+    PORT (
+        SW1 : IN STD_LOGIC; 
+        SW2 : IN STD_LOGIC; 
+		  back_bit: in STD_LOGIC;
+        Front_led : OUT STD_LOGIC := '0';
+		  Back_led: OUT STD_LOGIC := '0'
+
+    );
+END ENTITY led_cntrl;
+
+ARCHITECTURE led_cntrl_b OF led_cntrl IS
+SIGNAL STATE: STD_LOGIC_VECTOR(1 DOWNTO 0);
+BEGIN
+    PROCESS (SW1,SW2,back_bit)
+    BEGIN
+			STATE<=SW1(0);
+			STATE<=SW2(1);
+	 
+			case STATE is 
+			when "01"=> 
+			Front_led='1';
+			Back_led='0';
+			when "10" =>  
+			Front_led='1';
+			if (back_bit='1') then Back_led='1';
+			when "11" => 
+			Front_led='0';
+			Back_led='0';
+			when OTHERS =>
+			Front_led='0';
+			Back_led='0';
+			end case;
+			
+    END PROCESS;
+END led_cntrl_b;

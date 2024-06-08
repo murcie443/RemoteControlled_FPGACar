@@ -1,0 +1,29 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "Front_led",
+					"strict" : false
+				},
+				{
+					"name" : "Back_led",
+					"strict" : false
+				},
+				{
+					"name" : "SW1",
+					"strict" : false
+				},
+				{
+					"name" : "SW2",
+					"strict" : false
+				},
+				{
+					"name" : "back_bit",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

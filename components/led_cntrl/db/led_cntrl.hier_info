@@ -1,0 +1,10 @@
+|led_cntrl
+SW1 => Mux0.IN4
+SW1 => Mux1.IN4
+SW2 => Mux0.IN5
+SW2 => Mux1.IN5
+back_bit => Mux1.IN3
+Front_led <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+Back_led <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+
+
