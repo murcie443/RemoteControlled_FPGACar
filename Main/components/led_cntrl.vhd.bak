@@ -5,7 +5,7 @@ ENTITY led_cntrl IS
     PORT (
         SW1 : IN STD_LOGIC; 
         SW2 : IN STD_LOGIC; 
-		  back_bit: in STD_LOGIC; --direction bit
+		  back_bit: in STD_LOGIC;
         Front_led : OUT STD_LOGIC := '0';
 		  Back_led: OUT STD_LOGIC := '0'
 
@@ -14,7 +14,6 @@ END ENTITY led_cntrl;
 
 ARCHITECTURE led_cntrl_b OF led_cntrl IS
 SIGNAL STATE: STD_LOGIC_VECTOR(1 DOWNTO 0);
-
 BEGIN
     PROCESS (SW1,SW2,back_bit)
     BEGIN
