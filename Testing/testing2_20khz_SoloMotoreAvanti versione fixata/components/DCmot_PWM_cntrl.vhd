@@ -21,7 +21,7 @@ ARCHITECTURE driverdc_behave OF DCmot_PWM_cntrl IS
 	 signal flag: integer:=1; --flag to have the an hold for the output in the pwm interval 
 
 BEGIN
-    PROCESS (CLK1, DCmot_speedv)
+    PROCESS (CLK1)
     BEGIN
 
         IF rising_edge(CLK1) THEN
