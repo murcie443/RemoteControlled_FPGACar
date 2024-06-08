@@ -1,5 +1,5 @@
 Fitter report for Main
-Fri Jun 07 22:16:14 2024
+Sat Jun 08 19:38:10 2024
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -68,7 +68,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Fri Jun 07 22:16:14 2024       ;
+; Fitter Status                      ; Successful - Sat Jun 08 19:38:10 2024       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; Main                                        ;
 ; Top-level Entity Name              ; Main                                        ;
@@ -159,8 +159,8 @@ https://fpgasoftware.intel.com/eula.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.8%      ;
-;     Processors 3-4         ;   0.8%      ;
+;     Processor 2            ;   0.7%      ;
+;     Processors 3-4         ;   0.7%      ;
 +----------------------------+-------------+
 
 
@@ -202,7 +202,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------+
 ; Pin-Out File ;
 +--------------+
-The pin-out file can be found in C:/Users/david/Desktop/VHDLProject/Main_STABLE/output_files/Main.pin.
+The pin-out file can be found in C:/Users/david/Desktop/VHDLProject/Main/output_files/Main.pin.
 
 
 +----------------------------------------------------------------------+
@@ -1316,9 +1316,9 @@ Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors
 Info (119006): Selected device 10M50DAF484C7G for design "Main"
 Info (21077): Low junction temperature is 0 degrees C
 Info (21077): High junction temperature is 85 degrees C
-Info (15535): Implemented PLL "pll_10_60khz:inst2|altpll:altpll_component|pll_10_60khz_altpll:auto_generated|pll1" as MAX 10 PLL type File: C:/Users/david/Desktop/VHDLProject/Main_STABLE/db/pll_10_60khz_altpll.v Line: 47
-    Info (15099): Implementing clock multiplication of 1, clock division of 5000, and phase shift of 0 degrees (0 ps) for pll_10_60khz:inst2|altpll:altpll_component|pll_10_60khz_altpll:auto_generated|wire_pll1_clk[0] port File: C:/Users/david/Desktop/VHDLProject/Main_STABLE/db/pll_10_60khz_altpll.v Line: 47
-    Info (15099): Implementing clock multiplication of 3, clock division of 2500, and phase shift of 0 degrees (0 ps) for pll_10_60khz:inst2|altpll:altpll_component|pll_10_60khz_altpll:auto_generated|wire_pll1_clk[1] port File: C:/Users/david/Desktop/VHDLProject/Main_STABLE/db/pll_10_60khz_altpll.v Line: 47
+Info (15535): Implemented PLL "pll_10_60khz:inst2|altpll:altpll_component|pll_10_60khz_altpll:auto_generated|pll1" as MAX 10 PLL type File: C:/Users/david/Desktop/VHDLProject/Main/db/pll_10_60khz_altpll.v Line: 47
+    Info (15099): Implementing clock multiplication of 1, clock division of 5000, and phase shift of 0 degrees (0 ps) for pll_10_60khz:inst2|altpll:altpll_component|pll_10_60khz_altpll:auto_generated|wire_pll1_clk[0] port File: C:/Users/david/Desktop/VHDLProject/Main/db/pll_10_60khz_altpll.v Line: 47
+    Info (15099): Implementing clock multiplication of 3, clock division of 2500, and phase shift of 0 degrees (0 ps) for pll_10_60khz:inst2|altpll:altpll_component|pll_10_60khz_altpll:auto_generated|wire_pll1_clk[1] port File: C:/Users/david/Desktop/VHDLProject/Main/db/pll_10_60khz_altpll.v Line: 47
 Info (171003): Fitter is performing an Auto Fit compilation, which may decrease Fitter effort to reduce compilation time
 Warning (292013): Feature LogicLock is only available with a valid subscription license. You can purchase a software subscription to gain full access to this feature.
 Info (176444): Device migration not selected. If you intend to use device migration later, you may need to change the pin assignments as they may be incompatible with other devices
@@ -1358,9 +1358,9 @@ Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Tim
 Info (332130): Timing requirements not specified -- quality metrics such as performance may be sacrificed to reduce compilation time.
 Info (176353): Automatically promoted node CLK~input (placed in PIN P11 (CLK7p, DIFFIO_TX_RX_B20p, DIFFOUT_B20p, High_Speed))
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G16
-Info (176353): Automatically promoted node pll_10_60khz:inst2|altpll:altpll_component|pll_10_60khz_altpll:auto_generated|wire_pll1_clk[0] (placed in counter C1 of PLL_1) File: C:/Users/david/Desktop/VHDLProject/Main_STABLE/db/pll_10_60khz_altpll.v Line: 81
+Info (176353): Automatically promoted node pll_10_60khz:inst2|altpll:altpll_component|pll_10_60khz_altpll:auto_generated|wire_pll1_clk[0] (placed in counter C1 of PLL_1) File: C:/Users/david/Desktop/VHDLProject/Main/db/pll_10_60khz_altpll.v Line: 81
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G19
-Info (176353): Automatically promoted node pll_10_60khz:inst2|altpll:altpll_component|pll_10_60khz_altpll:auto_generated|wire_pll1_clk[1] (placed in counter C3 of PLL_1) File: C:/Users/david/Desktop/VHDLProject/Main_STABLE/db/pll_10_60khz_altpll.v Line: 81
+Info (176353): Automatically promoted node pll_10_60khz:inst2|altpll:altpll_component|pll_10_60khz_altpll:auto_generated|wire_pll1_clk[1] (placed in counter C3 of PLL_1) File: C:/Users/david/Desktop/VHDLProject/Main/db/pll_10_60khz_altpll.v Line: 81
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G18
 Info (176233): Starting register packing
 Info (176235): Finished register packing
@@ -1385,17 +1385,17 @@ Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
-Info (144001): Generated suppressed messages file C:/Users/david/Desktop/VHDLProject/Main_STABLE/output_files/Main.fit.smsg
+Info (144001): Generated suppressed messages file C:/Users/david/Desktop/VHDLProject/Main/output_files/Main.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 4 warnings
-    Info: Peak virtual memory: 5646 megabytes
-    Info: Processing ended: Fri Jun 07 22:16:14 2024
-    Info: Elapsed time: 00:00:07
+    Info: Peak virtual memory: 5645 megabytes
+    Info: Processing ended: Sat Jun 08 19:38:11 2024
+    Info: Elapsed time: 00:00:10
     Info: Total CPU time (on all processors): 00:00:01
 
 
 +----------------------------+
 ; Fitter Suppressed Messages ;
 +----------------------------+
-The suppressed messages can be found in C:/Users/david/Desktop/VHDLProject/Main_STABLE/output_files/Main.fit.smsg.
+The suppressed messages can be found in C:/Users/david/Desktop/VHDLProject/Main/output_files/Main.fit.smsg.
 
 

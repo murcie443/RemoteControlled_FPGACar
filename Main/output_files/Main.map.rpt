@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Main
-Fri Jun 07 22:16:06 2024
+Sat Jun 08 19:38:00 2024
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -51,7 +51,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Jun 07 22:16:06 2024       ;
+; Analysis & Synthesis Status        ; Successful - Sat Jun 08 19:38:00 2024       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; Main                                        ;
 ; Top-level Entity Name              ; Main                                        ;
@@ -173,27 +173,27 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                  ;
-+------------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path   ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                      ; Library ;
-+------------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------------------------+---------+
-; components/SVmot_angle_cntrl.vhd   ; yes             ; User VHDL File                     ; C:/Users/david/Desktop/VHDLProject/Main_STABLE/components/SVmot_angle_cntrl.vhd   ;         ;
-; components/UART_RX.vhd             ; yes             ; User VHDL File                     ; C:/Users/david/Desktop/VHDLProject/Main_STABLE/components/UART_RX.vhd             ;         ;
-; Main.bdf                           ; yes             ; User Block Diagram/Schematic File  ; C:/Users/david/Desktop/VHDLProject/Main_STABLE/Main.bdf                           ;         ;
-; components/PWM_DCMotor.vhd         ; yes             ; User VHDL File                     ; C:/Users/david/Desktop/VHDLProject/Main_STABLE/components/PWM_DCMotor.vhd         ;         ;
-; components/DCmot_PWM_cntrl.vhd     ; yes             ; User VHDL File                     ; C:/Users/david/Desktop/VHDLProject/Main_STABLE/components/DCmot_PWM_cntrl.vhd     ;         ;
-; components/led_cntrl.vhd           ; yes             ; User VHDL File                     ; C:/Users/david/Desktop/VHDLProject/Main_STABLE/components/led_cntrl.vhd           ;         ;
-; components/preliminary_control.vhd ; yes             ; User VHDL File                     ; C:/Users/david/Desktop/VHDLProject/Main_STABLE/components/preliminary_control.vhd ;         ;
-; pll/pll_10_60khz.v                 ; yes             ; User Wizard-Generated File         ; C:/Users/david/Desktop/VHDLProject/Main_STABLE/pll/pll_10_60khz.v                 ;         ;
-; components/byte_divider.vhd        ; yes             ; User VHDL File                     ; C:/Users/david/Desktop/VHDLProject/Main_STABLE/components/byte_divider.vhd        ;         ;
-; altpll.tdf                         ; yes             ; Megafunction                       ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altpll.tdf                 ;         ;
-; aglobal201.inc                     ; yes             ; Megafunction                       ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/aglobal201.inc             ;         ;
-; stratix_pll.inc                    ; yes             ; Megafunction                       ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/stratix_pll.inc            ;         ;
-; stratixii_pll.inc                  ; yes             ; Megafunction                       ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/stratixii_pll.inc          ;         ;
-; cycloneii_pll.inc                  ; yes             ; Megafunction                       ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/cycloneii_pll.inc          ;         ;
-; db/pll_10_60khz_altpll.v           ; yes             ; Auto-Generated Megafunction        ; C:/Users/david/Desktop/VHDLProject/Main_STABLE/db/pll_10_60khz_altpll.v           ;         ;
-+------------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------------------------+---------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                           ;
++------------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path   ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                               ; Library ;
++------------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------+---------+
+; components/SVmot_angle_cntrl.vhd   ; yes             ; User VHDL File                     ; C:/Users/david/Desktop/VHDLProject/Main/components/SVmot_angle_cntrl.vhd   ;         ;
+; components/UART_RX.vhd             ; yes             ; User VHDL File                     ; C:/Users/david/Desktop/VHDLProject/Main/components/UART_RX.vhd             ;         ;
+; Main.bdf                           ; yes             ; User Block Diagram/Schematic File  ; C:/Users/david/Desktop/VHDLProject/Main/Main.bdf                           ;         ;
+; components/PWM_DCMotor.vhd         ; yes             ; User VHDL File                     ; C:/Users/david/Desktop/VHDLProject/Main/components/PWM_DCMotor.vhd         ;         ;
+; components/DCmot_PWM_cntrl.vhd     ; yes             ; User VHDL File                     ; C:/Users/david/Desktop/VHDLProject/Main/components/DCmot_PWM_cntrl.vhd     ;         ;
+; components/led_cntrl.vhd           ; yes             ; User VHDL File                     ; C:/Users/david/Desktop/VHDLProject/Main/components/led_cntrl.vhd           ;         ;
+; components/preliminary_control.vhd ; yes             ; User VHDL File                     ; C:/Users/david/Desktop/VHDLProject/Main/components/preliminary_control.vhd ;         ;
+; pll/pll_10_60khz.v                 ; yes             ; User Wizard-Generated File         ; C:/Users/david/Desktop/VHDLProject/Main/pll/pll_10_60khz.v                 ;         ;
+; components/byte_divider.vhd        ; yes             ; User VHDL File                     ; C:/Users/david/Desktop/VHDLProject/Main/components/byte_divider.vhd        ;         ;
+; altpll.tdf                         ; yes             ; Megafunction                       ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altpll.tdf          ;         ;
+; aglobal201.inc                     ; yes             ; Megafunction                       ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/aglobal201.inc      ;         ;
+; stratix_pll.inc                    ; yes             ; Megafunction                       ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/stratix_pll.inc     ;         ;
+; stratixii_pll.inc                  ; yes             ; Megafunction                       ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/stratixii_pll.inc   ;         ;
+; cycloneii_pll.inc                  ; yes             ; Megafunction                       ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/cycloneii_pll.inc   ;         ;
+; db/pll_10_60khz_altpll.v           ; yes             ; Auto-Generated Megafunction        ; C:/Users/david/Desktop/VHDLProject/Main/db/pll_10_60khz_altpll.v           ;         ;
++------------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------+---------+
 
 
 +---------------------------------------------------------+
@@ -762,42 +762,42 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Fri Jun 07 22:15:57 2024
+    Info: Processing started: Sat Jun 08 19:37:50 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Main -c Main
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file components/svmot_angle_cntrl.vhd
-    Info (12022): Found design unit 1: SVmot_angle_cntrl-servomotor_behave File: C:/Users/david/Desktop/VHDLProject/Main_STABLE/components/SVmot_angle_cntrl.vhd Line: 14
-    Info (12023): Found entity 1: SVmot_angle_cntrl File: C:/Users/david/Desktop/VHDLProject/Main_STABLE/components/SVmot_angle_cntrl.vhd Line: 5
+    Info (12022): Found design unit 1: SVmot_angle_cntrl-servomotor_behave File: C:/Users/david/Desktop/VHDLProject/Main/components/SVmot_angle_cntrl.vhd Line: 14
+    Info (12023): Found entity 1: SVmot_angle_cntrl File: C:/Users/david/Desktop/VHDLProject/Main/components/SVmot_angle_cntrl.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file components/uart_rx.vhd
-    Info (12022): Found design unit 1: UART_RX-rtl File: C:/Users/david/Desktop/VHDLProject/Main_STABLE/components/UART_RX.vhd Line: 18
-    Info (12023): Found entity 1: UART_RX File: C:/Users/david/Desktop/VHDLProject/Main_STABLE/components/UART_RX.vhd Line: 5
+    Info (12022): Found design unit 1: UART_RX-rtl File: C:/Users/david/Desktop/VHDLProject/Main/components/UART_RX.vhd Line: 18
+    Info (12023): Found entity 1: UART_RX File: C:/Users/david/Desktop/VHDLProject/Main/components/UART_RX.vhd Line: 5
 Info (12021): Found 1 design units, including 1 entities, in source file main.bdf
     Info (12023): Found entity 1: Main
 Info (12021): Found 2 design units, including 1 entities, in source file components/pwm_dcmotor.vhd
-    Info (12022): Found design unit 1: PWM_DCMotor-driverdc_behave File: C:/Users/david/Desktop/VHDLProject/Main_STABLE/components/PWM_DCMotor.vhd Line: 15
-    Info (12023): Found entity 1: PWM_DCMotor File: C:/Users/david/Desktop/VHDLProject/Main_STABLE/components/PWM_DCMotor.vhd Line: 5
+    Info (12022): Found design unit 1: PWM_DCMotor-driverdc_behave File: C:/Users/david/Desktop/VHDLProject/Main/components/PWM_DCMotor.vhd Line: 15
+    Info (12023): Found entity 1: PWM_DCMotor File: C:/Users/david/Desktop/VHDLProject/Main/components/PWM_DCMotor.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file components/dcmot_pwm_cntrl.vhd
-    Info (12022): Found design unit 1: DCmot_PWM_cntrl-driverdc_behave File: C:/Users/david/Desktop/VHDLProject/Main_STABLE/components/DCmot_PWM_cntrl.vhd Line: 14
-    Info (12023): Found entity 1: DCmot_PWM_cntrl File: C:/Users/david/Desktop/VHDLProject/Main_STABLE/components/DCmot_PWM_cntrl.vhd Line: 5
+    Info (12022): Found design unit 1: DCmot_PWM_cntrl-driverdc_behave File: C:/Users/david/Desktop/VHDLProject/Main/components/DCmot_PWM_cntrl.vhd Line: 14
+    Info (12023): Found entity 1: DCmot_PWM_cntrl File: C:/Users/david/Desktop/VHDLProject/Main/components/DCmot_PWM_cntrl.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file components/led_cntrl.vhd
-    Info (12022): Found design unit 1: led_cntrl-led_cntrl_b File: C:/Users/david/Desktop/VHDLProject/Main_STABLE/components/led_cntrl.vhd Line: 15
-    Info (12023): Found entity 1: led_cntrl File: C:/Users/david/Desktop/VHDLProject/Main_STABLE/components/led_cntrl.vhd Line: 4
+    Info (12022): Found design unit 1: led_cntrl-led_cntrl_b File: C:/Users/david/Desktop/VHDLProject/Main/components/led_cntrl.vhd Line: 15
+    Info (12023): Found entity 1: led_cntrl File: C:/Users/david/Desktop/VHDLProject/Main/components/led_cntrl.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file components/preliminary_control.vhd
-    Info (12022): Found design unit 1: preliminary_control-preliminary_control_arch File: C:/Users/david/Desktop/VHDLProject/Main_STABLE/components/preliminary_control.vhd Line: 16
-    Info (12023): Found entity 1: preliminary_control File: C:/Users/david/Desktop/VHDLProject/Main_STABLE/components/preliminary_control.vhd Line: 6
+    Info (12022): Found design unit 1: preliminary_control-preliminary_control_arch File: C:/Users/david/Desktop/VHDLProject/Main/components/preliminary_control.vhd Line: 16
+    Info (12023): Found entity 1: preliminary_control File: C:/Users/david/Desktop/VHDLProject/Main/components/preliminary_control.vhd Line: 6
 Info (12021): Found 1 design units, including 1 entities, in source file pll/pll_10_60khz.v
-    Info (12023): Found entity 1: pll_10_60khz File: C:/Users/david/Desktop/VHDLProject/Main_STABLE/pll/pll_10_60khz.v Line: 40
+    Info (12023): Found entity 1: pll_10_60khz File: C:/Users/david/Desktop/VHDLProject/Main/pll/pll_10_60khz.v Line: 40
 Info (12021): Found 2 design units, including 1 entities, in source file components/byte_divider.vhd
-    Info (12022): Found design unit 1: byte_divider-byte_divider File: C:/Users/david/Desktop/VHDLProject/Main_STABLE/components/byte_divider.vhd Line: 12
-    Info (12023): Found entity 1: byte_divider File: C:/Users/david/Desktop/VHDLProject/Main_STABLE/components/byte_divider.vhd Line: 4
+    Info (12022): Found design unit 1: byte_divider-byte_divider File: C:/Users/david/Desktop/VHDLProject/Main/components/byte_divider.vhd Line: 12
+    Info (12023): Found entity 1: byte_divider File: C:/Users/david/Desktop/VHDLProject/Main/components/byte_divider.vhd Line: 4
 Info (12127): Elaborating entity "Main" for the top level hierarchy
 Info (12128): Elaborating entity "PWM_DCMotor" for hierarchy "PWM_DCMotor:inst5"
-Info (12128): Elaborating entity "DCmot_PWM_cntrl" for hierarchy "PWM_DCMotor:inst5|DCmot_PWM_cntrl:U_rev" File: C:/Users/david/Desktop/VHDLProject/Main_STABLE/components/PWM_DCMotor.vhd Line: 29
+Info (12128): Elaborating entity "DCmot_PWM_cntrl" for hierarchy "PWM_DCMotor:inst5|DCmot_PWM_cntrl:U_rev" File: C:/Users/david/Desktop/VHDLProject/Main/components/PWM_DCMotor.vhd Line: 29
 Info (12128): Elaborating entity "pll_10_60khz" for hierarchy "pll_10_60khz:inst2"
-Info (12128): Elaborating entity "altpll" for hierarchy "pll_10_60khz:inst2|altpll:altpll_component" File: C:/Users/david/Desktop/VHDLProject/Main_STABLE/pll/pll_10_60khz.v Line: 104
-Info (12130): Elaborated megafunction instantiation "pll_10_60khz:inst2|altpll:altpll_component" File: C:/Users/david/Desktop/VHDLProject/Main_STABLE/pll/pll_10_60khz.v Line: 104
-Info (12133): Instantiated megafunction "pll_10_60khz:inst2|altpll:altpll_component" with the following parameter: File: C:/Users/david/Desktop/VHDLProject/Main_STABLE/pll/pll_10_60khz.v Line: 104
+Info (12128): Elaborating entity "altpll" for hierarchy "pll_10_60khz:inst2|altpll:altpll_component" File: C:/Users/david/Desktop/VHDLProject/Main/pll/pll_10_60khz.v Line: 104
+Info (12130): Elaborated megafunction instantiation "pll_10_60khz:inst2|altpll:altpll_component" File: C:/Users/david/Desktop/VHDLProject/Main/pll/pll_10_60khz.v Line: 104
+Info (12133): Instantiated megafunction "pll_10_60khz:inst2|altpll:altpll_component" with the following parameter: File: C:/Users/david/Desktop/VHDLProject/Main/pll/pll_10_60khz.v Line: 104
     Info (12134): Parameter "bandwidth_type" = "AUTO"
     Info (12134): Parameter "clk0_divide_by" = "5000"
     Info (12134): Parameter "clk0_duty_cycle" = "50"
@@ -857,14 +857,14 @@ Info (12133): Instantiated megafunction "pll_10_60khz:inst2|altpll:altpll_compon
     Info (12134): Parameter "port_extclk3" = "PORT_UNUSED"
     Info (12134): Parameter "width_clock" = "5"
 Info (12021): Found 1 design units, including 1 entities, in source file db/pll_10_60khz_altpll.v
-    Info (12023): Found entity 1: pll_10_60khz_altpll File: C:/Users/david/Desktop/VHDLProject/Main_STABLE/db/pll_10_60khz_altpll.v Line: 30
+    Info (12023): Found entity 1: pll_10_60khz_altpll File: C:/Users/david/Desktop/VHDLProject/Main/db/pll_10_60khz_altpll.v Line: 30
 Info (12128): Elaborating entity "pll_10_60khz_altpll" for hierarchy "pll_10_60khz:inst2|altpll:altpll_component|pll_10_60khz_altpll:auto_generated" File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altpll.tdf Line: 898
 Info (12128): Elaborating entity "byte_divider" for hierarchy "byte_divider:inst8"
 Info (12128): Elaborating entity "preliminary_control" for hierarchy "preliminary_control:inst"
-Warning (10492): VHDL Process Statement warning at preliminary_control.vhd(26): signal "RX_data_IN" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/david/Desktop/VHDLProject/Main_STABLE/components/preliminary_control.vhd Line: 26
+Warning (10492): VHDL Process Statement warning at preliminary_control.vhd(26): signal "RX_data_IN" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/david/Desktop/VHDLProject/Main/components/preliminary_control.vhd Line: 26
 Info (12128): Elaborating entity "UART_RX" for hierarchy "UART_RX:inst1"
 Info (12128): Elaborating entity "led_cntrl" for hierarchy "led_cntrl:inst9"
-Warning (10492): VHDL Process Statement warning at led_cntrl.vhd(22): signal "STATE" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/david/Desktop/VHDLProject/Main_STABLE/components/led_cntrl.vhd Line: 22
+Warning (10492): VHDL Process Statement warning at led_cntrl.vhd(23): signal "STATE" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/david/Desktop/VHDLProject/Main/components/led_cntrl.vhd Line: 23
 Info (12128): Elaborating entity "SVmot_angle_cntrl" for hierarchy "SVmot_angle_cntrl:inst3"
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
@@ -875,9 +875,9 @@ Info (21057): Implemented 134 device resources after synthesis - the final resou
     Info (21061): Implemented 123 logic cells
     Info (21065): Implemented 1 PLLs
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 3 warnings
-    Info: Peak virtual memory: 4800 megabytes
-    Info: Processing ended: Fri Jun 07 22:16:06 2024
-    Info: Elapsed time: 00:00:09
+    Info: Peak virtual memory: 4793 megabytes
+    Info: Processing ended: Sat Jun 08 19:38:00 2024
+    Info: Elapsed time: 00:00:10
     Info: Total CPU time (on all processors): 00:00:02
 
 
