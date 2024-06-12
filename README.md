@@ -6,10 +6,9 @@ The project wants to emphasize the board’s ability to execute processes suitab
 
 ## Results
 The results are acceptable for our goals and below are some of the images taken of the completed work:
-To attach images in Markdown, you can use the following syntax:
 
-<img src="medias/result_total.jpg" alt="Final Overview of the car" width="500" height="500">
-<img src="medias/p3.jpg" alt="Open Overview of the car" width="500" height="500">
+<img src="medias/result_total.jpg" alt="Final Overview of the car" width="500" height="400">
+<img src="medias/p3.jpg" alt="Open Overview of the car" width="500" height="400">
 
 
 # Additional info
