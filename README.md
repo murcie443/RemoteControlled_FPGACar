@@ -8,23 +8,16 @@ The project wants to emphasize the board’s ability to execute processes suitab
 The results are acceptable for our goals and below are some of the images taken of the completed work:
 To attach images in Markdown, you can use the following syntax:
 
+<img src="medias/result_total.jpg" alt="Final Overview of the car" width="500" height="500">
+<img src="medias/p3.jpg" alt="Open Overview of the car" width="500" height="500">
 
-![Overview of the car](medias/p3.jpg)
-![Overview of the car](medias/result_total.jpg)
 
-
-## Additional info
+# Additional info
 Check out the report if you are interested in our work!
 
 [Link to PDF](Report.pdf)
 
-
-## Additional info
-Check out the report if you are interested in our work!
-
-[Link to PDF](Report.pdf)
-
-# Note
+## Note
 You can also change the files in the components folder for your own purposes 
 
 🚀 Happy coding! 🌟
