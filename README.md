@@ -1,10 +1,8 @@
 
 ![GitHub](https://img.shields.io/badge/Github-green?style=flat&logo=github&link=https%3A%2F%2Fgithub.com%2Fmurcie443
 )
-
 ![Quartus](https://img.shields.io/badge/Quartus%20Prime%20-%20blue?style=flat
 )
-
 ![VHDL](https://img.shields.io/badge/VHDL-%20red?style=flat
 )
 
