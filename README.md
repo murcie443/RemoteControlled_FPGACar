@@ -14,7 +14,6 @@ The project shown here aims to realize a radio-controlled vehicle driven through
 The project wants to emphasize the board's ability to execute processes suitable for control in a parallel manner. Specifically, it is intended to design a vehicle with two steered wheels on the front axle and two driven wheels on the rear axle.
 
 ## Vehicle design
-The project wants to emphasize the board’s ability to execute processes suitable for control in a parallel manner. Specifically, it is intended to design a vehicle with two steered wheels on the front axle and two driven wheels on the rear axle.
 <img src="medias/design.jpg" alt="design" width="500" height="400">
 
 
