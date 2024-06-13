@@ -10,6 +10,21 @@ SW1 => led_cntrl:inst9.SW1
 SW2 => led_cntrl:inst9.SW2
 BACK_LED <= led_cntrl:inst9.Back_led
 PWM_SVmot <= SVmot_angle_cntrl:inst3.PWM_SVmot
+debug_out[0] <= UART_RX:inst1.o_RX_Byte[0]
+debug_out[1] <= UART_RX:inst1.o_RX_Byte[1]
+debug_out[2] <= UART_RX:inst1.o_RX_Byte[2]
+debug_out[3] <= UART_RX:inst1.o_RX_Byte[3]
+debug_out[4] <= UART_RX:inst1.o_RX_Byte[4]
+debug_out[5] <= UART_RX:inst1.o_RX_Byte[5]
+debug_out[6] <= UART_RX:inst1.o_RX_Byte[6]
+debug_out[7] <= UART_RX:inst1.o_RX_Byte[7]
+display_vel[0] <= sevensegment:inst6.data_out[0]
+display_vel[1] <= sevensegment:inst6.data_out[1]
+display_vel[2] <= sevensegment:inst6.data_out[2]
+display_vel[3] <= sevensegment:inst6.data_out[3]
+display_vel[4] <= sevensegment:inst6.data_out[4]
+display_vel[5] <= sevensegment:inst6.data_out[5]
+display_vel[6] <= sevensegment:inst6.data_out[6]
 
 
 |Main|PWM_DCMotor:inst5
@@ -257,5 +272,36 @@ Svmot_anglev[3] => Equal1.IN4
 Svmot_anglev[3] => Equal2.IN4
 Svmot_anglev[3] => LessThan4.IN1
 PWM_SVmot <= PWM_SVmot~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|sevensegment:inst6
+data_in[0] => Mux0.IN10
+data_in[0] => Mux1.IN10
+data_in[0] => Mux2.IN10
+data_in[0] => Mux3.IN10
+data_in[0] => Mux4.IN10
+data_in[0] => Mux5.IN10
+data_in[0] => Mux6.IN10
+data_in[1] => Mux0.IN9
+data_in[1] => Mux1.IN9
+data_in[1] => Mux2.IN9
+data_in[1] => Mux3.IN9
+data_in[1] => Mux4.IN9
+data_in[1] => Mux5.IN9
+data_in[1] => Mux6.IN9
+data_in[2] => Mux0.IN8
+data_in[2] => Mux1.IN8
+data_in[2] => Mux2.IN8
+data_in[2] => Mux3.IN8
+data_in[2] => Mux4.IN8
+data_in[2] => Mux5.IN8
+data_in[2] => Mux6.IN8
+data_out[0] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+data_out[1] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+data_out[2] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+data_out[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+data_out[4] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+data_out[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+data_out[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 

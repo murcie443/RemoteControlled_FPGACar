@@ -24,6 +24,66 @@
 					"strict" : false
 				},
 				{
+					"name" : "debug_out[7]",
+					"strict" : false
+				},
+				{
+					"name" : "debug_out[6]",
+					"strict" : false
+				},
+				{
+					"name" : "debug_out[5]",
+					"strict" : false
+				},
+				{
+					"name" : "debug_out[4]",
+					"strict" : false
+				},
+				{
+					"name" : "debug_out[3]",
+					"strict" : false
+				},
+				{
+					"name" : "debug_out[2]",
+					"strict" : false
+				},
+				{
+					"name" : "debug_out[1]",
+					"strict" : false
+				},
+				{
+					"name" : "debug_out[0]",
+					"strict" : false
+				},
+				{
+					"name" : "display_vel[6]",
+					"strict" : false
+				},
+				{
+					"name" : "display_vel[5]",
+					"strict" : false
+				},
+				{
+					"name" : "display_vel[4]",
+					"strict" : false
+				},
+				{
+					"name" : "display_vel[3]",
+					"strict" : false
+				},
+				{
+					"name" : "display_vel[2]",
+					"strict" : false
+				},
+				{
+					"name" : "display_vel[1]",
+					"strict" : false
+				},
+				{
+					"name" : "display_vel[0]",
+					"strict" : false
+				},
+				{
 					"name" : "SW1",
 					"strict" : false
 				},
