@@ -1,5 +1,5 @@
 Assembler report for Main
-Thu Jun 13 15:08:48 2024
+Thu Jun 13 15:46:43 2024
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -10,7 +10,7 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
   2. Assembler Summary
   3. Assembler Settings
   4. Assembler Generated Files
-  5. Assembler Device Options: C:/Users/david/Desktop/VHDLProject/Main/output_files/Main.sof
+  5. Assembler Device Options: C:/Users/Francesco Stasi/OneDrive - Politecnico di Bari/UNI_Digital_Programmable_Systems/VHDLProject/Main/output_files/Main.sof
   6. Assembler Messages
 
 
@@ -38,7 +38,7 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Thu Jun 13 15:08:48 2024 ;
+; Assembler Status      ; Successful - Thu Jun 13 15:46:43 2024 ;
 ; Revision Name         ; Main                                  ;
 ; Top-level Entity Name ; Main                                  ;
 ; Family                ; MAX 10                                ;
@@ -53,23 +53,23 @@ https://fpgasoftware.intel.com/eula.
 +--------+---------+---------------+
 
 
-+---------------------------------------------------------------+
-; Assembler Generated Files                                     ;
-+---------------------------------------------------------------+
-; File Name                                                     ;
-+---------------------------------------------------------------+
-; C:/Users/david/Desktop/VHDLProject/Main/output_files/Main.sof ;
-+---------------------------------------------------------------+
++---------------------------------------------------------------------------------------------------------------------------------+
+; Assembler Generated Files                                                                                                       ;
++---------------------------------------------------------------------------------------------------------------------------------+
+; File Name                                                                                                                       ;
++---------------------------------------------------------------------------------------------------------------------------------+
+; C:/Users/Francesco Stasi/OneDrive - Politecnico di Bari/UNI_Digital_Programmable_Systems/VHDLProject/Main/output_files/Main.sof ;
++---------------------------------------------------------------------------------------------------------------------------------+
 
 
-+-----------------------------------------------------------------------------------------+
-; Assembler Device Options: C:/Users/david/Desktop/VHDLProject/Main/output_files/Main.sof ;
-+----------------+------------------------------------------------------------------------+
-; Option         ; Setting                                                                ;
-+----------------+------------------------------------------------------------------------+
-; JTAG usercode  ; 0x002839D1                                                             ;
-; Checksum       ; 0x002839D1                                                             ;
-+----------------+------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Assembler Device Options: C:/Users/Francesco Stasi/OneDrive - Politecnico di Bari/UNI_Digital_Programmable_Systems/VHDLProject/Main/output_files/Main.sof ;
++----------------+------------------------------------------------------------------------------------------------------------------------------------------+
+; Option         ; Setting                                                                                                                                  ;
++----------------+------------------------------------------------------------------------------------------------------------------------------------------+
+; JTAG usercode  ; 0x00283710                                                                                                                               ;
+; Checksum       ; 0x00283710                                                                                                                               ;
++----------------+------------------------------------------------------------------------------------------------------------------------------------------+
 
 
 +--------------------+
@@ -78,15 +78,15 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime Assembler
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Thu Jun 13 15:08:44 2024
+    Info: Processing started: Thu Jun 13 15:46:40 2024
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off Main -c Main
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (115031): Writing out detailed assembly data for power analysis
 Info (115030): Assembler is generating device programming files
 Info: Quartus Prime Assembler was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4695 megabytes
-    Info: Processing ended: Thu Jun 13 15:08:48 2024
-    Info: Elapsed time: 00:00:04
-    Info: Total CPU time (on all processors): 00:00:00
+    Info: Peak virtual memory: 4694 megabytes
+    Info: Processing ended: Thu Jun 13 15:46:43 2024
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:03
 
 

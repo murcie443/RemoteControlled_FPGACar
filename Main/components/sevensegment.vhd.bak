@@ -5,7 +5,6 @@ use ieee.std_logic_arith.all;
 
 entity sevensegment is 
 port(
-     data_in_dir	: in std_logic;
 	  data_in	: in std_logic_vector(2 downto 0) := (others =>'0');
 	  data_out: out std_logic_vector(6 downto 0) := (others =>'0')
 			);
@@ -15,13 +14,8 @@ architecture sevensegment_b of sevensegment is
 
 begin 
 
-
-
-process(data_in, data_in_dir) begin
-    IF data_in_dir = '0' THEN 
-                data_out<=not"0000000";
-            ELSE
-                case data_in is
+process(data_in) begin
+	case data_in is
 	when "000" => data_out<= not "0111111"; --0
 	when "001" => data_out<=not "0000110"; --1
 	when "010" => data_out<=not "1011011"; --2 
@@ -32,7 +26,6 @@ process(data_in, data_in_dir) begin
 	when "111" => data_out<=not "0000111"; --7
 	when others => data_out<=not"0000000"; --default
 	end case;
-            END IF;
 end process;
 
 
