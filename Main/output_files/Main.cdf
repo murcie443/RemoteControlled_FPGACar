@@ -4,7 +4,7 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(10M50DAF484) Path("C:/Users/Francesco Stasi/OneDrive - Politecnico di Bari/UNI_Digital_Programmable_Systems/VHDLProject/Main/output_files/") File("Main.pof") MfrSpec(OpMask(1) Child_OpMask(2 1 1));
+		Device PartName(10M50DAF484) Path("C:/Users/david/Desktop/VHDLProject/Testing/TestConMotore/Main3/output_files/") File("Main.pof") MfrSpec(OpMask(1) Child_OpMask(2 1 1));
 
 ChainEnd;
 

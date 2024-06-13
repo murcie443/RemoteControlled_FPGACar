@@ -27,16 +27,9 @@ https://fpgasoftware.intel.com/eula.
 	(port
 		(pt 0 32)
 		(input)
-		(text "data_in_dir" (rect 0 0 43 12)(font "Arial" ))
-		(text "data_in_dir" (rect 21 27 64 39)(font "Arial" ))
-		(line (pt 0 32)(pt 16 32)(line_width 1))
-	)
-	(port
-		(pt 0 48)
-		(input)
 		(text "data_in[2..0]" (rect 0 0 48 12)(font "Arial" ))
-		(text "data_in[2..0]" (rect 21 43 69 55)(font "Arial" ))
-		(line (pt 0 48)(pt 16 48)(line_width 3))
+		(text "data_in[2..0]" (rect 21 27 69 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
 	)
 	(port
 		(pt 208 32)

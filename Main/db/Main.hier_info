@@ -5,11 +5,11 @@ CLK => UART_RX:inst1.i_Clk
 SW0 => preliminary_control:inst.EN_SW
 i_RX_Serial => UART_RX:inst1.i_RX_Serial
 PWM_DCmot_rev <= PWM_DCMotor:inst5.PWM_DCmot_rev
-PWM_SVmot <= SVmot_angle_cntrl:inst3.PWM_SVmot
 FRONT_LED <= led_cntrl:inst9.Front_led
 SW1 => led_cntrl:inst9.SW1
 SW2 => led_cntrl:inst9.SW2
 BACK_LED <= led_cntrl:inst9.Back_led
+PWM_SVmot <= SVmot_angle_cntrl:inst3.PWM_SVmot
 debug_out[0] <= UART_RX:inst1.o_RX_Byte[0]
 debug_out[1] <= UART_RX:inst1.o_RX_Byte[1]
 debug_out[2] <= UART_RX:inst1.o_RX_Byte[2]
@@ -231,6 +231,16 @@ o_RX_Byte[6] <= r_RX_Byte[6].DB_MAX_OUTPUT_PORT_TYPE
 o_RX_Byte[7] <= r_RX_Byte[7].DB_MAX_OUTPUT_PORT_TYPE
 
 
+|Main|led_cntrl:inst9
+SW1 => Mux0.IN4
+SW1 => Mux1.IN4
+SW2 => Mux0.IN5
+SW2 => Mux1.IN5
+back_bit => Mux1.IN3
+Front_led <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+Back_led <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+
+
 |Main|SVmot_angle_cntrl:inst3
 CLK2 => innercounter[0].CLK
 CLK2 => innercounter[1].CLK
@@ -264,24 +274,7 @@ Svmot_anglev[3] => LessThan4.IN1
 PWM_SVmot <= PWM_SVmot~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Main|led_cntrl:inst9
-SW1 => Mux0.IN4
-SW1 => Mux1.IN4
-SW2 => Mux0.IN5
-SW2 => Mux1.IN5
-back_bit => Mux1.IN3
-Front_led <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
-Back_led <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
-
-
 |Main|sevensegment:inst6
-data_in_dir => data_out.OUTPUTSELECT
-data_in_dir => data_out.OUTPUTSELECT
-data_in_dir => data_out.OUTPUTSELECT
-data_in_dir => data_out.OUTPUTSELECT
-data_in_dir => data_out.OUTPUTSELECT
-data_in_dir => data_out.OUTPUTSELECT
-data_in_dir => data_out.OUTPUTSELECT
 data_in[0] => Mux0.IN10
 data_in[0] => Mux1.IN10
 data_in[0] => Mux2.IN10
@@ -303,12 +296,12 @@ data_in[2] => Mux3.IN8
 data_in[2] => Mux4.IN8
 data_in[2] => Mux5.IN8
 data_in[2] => Mux6.IN8
-data_out[0] <= data_out.DB_MAX_OUTPUT_PORT_TYPE
-data_out[1] <= data_out.DB_MAX_OUTPUT_PORT_TYPE
-data_out[2] <= data_out.DB_MAX_OUTPUT_PORT_TYPE
-data_out[3] <= data_out.DB_MAX_OUTPUT_PORT_TYPE
-data_out[4] <= data_out.DB_MAX_OUTPUT_PORT_TYPE
-data_out[5] <= data_out.DB_MAX_OUTPUT_PORT_TYPE
-data_out[6] <= data_out.DB_MAX_OUTPUT_PORT_TYPE
+data_out[0] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+data_out[1] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+data_out[2] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+data_out[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+data_out[4] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+data_out[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+data_out[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 

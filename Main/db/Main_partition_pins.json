@@ -12,15 +12,15 @@
 					"strict" : false
 				},
 				{
-					"name" : "PWM_SVmot",
-					"strict" : false
-				},
-				{
 					"name" : "FRONT_LED",
 					"strict" : false
 				},
 				{
 					"name" : "BACK_LED",
+					"strict" : false
+				},
+				{
+					"name" : "PWM_SVmot",
 					"strict" : false
 				},
 				{
